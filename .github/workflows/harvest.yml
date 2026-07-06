@@ -15,13 +15,11 @@ on:
     paths: ["scripts/**", "config.json", "index.html", "docs/**"]
 
 permissions:
-  contents: write
-  pages: write
-  id-token: write
+  contents: write     # commit the refreshed catalog.json; branch-based Pages serves it
 
 concurrency:
   group: harvest
-  cancel-in-progress: true
+  cancel-in-progress: false   # let a running harvest finish so its catalog push isn't lost
 
 jobs:
   harvest:
@@ -36,13 +34,15 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHFIELD_PAT || secrets.GITHUB_TOKEN }}
         run: node scripts/harvest.mjs
       - name: Commit catalog if changed
+        # Pages serves from the main branch (build_type: legacy), so committing the
+        # refreshed catalog.json is the whole deploy. Rebase-retry in case a
+        # concurrent run pushed first.
         run: |
           git config user.name  "githfield-bot"
           git config user.email "bot@githfield"
           git add catalog.json
-          git diff --cached --quiet || git commit -m "harvest: refresh catalog.json"
-          git push || true
-      - uses: actions/configure-pages@v5
-      - uses: actions/upload-pages-artifact@v3
-        with: { path: "." }
-      - uses: actions/deploy-pages@v4
+          git diff --cached --quiet && { echo "no change"; exit 0; }
+          git commit -m "harvest: refresh catalog.json"
+          for i in 1 2 3; do
+            git pull --rebase --autostash origin main && git push && break || sleep 3
+          done
