@@ -1,6 +1,6 @@
 {
-  "generated": "2026-07-06T14:45:12.026Z",
-  "fieldCount": 11,
+  "generated": "2026-07-06T15:25:25.937Z",
+  "fieldCount": 12,
   "fields": [
     {
       "field": "bt",
@@ -5338,6 +5338,1769 @@
         "open": 0,
         "review": 0,
         "done": 0
+      }
+    },
+    {
+      "field": "pulse",
+      "name": "Pulse",
+      "accent": "#6aa3d6",
+      "summary": "The Knitweb engine — settlement ledger, PoUW-minted PLS, p2p mesh",
+      "homepage": "https://knitweb.art",
+      "project": "https://github.com/orgs/Knitweb/projects/2",
+      "repo": "Knitweb/pulse",
+      "group_by": "",
+      "docs": [
+        {
+          "title": "Architecture",
+          "stage": "reference",
+          "url": "https://github.com/Knitweb/docs/blob/main/pulse/ARCHITECTURE.md",
+          "path": "Knitweb/docs/blob/main/pulse/ARCHITECTURE.md"
+        },
+        {
+          "title": "Overview",
+          "stage": "reference",
+          "url": "https://github.com/Knitweb/docs/blob/main/pulse/overview.md",
+          "path": "Knitweb/docs/blob/main/pulse/overview.md"
+        },
+        {
+          "title": "Assessment",
+          "stage": "reference",
+          "url": "https://github.com/Knitweb/docs/blob/main/pulse/assessment.md",
+          "path": "Knitweb/docs/blob/main/pulse/assessment.md"
+        }
+      ],
+      "backlog": [
+        {
+          "number": 4,
+          "title": "security: gateway economy is 0.0.0.0/no-auth + from_seed keys are publicly derivable (dev-only guardrails needed)",
+          "url": "https://github.com/Knitweb/pulse/issues/4",
+          "state": "closed",
+          "labels": [
+            "area:knitweb",
+            "type:security",
+            "prio:high"
+          ],
+          "goal": "Carried over from review of the pre-migration febuz/pulse PRs #72 (fromseed) and #73 (gateway) — those PR comments didn't migrate, but the c",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 6,
+          "title": "Land the pure-Python rewrite (canonical knitweb/pulse)",
+          "url": "https://github.com/Knitweb/pulse/issues/6",
+          "state": "closed",
+          "labels": [
+            "area:knitweb",
+            "prio:high"
+          ],
+          "goal": "Replace the JS scaffold with the pure-Python knitweb (PR #5; reconcile/supersede the earlier rewrite). Pulse is pure-Python.",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 7,
+          "title": "CI → run the Python test suite",
+          "url": "https://github.com/Knitweb/pulse/issues/7",
+          "state": "closed",
+          "labels": [
+            "area:knitweb",
+            "type:ci",
+            "prio:high"
+          ],
+          "goal": "Point CI at pytest tests/property -q (and full suite). Requires a workflow-scoped token.",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 8,
+          "title": "pip-installability (hatchling editable/pyproject)",
+          "url": "https://github.com/Knitweb/pulse/issues/8",
+          "state": "closed",
+          "labels": [
+            "area:knitweb",
+            "prio:med"
+          ],
+          "goal": "pip install -e . fails (old hatchling editable hook / metadata). Make the package cleanly installable so apps (molgang) can depend on it wit",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 9,
+          "title": "Live p2p fabric node (replicate the Web over feeds)",
+          "url": "https://github.com/Knitweb/pulse/issues/9",
+          "state": "closed",
+          "labels": [
+            "area:knitweb",
+            "type:p2p",
+            "prio:med"
+          ],
+          "goal": "A long-running knitweb node that holds a fabric Web and replicates it over signed p2p feeds, so apps extend a shared, replicated web. molgan",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 10,
+          "title": "gateway.App p2p-backed shared web",
+          "url": "https://github.com/Knitweb/pulse/issues/10",
+          "state": "closed",
+          "labels": [
+            "area:knitweb",
+            "type:p2p",
+            "prio:med"
+          ],
+          "goal": "Back gateway.App's persistent web with the p2p fabric node so multiple App instances share one web (not just a local file).",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 11,
+          "title": "Pulse operator CLI parity (knitweb.tools.cli)",
+          "url": "https://github.com/Knitweb/pulse/issues/11",
+          "state": "closed",
+          "labels": [
+            "area:knitweb",
+            "prio:med"
+          ],
+          "goal": "Flesh out the Python Pulse operator CLI to match whatever the prior JS CLI offered (identity, host status, node, pay, balance, address — plu",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 12,
+          "title": "loom→knitweb vocabulary rename (owner-gated)",
+          "url": "https://github.com/Knitweb/pulse/issues/12",
+          "state": "closed",
+          "labels": [
+            "area:knitweb",
+            "type:docs",
+            "prio:low"
+          ],
+          "goal": "Rename the loom primitive references to knitweb per the vocabulary rule (Web·Knit·Pulse·Fiber·knitweb; never 'loom'/'network'). Hash-critica",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 13,
+          "title": "Provenance explorer: verify a web's OriginTrail UAL",
+          "url": "https://github.com/Knitweb/pulse/issues/13",
+          "state": "closed",
+          "labels": [
+            "area:knitweb",
+            "type:p2p",
+            "prio:med"
+          ],
+          "goal": "A small tool/endpoint to resolve + verify a woven web's OriginTrail UAL (anchor receipt → stateroot match), so anyone can independently chec",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 14,
+          "title": "Spider PoUW compute-marketplace MVP (sell verifiable GPU work for PLS)",
+          "url": "https://github.com/Knitweb/pulse/issues/14",
+          "state": "closed",
+          "labels": [
+            "area:knitweb",
+            "type:p2p",
+            "prio:low"
+          ],
+          "goal": "The DePIN core: a spider advertises GPU/RAM, takes a job through pouw/scheduler, returns a verifiable result, and earns PLS via proof-of-use",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 19,
+          "title": "version drift: knitweb.__version__ '0.0.1' vs pyproject '0.6.0'",
+          "url": "https://github.com/Knitweb/pulse/issues/19",
+          "state": "closed",
+          "labels": [
+            "bug",
+            "area:knitweb",
+            "prio:low",
+            "MoSCoW: Should"
+          ],
+          "goal": "Surfaced by PR #17 (CLI version command): knitweb.init.version is '0.0.1' in src/dev mode but pyproject.toml declares '0.6.0' (installed whe",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 21,
+          "title": "FabricNode: gossip Web edges (links), not just node records",
+          "url": "https://github.com/Knitweb/pulse/issues/21",
+          "state": "closed",
+          "labels": [
+            "area:knitweb",
+            "type:p2p",
+            "prio:high"
+          ],
+          "goal": "The live FabricNode (#9, PR #18) currently propagates node records but NOT Web edges/links. For a knowledge graph the EDGES are the value (r",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 22,
+          "title": "JSON-LD export of the fabric Web (OriginTrail DKG-compatible, @language/@direction)",
+          "url": "https://github.com/Knitweb/pulse/issues/22",
+          "state": "closed",
+          "labels": [
+            "area:knitweb",
+            "type:p2p",
+            "prio:med",
+            "MoSCoW: Should"
+          ],
+          "goal": "From the multilingual design: emit the woven Web as JSON-LD with rdf:langString + BCP-47 @language + @direction (rtl for Arabic) so a knitwe",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 23,
+          "title": "Unify FabricNode transport with AsyncioP2PNode",
+          "url": "https://github.com/Knitweb/pulse/issues/23",
+          "state": "closed",
+          "labels": [
+            "area:knitweb",
+            "type:p2p",
+            "prio:med",
+            "MoSCoW: Could"
+          ],
+          "goal": "PR #18's FabricNode runs its own asyncio.startserver rather than extending the existing AsyncioP2PNode. Unify onto one p2p transport stack t",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 24,
+          "title": "FabricNode hardening: equivocation quarantine + partial Merkle proofs + DHT discovery",
+          "url": "https://github.com/Knitweb/pulse/issues/24",
+          "state": "closed",
+          "labels": [
+            "area:knitweb",
+            "type:p2p",
+            "prio:low",
+            "MoSCoW: Should"
+          ],
+          "goal": "The #18 out-of-scope items: quarantine equivocating peers (reuse pouw equivocation-report), serve partial Merkle proofs for sub-web verifica",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 27,
+          "title": "Finish loom→knitweb: docs/research/08-knitweb.md still uses 'loom' (peer-node) on main",
+          "url": "https://github.com/Knitweb/pulse/issues/27",
+          "state": "closed",
+          "labels": [
+            "area:knitweb",
+            "type:docs",
+            "prio:high"
+          ],
+          "goal": "PR #26 (rename) was merged before the verify-flagged fix landed, so main still has ~48 active 'loom'/'Loom'/'looms' refs in docs/research/08",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 29,
+          "title": "EPIC: Fiber tension — make-or-break traversal mechanics (taut / slack / snapped)",
+          "url": "https://github.com/Knitweb/pulse/issues/29",
+          "state": "closed",
+          "labels": [
+            "area:molgang",
+            "area:knitweb",
+            "type:p2p",
+            "prio:high",
+            "MoSCoW: Could"
+          ],
+          "goal": "Model tension as the quantitative variable on every fiber (edge) governing traversal — not a static link but a tensioned thread.",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 33,
+          "title": "p2p cleanup: relay outer-frame doc wording + _relay_ namespace note (from #32 review)",
+          "url": "https://github.com/Knitweb/pulse/issues/33",
+          "state": "closed",
+          "labels": [
+            "type:p2p",
+            "prio:low",
+            "MoSCoW: Could"
+          ],
+          "goal": "Non-blocking nits from the adversarial review of #32 (signed-record byte-identity IS preserved — these are polish):",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 37,
+          "title": "p2p: reputation bans are keyed by endpoint, not identity — collateral bans via the merged relay (#31/#32 follow-up)",
+          "url": "https://github.com/Knitweb/pulse/issues/37",
+          "state": "closed",
+          "labels": [
+            "MoSCoW: Should"
+          ],
+          "goal": "",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 38,
+          "title": "p2p follow-ups from round-2 review: PEX-over-relay carrier auth + jsonld dangling-edge error type",
+          "url": "https://github.com/Knitweb/pulse/issues/38",
+          "state": "closed",
+          "labels": [
+            "type:p2p",
+            "type:security",
+            "prio:med",
+            "MoSCoW: Should"
+          ],
+          "goal": "Non-blocking nits from the adversarial review of #34/#35/#36 (all merged, all byte-identity-clean):",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 39,
+          "title": "fabric: JSON-LD export is English-only — add @language/@direction (follow-up to merged #34)",
+          "url": "https://github.com/Knitweb/pulse/issues/39",
+          "state": "closed",
+          "labels": [
+            "MoSCoW: Should"
+          ],
+          "goal": "Fix: emit language-tagged value objects for label literals, e.g. {\"@value\":\"ذرة\",\"@language\":\"ar\",\"@direction\":\"rtl\"} (and @language for en/",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 40,
+          "title": "p2p: PEX needs an inbound cap + static-peer floor (eclipse defense) — follow-up to merged #36",
+          "url": "https://github.com/Knitweb/pulse/issues/40",
+          "state": "closed",
+          "labels": [
+            "MoSCoW: Should"
+          ],
+          "goal": "Add: (1) a cap on total directory size + per-exchange accepted-peer cap (bounded merge); (2) never let PEX fully replace the peerbook — keep",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 44,
+          "title": "Wire the anti-entropy convergence loop (#43) into AsyncioP2PNode + FabricNode",
+          "url": "https://github.com/Knitweb/pulse/issues/44",
+          "state": "closed",
+          "labels": [
+            "type:p2p",
+            "prio:high",
+            "MoSCoW: Should"
+          ],
+          "goal": "PR #43 shipped a standalone, tested anti-entropy/reconnect driver (p2p/antientropy.py) driven by injected callbacks, but it is not yet wired",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 49,
+          "title": "fabric: web_state_root folds node CIDs only — edges/relations aren't in the convergence witness",
+          "url": "https://github.com/Knitweb/pulse/issues/49",
+          "state": "closed",
+          "labels": [
+            "MoSCoW: Should"
+          ],
+          "goal": "Confirmed in fabric/items.py: webstateroot = SHA-256 Merkle root of sorted(web.nodes.keys()) — node CIDs only. Edges/typed links are not fol",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 50,
+          "title": "p2p doc/test follow-ups from round 5: doc metrics-scope staleness + add Byzantine-exclusion scenario",
+          "url": "https://github.com/Knitweb/pulse/issues/50",
+          "state": "closed",
+          "labels": [
+            "type:p2p",
+            "type:docs",
+            "prio:low",
+            "MoSCoW: Could"
+          ],
+          "goal": "Non-blocking, from the round-5 review (all merged):",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 52,
+          "title": "Follow-up: fold FabricNode._serve_connection routing into the BaseNode seam",
+          "url": "https://github.com/Knitweb/pulse/issues/52",
+          "state": "closed",
+          "labels": [
+            "type:p2p",
+            "prio:low",
+            "MoSCoW: Should"
+          ],
+          "goal": "From the #23/#51 unification review (merged): FabricNode.serveconnection still inlines its own routing (framesin/out + kind-dispatch) rather",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 58,
+          "title": "p2p reputation: use a cryptographic peer identity (handshake pubkey) instead of tcp:<ip> to avoid NAT collateral-bans",
+          "url": "https://github.com/Knitweb/pulse/issues/58",
+          "state": "closed",
+          "labels": [
+            "type:p2p",
+            "type:security",
+            "prio:med",
+            "MoSCoW: Should"
+          ],
+          "goal": "Proper fix: key reputation on a cryptographic node identity — have peers prove a stable pubkey via the Knit handshake, and ban that KEY, not",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 60,
+          "title": "EPIC: port proven crypto-p2p patterns (libp2p / Bitcoin / devp2p / Kademlia / Nostr) into knitweb",
+          "url": "https://github.com/Knitweb/pulse/issues/60",
+          "state": "open",
+          "labels": [
+            "type:p2p",
+            "prio:high",
+            "MoSCoW: Should"
+          ],
+          "goal": "Research-driven expansion (owner ask): mine our own docs/research for designed-but-unimplemented ideas, AND study real crypto p2p codebases ",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 65,
+          "title": "Adopt PeerIdentityGate (#62) in BaseNode._dispatch — single, general identity-keying (supersede #61 inline)",
+          "url": "https://github.com/Knitweb/pulse/issues/65",
+          "state": "closed",
+          "labels": [
+            "type:p2p",
+            "prio:med",
+            "MoSCoW: Should"
+          ],
+          "goal": "",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 66,
+          "title": "addrbook (#63): add multi-group-flood eclipse test + document tried-promotion as the load-bearing defense",
+          "url": "https://github.com/Knitweb/pulse/issues/66",
+          "state": "closed",
+          "labels": [
+            "type:p2p",
+            "type:security",
+            "prio:med",
+            "MoSCoW: Should"
+          ],
+          "goal": "Verify of #63 found the headline eclipse test floods only a SINGLE source-group + /16. Under a realistic multi-/16 flood (attacker owning a ",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 70,
+          "title": "p2p: DHT keyspace eclipse — node_id=sha256(pubkey) is grindable; consider S/Kademlia crypto-puzzle (Refs #60 #68)",
+          "url": "https://github.com/Knitweb/pulse/issues/70",
+          "state": "open",
+          "labels": [
+            "MoSCoW: Should"
+          ],
+          "goal": "From the #68 review: Kademlia derives nodeid = sha256(pubkey) and keys are free to mint, so an attacker can grind keypairs until their id la",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 71,
+          "title": "erlay reconcile (#69): adaptive fanout / early-exit to cut the constant-factor frame overhead for small diffs",
+          "url": "https://github.com/Knitweb/pulse/issues/71",
+          "state": "open",
+          "labels": [
+            "type:p2p",
+            "prio:low",
+            "MoSCoW: Could"
+          ],
+          "goal": "Verify of #69 noted the bisection reconciliation incurs a ~constant-factor frame overhead (~200 frames even at diff=2 over a 4000-CID invent",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 74,
+          "title": "p2p discovery hardening: bound the flat PeerDirectory + isolate source-group eclipse test",
+          "url": "https://github.com/Knitweb/pulse/issues/74",
+          "state": "closed",
+          "labels": [
+            "type:p2p",
+            "type:security",
+            "prio:med",
+            "MoSCoW: Should"
+          ],
+          "goal": "Follow-ups from the #73 AddrBook-activation review (merged; eclipse defense now live on the DIAL/PEX sample path):",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 76,
+          "title": "p2p inv-relay: test each dedup layer in isolation + clarify per-hop envelope vs record byte-identity",
+          "url": "https://github.com/Knitweb/pulse/issues/76",
+          "state": "closed",
+          "labels": [
+            "type:p2p",
+            "prio:low",
+            "MoSCoW: Should"
+          ],
+          "goal": "Follow-ups from the #75 inventory-activation review (merged; propagation now inv-announce→getdata→data, full-flood replaced):",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 78,
+          "title": "p2p: wire mesh/gossip heartbeats into a prod background scheduler + strengthen multi-hop gossip",
+          "url": "https://github.com/Knitweb/pulse/issues/78",
+          "state": "closed",
+          "labels": [
+            "type:p2p",
+            "prio:med",
+            "MoSCoW: Should"
+          ],
+          "goal": "Follow-ups from the #77 gossipsub-mesh activation (merged; eager fan-out now O(D) + lazy IHAVE):",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 81,
+          "title": "fabric/node.py: update docstrings — state_root now commits to edges, not just node CIDs",
+          "url": "https://github.com/Knitweb/pulse/issues/81",
+          "state": "closed",
+          "labels": [
+            "type:docs",
+            "prio:low",
+            "MoSCoW: Could"
+          ],
+          "goal": "Cosmetic only. After #80 (merged), the webstateroot = sha256(noderoot || edgeroot), but src/knitweb/fabric/node.py still has docstrings (lin",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 87,
+          "title": "P0: bootstrap_round() bypasses MAX_PEX_INBOUND cap — bound attacker-controlled bootstrap replies",
+          "url": "https://github.com/Knitweb/pulse/issues/87",
+          "state": "closed",
+          "labels": [
+            "area:knitweb",
+            "type:p2p",
+            "type:security",
+            "prio:high",
+            "MoSCoW: Should",
+            "track-p"
+          ],
+          "goal": "discovery.py line 293 calls directory.merge(peersfromrecords(reply.get('peers') or [])) with NO [:inboundcap], unlike handlepeerexchange lin",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 88,
+          "title": "📋 COORDINATION — two-track dev plan (Codex=molgang · Claude Code=pulse)",
+          "url": "https://github.com/Knitweb/pulse/issues/88",
+          "state": "open",
+          "labels": [
+            "MoSCoW: Should",
+            "track-p",
+            "coordination"
+          ],
+          "goal": "Collision-free decomposition for two parallel dev sessions across separate GitHub repositories. Verified disjoint file trees ⇒ zero edit col",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 89,
+          "title": "[CRITICAL] Cleartext node:<pubkey> piggybacked beside TCP source IP — permanent passive IP↔pubkey↔Knit-signer deanonymization",
+          "url": "https://github.com/Knitweb/pulse/issues/89",
+          "state": "closed",
+          "labels": [
+            "type:security",
+            "MoSCoW: Could",
+            "track-p"
+          ],
+          "goal": "Severity: CRITICAL  ·  Track P (pulse)",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 90,
+          "title": "[HIGH] PiggybackProof replay (no nonce cache, no body/connection binding) → targeted ban of honest node:<pubkey>, carrier-ban evasion, and e",
+          "url": "https://github.com/Knitweb/pulse/issues/90",
+          "state": "closed",
+          "labels": [
+            "type:security",
+            "MoSCoW: Should",
+            "track-p"
+          ],
+          "goal": "Severity: HIGH  ·  Track P (pulse)",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 91,
+          "title": "[HIGH] inv-getdata / IWANT amplification: single ~2 MiB request elicits up to ~390 GiB served, no per-peer rate or byte limit",
+          "url": "https://github.com/Knitweb/pulse/issues/91",
+          "state": "closed",
+          "labels": [
+            "type:security",
+            "MoSCoW: Should",
+            "track-p"
+          ],
+          "goal": "Severity: HIGH  ·  Track P (pulse)",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 92,
+          "title": "[HIGH] Unbounded per-node _frames store — permanent memory exhaustion via own-key-signed junk records",
+          "url": "https://github.com/Knitweb/pulse/issues/92",
+          "state": "closed",
+          "labels": [
+            "type:security",
+            "MoSCoW: Should",
+            "track-p"
+          ],
+          "goal": "Severity: HIGH  ·  Track P (pulse)",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 93,
+          "title": "[HIGH] Eager inv-announce with no Dandelion/diffusion — author is deterministically the first/earliest announcer, revealing Knit source",
+          "url": "https://github.com/Knitweb/pulse/issues/93",
+          "state": "closed",
+          "labels": [
+            "type:security",
+            "MoSCoW: Should",
+            "track-p"
+          ],
+          "goal": "Severity: HIGH  ·  Track P (pulse)",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 94,
+          "title": "[HIGH] Inbound PEX keys learned addresses under fixed local: source group, neutering the addrbook new-table eclipse defense on the attacker-",
+          "url": "https://github.com/Knitweb/pulse/issues/94",
+          "state": "closed",
+          "labels": [
+            "type:security",
+            "MoSCoW: Should",
+            "track-p"
+          ],
+          "goal": "Severity: HIGH  ·  Track P (pulse)",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 98,
+          "title": "[MEDIUM] node.bootstrap_peers() live path bypasses MAX_PEX_INBOUND (sibling of #87)",
+          "url": "https://github.com/Knitweb/pulse/issues/98",
+          "state": "closed",
+          "labels": [
+            "type:security",
+            "MoSCoW: Should",
+            "track-p"
+          ],
+          "goal": "Track P · type:security — surfaced by the adversarial verify of #95 (the #87 fix).",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 99,
+          "title": "[LOW] Flaky: test_node_learns_a_third_peer_via_pex is order-dependent under pytest-randomly",
+          "url": "https://github.com/Knitweb/pulse/issues/99",
+          "state": "closed",
+          "labels": [
+            "prio:low",
+            "MoSCoW: Could",
+            "track-p"
+          ],
+          "goal": "Track P · prio:low — surfaced by the #97 adversarial verify (not a regression; pre-existing since #36).",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 103,
+          "title": "[#100] test-api-create",
+          "url": "https://github.com/Knitweb/pulse/issues/103",
+          "state": "closed",
+          "labels": [
+            "area:knitweb",
+            "MoSCoW: Should",
+            "MoSCoW: Would",
+            "track-p"
+          ],
+          "goal": "x",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 104,
+          "title": "[#temp2]",
+          "url": "https://github.com/Knitweb/pulse/issues/104",
+          "state": "closed",
+          "labels": [
+            "MoSCoW: Should",
+            "MoSCoW: Would"
+          ],
+          "goal": "tmp",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 105,
+          "title": "[#100] Deterministic structured retrieve",
+          "url": "https://github.com/Knitweb/pulse/issues/105",
+          "state": "closed",
+          "labels": [
+            "area:knitweb",
+            "MoSCoW: Should",
+            "MoSCoW: Would",
+            "track-p"
+          ],
+          "goal": "test",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 106,
+          "title": "[#101] Recursive distill controller",
+          "url": "https://github.com/Knitweb/pulse/issues/106",
+          "state": "closed",
+          "labels": [
+            "area:knitweb",
+            "MoSCoW: Should",
+            "MoSCoW: Would",
+            "track-p"
+          ],
+          "goal": "See docs/BACKLOG100120INTERPRETATIONLOBE.md section #101. Stage: mining. Depends on: #100.",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 109,
+          "title": "📋 Epic: The Interpretation Lobe & the Settlement / Mining split (IL-100…IL-120)",
+          "url": "https://github.com/Knitweb/pulse/issues/109",
+          "state": "open",
+          "labels": [
+            "MoSCoW: Should",
+            "track-p",
+            "coordination"
+          ],
+          "goal": "The Interpretation Lobe & the Settlement / Mining split",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 110,
+          "title": "[IL-100] Deterministic structured retrieve (trap 1)",
+          "url": "https://github.com/Knitweb/pulse/issues/110",
+          "state": "closed",
+          "labels": [
+            "MoSCoW: Should",
+            "track-p",
+            "epic:interpret",
+            "settlement"
+          ],
+          "goal": "Story. As a spider, I want a retrieve(query, subscription) that returns a",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 111,
+          "title": "[IL-101] Recursive distill controller (trap 2 — the missing middle)",
+          "url": "https://github.com/Knitweb/pulse/issues/111",
+          "state": "open",
+          "labels": [
+            "MoSCoW: Should",
+            "track-p",
+            "epic:interpret",
+            "mining"
+          ],
+          "goal": "⛔ Blocked by: #110 (IL-100)",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 112,
+          "title": "[IL-102] Provenance-gate as the distiller output contract",
+          "url": "https://github.com/Knitweb/pulse/issues/112",
+          "state": "closed",
+          "labels": [
+            "MoSCoW: Should",
+            "track-p",
+            "epic:interpret",
+            "settlement"
+          ],
+          "goal": "⛔ Blocked by: #111 (IL-101)",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 113,
+          "title": "[IL-103] Distilled intermediates as content-addressed Web nodes",
+          "url": "https://github.com/Knitweb/pulse/issues/113",
+          "state": "closed",
+          "labels": [
+            "MoSCoW: Should",
+            "track-p",
+            "epic:interpret",
+            "settlement",
+            "mining"
+          ],
+          "goal": "⛔ Blocked by: #111 (IL-101)",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 114,
+          "title": "[IL-104] Compile the answer to a question (not just a named asset)",
+          "url": "https://github.com/Knitweb/pulse/issues/114",
+          "state": "closed",
+          "labels": [
+            "MoSCoW: Could",
+            "track-p",
+            "epic:interpret",
+            "settlement"
+          ],
+          "goal": "⛔ Blocked by: #112 (IL-102)",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 115,
+          "title": "[IL-105] Register distill as a PoUW job class with split verification",
+          "url": "https://github.com/Knitweb/pulse/issues/115",
+          "state": "open",
+          "labels": [
+            "MoSCoW: Should",
+            "track-p",
+            "epic:pouw",
+            "settlement"
+          ],
+          "goal": "⛔ Blocked by: #110, #111, #112 (IL-100, IL-101, IL-102)",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 116,
+          "title": "[IL-106] Deterministic re-execution of retrieve + gate",
+          "url": "https://github.com/Knitweb/pulse/issues/116",
+          "state": "closed",
+          "labels": [
+            "MoSCoW: Could",
+            "track-p",
+            "epic:pouw",
+            "settlement"
+          ],
+          "goal": "⛔ Blocked by: #115 (IL-105)",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 117,
+          "title": "[IL-107] Challenge-window + reputation for relevance",
+          "url": "https://github.com/Knitweb/pulse/issues/117",
+          "state": "closed",
+          "labels": [
+            "MoSCoW: Could",
+            "track-p",
+            "epic:pouw",
+            "settlement"
+          ],
+          "goal": "⛔ Blocked by: #115 (IL-105)",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 118,
+          "title": "[IL-108] Bounded self-reflective iteration as the metered default",
+          "url": "https://github.com/Knitweb/pulse/issues/118",
+          "state": "closed",
+          "labels": [
+            "MoSCoW: Could",
+            "track-p",
+            "epic:pouw",
+            "mining"
+          ],
+          "goal": "⛔ Blocked by: #111, #115 (IL-101, IL-105)",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 119,
+          "title": "[IL-109] Rich reputation/deploy/debug metalayer as chunk metadata (off-wire)",
+          "url": "https://github.com/Knitweb/pulse/issues/119",
+          "state": "closed",
+          "labels": [
+            "MoSCoW: Could",
+            "track-p",
+            "epic:reputation",
+            "mining"
+          ],
+          "goal": "Story. As a knowledge contributor, I want each chunk to carry a rich reputation +",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 120,
+          "title": "[IL-110] Canonical quantization of reputation → integer bytecode weight",
+          "url": "https://github.com/Knitweb/pulse/issues/120",
+          "state": "open",
+          "labels": [
+            "MoSCoW: Could",
+            "track-p",
+            "epic:reputation",
+            "settlement"
+          ],
+          "goal": "⛔ Blocked by: #119 (IL-109)",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 121,
+          "title": "[IL-111] Flywheel feedback: distill outcomes re-weave the Web",
+          "url": "https://github.com/Knitweb/pulse/issues/121",
+          "state": "open",
+          "labels": [
+            "MoSCoW: Could",
+            "track-p",
+            "epic:reputation",
+            "settlement"
+          ],
+          "goal": "⛔ Blocked by: #117, #120 (IL-107, IL-110)",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 122,
+          "title": "[IL-112] Stage tagging across the pipeline",
+          "url": "https://github.com/Knitweb/pulse/issues/122",
+          "state": "open",
+          "labels": [
+            "MoSCoW: Could",
+            "track-p",
+            "epic:settlement-mining"
+          ],
+          "goal": "Story. As a node operator, I want every pipeline stage explicitly tagged",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 123,
+          "title": "[IL-113] Enforce the mining → settlement crossing contract",
+          "url": "https://github.com/Knitweb/pulse/issues/123",
+          "state": "open",
+          "labels": [
+            "MoSCoW: Should",
+            "track-p",
+            "epic:settlement-mining",
+            "settlement"
+          ],
+          "goal": "⛔ Blocked by: #122 (IL-112)",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 124,
+          "title": "[IL-114] Off-wire mining producers: wrap the ML stack as spiders",
+          "url": "https://github.com/Knitweb/pulse/issues/124",
+          "state": "open",
+          "labels": [
+            "MoSCoW: Could",
+            "track-p",
+            "epic:settlement-mining",
+            "settlement",
+            "mining"
+          ],
+          "goal": "⛔ Blocked by: #123 (IL-113)",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 125,
+          "title": "[IL-115] One boundary: settlement = partial-replication = PII",
+          "url": "https://github.com/Knitweb/pulse/issues/125",
+          "state": "open",
+          "labels": [
+            "MoSCoW: Should",
+            "track-p",
+            "epic:settlement-mining",
+            "settlement"
+          ],
+          "goal": "⛔ Blocked by: #122, #123 (IL-112, IL-113)",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 126,
+          "title": "[IL-116] Pluggable trap-1 backend (working-memory only)",
+          "url": "https://github.com/Knitweb/pulse/issues/126",
+          "state": "open",
+          "labels": [
+            "MoSCoW: Could",
+            "track-p",
+            "epic:backends",
+            "settlement",
+            "mining"
+          ],
+          "goal": "⛔ Blocked by: #110 (IL-100)",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 127,
+          "title": "[IL-117] STM/LTM tiering with signed-intent promotion",
+          "url": "https://github.com/Knitweb/pulse/issues/127",
+          "state": "open",
+          "labels": [
+            "MoSCoW: Could",
+            "track-p",
+            "epic:backends",
+            "settlement"
+          ],
+          "goal": "⛔ Blocked by: #111 (IL-101)",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 128,
+          "title": "[IL-118] Pluggable recognition resolver → content-address",
+          "url": "https://github.com/Knitweb/pulse/issues/128",
+          "state": "closed",
+          "labels": [
+            "MoSCoW: Could",
+            "track-p",
+            "epic:edge",
+            "mining"
+          ],
+          "goal": "Story. As an edge/AR user, I want recognition (marker / scene-semantic / embedding)",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 129,
+          "title": "[IL-119] Verifiable AR overlays from a distilled bundle",
+          "url": "https://github.com/Knitweb/pulse/issues/129",
+          "state": "closed",
+          "labels": [
+            "MoSCoW: Could",
+            "track-p",
+            "epic:edge",
+            "settlement"
+          ],
+          "goal": "⛔ Blocked by: #114, #128 (IL-104, IL-118)",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 130,
+          "title": "[IL-120] Durable anchor binding, ephemeral recognition events",
+          "url": "https://github.com/Knitweb/pulse/issues/130",
+          "state": "open",
+          "labels": [
+            "MoSCoW: Could",
+            "track-p",
+            "epic:edge",
+            "settlement",
+            "mining"
+          ],
+          "goal": "⛔ Blocked by: #125, #128 (IL-115, IL-118)",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 131,
+          "title": "[IL-102] Regression-lock the asset_cid+originator presence guard (synaptic/bytecode.py)",
+          "url": "https://github.com/Knitweb/pulse/issues/131",
+          "state": "closed",
+          "labels": [
+            "MoSCoW: Should",
+            "track-p"
+          ],
+          "goal": "Relates to IL-102 (#112).",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 132,
+          "title": "[IL-100] Promote retrieve.py _in_scope convention to a fabric-wide subscription-scope mapping",
+          "url": "https://github.com/Knitweb/pulse/issues/132",
+          "state": "closed",
+          "labels": [
+            "MoSCoW: Could",
+            "track-p"
+          ],
+          "goal": "Relates to IL-100 (#110). Cross-module consumers: #125, #126.",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 133,
+          "title": "[IL-110] Replace float blend in quantize_weight with integer/fixed-point (HIGH)",
+          "url": "https://github.com/Knitweb/pulse/issues/133",
+          "state": "closed",
+          "labels": [
+            "MoSCoW: Should",
+            "track-p"
+          ],
+          "goal": "Relates to IL-110 (#120). HIGH priority — closest of the Epic-A follow-ups to the integer-only invariant.",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 134,
+          "title": "[IL-101] Replace distill byte-length/wall-clock metering with a real step/token budget primitive",
+          "url": "https://github.com/Knitweb/pulse/issues/134",
+          "state": "closed",
+          "labels": [
+            "MoSCoW: Could",
+            "track-p"
+          ],
+          "goal": "Relates to IL-101 and IL-108.",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 135,
+          "title": "[IL-103] Make dropped distilled-from edges observable in _emit_intermediate (minor)",
+          "url": "https://github.com/Knitweb/pulse/issues/135",
+          "state": "closed",
+          "labels": [
+            "MoSCoW: Could",
+            "track-p"
+          ],
+          "goal": "Relates to IL-103. Minor / hardening.",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 136,
+          "title": "interpret: quantize_weight does float arithmetic feeding a CID'd weight — convert to integer (byte-identity discipline)",
+          "url": "https://github.com/Knitweb/pulse/issues/136",
+          "state": "closed",
+          "labels": [
+            "MoSCoW: Should"
+          ],
+          "goal": "Follow-up to merged #108. interpret/quantize.py computes blended = 0.6rep + 60.0recency + 0.7pouw then int(blended), and that int becomes a ",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 143,
+          "title": "[p2p][HIGH] Mesh-control serve path trusts unauthenticated self-asserted `_MESH_PEER_KEY` → unbounded peer-table growth + one-connection sybil eclipse",
+          "url": "https://github.com/Knitweb/pulse/issues/143",
+          "state": "closed",
+          "labels": [
+            "MoSCoW: Should"
+          ],
+          "goal": "Two HIGH findings with a shared root cause and shared fix: servemesh (node.py:1099-1104) calls addpeer on a self-asserted, unsigned, carrier",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 144,
+          "title": "[p2p][HIGH] Edge-vs-node ingest routes on inner `record[\"kind\"]` but author `weave()` ignores it → permanent, anti-entropy-proof `web_state_root` divergence",
+          "url": "https://github.com/Knitweb/pulse/issues/144",
+          "state": "closed",
+          "labels": [
+            "MoSCoW: Should"
+          ],
+          "goal": "Convergence-soundness break. A single validly-signed record is stored as a NODE by the author (weave() node.py:621) but routed as an EDGE by",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 145,
+          "title": "[p2p][HIGH] Unbounded recursion in canonical CBOR decoder → pre-auth remote DoS (RecursionError escapes `except WireError`)",
+          "url": "https://github.com/Knitweb/pulse/issues/145",
+          "state": "closed",
+          "labels": [
+            "MoSCoW: Must",
+            "MoSCoW: Should"
+          ],
+          "goal": "A ~1 KB inbound frame of ~1000 nested CBOR arrays (b'\\x81'1000+b'\\x00', far under MAXFRAMEBYTES) makes decode recurse past sys.getrecursionl",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 146,
+          "title": "[p2p][MED] inv-announce reply is a deterministic, unbudgeted holdings/membership oracle",
+          "url": "https://github.com/Knitweb/pulse/issues/146",
+          "state": "closed",
+          "labels": [
+            "MoSCoW: Should"
+          ],
+          "goal": "A probing peer learns exactly which CIDs a target holds (and by extension authored) via the deterministic oninv want-dedup store-check + unb",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 152,
+          "title": "Pulse: integer attention metadata records for Lens",
+          "url": "https://github.com/Knitweb/pulse/issues/152",
+          "state": "closed",
+          "labels": [
+            "enhancement",
+            "area:knitweb",
+            "MoSCoW: Should",
+            "track-p",
+            "epic:interpret"
+          ],
+          "goal": "Add optional CID-linked metadata records for confidence, usefulness, deploy/debug score, source priority, and relation weight. All values mu",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 153,
+          "title": "Pulse: stable read-only export boundary for Lens",
+          "url": "https://github.com/Knitweb/pulse/issues/153",
+          "state": "closed",
+          "labels": [
+            "enhancement",
+            "area:knitweb",
+            "MoSCoW: Should",
+            "track-p",
+            "epic:interpret"
+          ],
+          "goal": "Define and document the stable pure-Python import surface Lens can rely on: canonical CID, Web, JSON-LD export/import, provenance traversal,",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 154,
+          "title": "Pulse: signed record verification helper for Lens",
+          "url": "https://github.com/Knitweb/pulse/issues/154",
+          "state": "closed",
+          "labels": [
+            "enhancement",
+            "area:knitweb",
+            "MoSCoW: Should",
+            "track-p",
+            "epic:interpret"
+          ],
+          "goal": "Provide one small helper that validates record CID recomputation, author/provider field matching, attestation verification, and float-free c",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 155,
+          "title": "Pulse: reusable provenance query contract for Lens",
+          "url": "https://github.com/Knitweb/pulse/issues/155",
+          "state": "closed",
+          "labels": [
+            "enhancement",
+            "area:knitweb",
+            "MoSCoW: Should",
+            "track-p",
+            "epic:interpret"
+          ],
+          "goal": "Stabilize provenance traversal inputs and outputs for Lens. Include ancestry, origins, relation filters, deterministic ordering, and danglin",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 156,
+          "title": "Pulse: deterministic Web snapshot API for Lens",
+          "url": "https://github.com/Knitweb/pulse/issues/156",
+          "state": "closed",
+          "labels": [
+            "enhancement",
+            "area:knitweb",
+            "MoSCoW: Should",
+            "track-p",
+            "epic:interpret"
+          ],
+          "goal": "Add a read-only API returning state root, node count, edge count, records, and JSON-LD export without mutating fabric state. Acceptance: rep",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 157,
+          "title": "Pulse: gateway /interpret delegation hook for Lens",
+          "url": "https://github.com/Knitweb/pulse/issues/157",
+          "state": "closed",
+          "labels": [
+            "enhancement",
+            "area:knitweb",
+            "MoSCoW: Should",
+            "track-p",
+            "epic:interpret"
+          ],
+          "goal": "Expose /interpret as a read-only gateway extension point that delegates to an external Lens service/module without adding LLM, vector, or gr",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 158,
+          "title": "Pulse docs: Lens/RLM contract",
+          "url": "https://github.com/Knitweb/pulse/issues/158",
+          "state": "closed",
+          "labels": [
+            "documentation",
+            "area:knitweb",
+            "MoSCoW: Should",
+            "track-p",
+            "epic:interpret"
+          ],
+          "goal": "Document the Lens/RLM contract: Lens is an ephemeral interpret layer over content-addressed fabric chunks, adapters are read models, no muta",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 159,
+          "title": "[HIGH] reconcile responder is unbudgeted + uncapped → 8 MiB recon-req = ~929s CPU amplification DoS",
+          "url": "https://github.com/Knitweb/pulse/issues/159",
+          "state": "closed",
+          "labels": [
+            "MoSCoW: Must",
+            "track-p"
+          ],
+          "goal": "Severity: HIGH (CPU-amplification DoS) · Surface: anti-entropy reconcile responder · sweep-2, main 10327e92",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 160,
+          "title": "[HIGH] relay carrier keys ban + ServeBudget on self-asserted _relay_reply_to → ban/budget bypass + reflection",
+          "url": "https://github.com/Knitweb/pulse/issues/160",
+          "state": "closed",
+          "labels": [
+            "MoSCoW: Must",
+            "track-p"
+          ],
+          "goal": "Severity: HIGH · Surface: relay/mailbox carrier · sweep-2, main 10327e92 · proven-vs-asserted class (#94/#100/#143), upstream of #143",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 161,
+          "title": "[MED] addrman new-table source-group (#100) forgeable via self-asserted _relay_reply_to → anti-eclipse bypass",
+          "url": "https://github.com/Knitweb/pulse/issues/161",
+          "state": "closed",
+          "labels": [
+            "MoSCoW: Should",
+            "track-p"
+          ],
+          "goal": "Severity: MED · Surface: addrman/PEX on relay carrier · sweep-2, main 10327e92 · same root cause as the relay-replyto ban/budget issue — clo",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 163,
+          "title": "[HIGH] #144 regression: relay/sync ingest routes node↔edge on UNSIGNED envelope kind → state-root partition re-opens",
+          "url": "https://github.com/Knitweb/pulse/issues/163",
+          "state": "closed",
+          "labels": [
+            "MoSCoW: Must",
+            "track-p"
+          ],
+          "goal": "Severity: HIGH (convergence soundness — silent permanent divergence) · Surface: signed-record ingest on relay/sync paths · sweep-2, main 103",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 167,
+          "title": "[sweep-3 HIGH] Cross-path node↔edge state-root partition: fabric-record gossip (envelope→node) vs relay/sync ingest (content→edge) for the same signed body",
+          "url": "https://github.com/Knitweb/pulse/issues/167",
+          "state": "closed",
+          "labels": [
+            "MoSCoW: Must",
+            "track-p"
+          ],
+          "goal": "Severity: HIGH (durable consensus / state-root partition — integrity/convergence) · sweep-3 L1 regression lens · main 5694919",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 168,
+          "title": "[sweep-3 HIGH] Inbound accept loop parks one fd-holding coroutine per TCP conn before the max_inbound semaphore → remote fd/slot-exhaustion DoS",
+          "url": "https://github.com/Knitweb/pulse/issues/168",
+          "state": "closed",
+          "labels": [
+            "MoSCoW: Must",
+            "track-p"
+          ],
+          "goal": "Severity: HIGH (remote fd/slot-exhaustion availability DoS) · sweep-3 L2 transport lifecycle · main 5694919",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 169,
+          "title": "[sweep-3 MED] canonical._decode lacks a decoded-object-COUNT cap → single 8 MiB frame inflates ~64× past the #145 depth bound",
+          "url": "https://github.com/Knitweb/pulse/issues/169",
+          "state": "closed",
+          "labels": [
+            "MoSCoW: Should",
+            "track-p"
+          ],
+          "goal": "Severity: MED (single-frame heap amplification) · sweep-3 L3 wire-decode bounds · main 5694919",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 174,
+          "title": "[p2p][MED] transport accept: add hard max_open_conns ceiling — timeout-only (#173) still allows high-arrival-rate burst fd exhaustion",
+          "url": "https://github.com/Knitweb/pulse/issues/174",
+          "state": "closed",
+          "labels": [
+            "MoSCoW: Should",
+            "track-p"
+          ],
+          "goal": "Follow-up to #168 / merged #173.",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 201,
+          "title": "settlement: neutral escrow release payouts with resume cursor",
+          "url": "https://github.com/Knitweb/pulse/issues/201",
+          "state": "closed",
+          "labels": [
+            "MoSCoW: Should"
+          ],
+          "goal": "Follows the merged settlement RFC #187.",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 202,
+          "title": "settlement: payee-pull refund claims over p2p",
+          "url": "https://github.com/Knitweb/pulse/issues/202",
+          "state": "open",
+          "labels": [
+            "MoSCoW: Should"
+          ],
+          "goal": "Follows the merged settlement RFC #187.",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 203,
+          "title": "settlement: optional expiry, forfeiture, and fee policies",
+          "url": "https://github.com/Knitweb/pulse/issues/203",
+          "state": "open",
+          "labels": [
+            "MoSCoW: Could"
+          ],
+          "goal": "Follows the merged settlement RFC #187.",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 209,
+          "title": "R1 follow-up: anchor the per-epoch mint cap on the signed Beat",
+          "url": "https://github.com/Knitweb/pulse/issues/209",
+          "state": "closed",
+          "labels": [
+            "roadmap:top10",
+            "phase:P0"
+          ],
+          "goal": "R1 (PR #196, merged) bound issuance to Pulse epochs but the per-epoch cap lives as a `Treasury`/`EmissionPolicy` policy parameter. Promote it to a **consensus-visible field carried on the signed `Beat`**, so the supply schedule is auditable from the chain of Beats, not just runtime config.",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 210,
+          "title": "CID-stability sign-off for the molgang chemistry record schema",
+          "url": "https://github.com/Knitweb/pulse/issues/210",
+          "state": "open",
+          "labels": [
+            "roadmap:top10",
+            "phase:P0"
+          ],
+          "goal": "Lock byte-stable CIDs for the chemistry node/edge canonical record types BEFORE the molgang plugin and its seed graph land — this is the hard coordination gate (molgang depends on stable CIDs).",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 211,
+          "title": "Browser-P2P transport: WebRTC/WebTransport carriers",
+          "url": "https://github.com/Knitweb/pulse/issues/211",
+          "state": "closed",
+          "labels": [
+            "roadmap:top10",
+            "phase:P1"
+          ],
+          "goal": "The single biggest serverless enabler — let the Pulse mesh run **in the browser** so molgang needs no central server (plan §5).",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 212,
+          "title": "Self-distributing code channel: fabric.codechannel (CIDv1 dapp bootstrap)",
+          "url": "https://github.com/Knitweb/pulse/issues/212",
+          "state": "open",
+          "labels": [
+            "roadmap:top10",
+            "phase:P1"
+          ],
+          "goal": "Ship the dapp's **own source code over the Web it runs on** — content-addressed, verifiable, self-bootstrapping (plan §5 'source-code-included').",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 213,
+          "title": "molgang → top-10 dapp: development roadmap (from the 50-page plan)",
+          "url": "https://github.com/Knitweb/pulse/issues/213",
+          "state": "open",
+          "labels": [
+            "roadmap:top10"
+          ],
+          "goal": "Translation of the 50-page development plan (molgangOntwikkelplan.pdf) into a trackable backlog: the measured gap from today to a top-10, se",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 228,
+          "title": "[IL] Agent-memory node kinds: Skill/Project/Preference/Architecture as CID nodes + canonical-serialization & dedup tests",
+          "url": "https://github.com/Knitweb/pulse/issues/228",
+          "state": "closed",
+          "labels": [],
+          "goal": "Give the lens \"content-addressed agent memory\" epic its substrate primitive: four content-addressed node kinds with stable canonical encodin",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 230,
+          "title": "Role-driven feature backlog — from the 100-professions field guide",
+          "url": "https://github.com/Knitweb/pulse/issues/230",
+          "state": "closed",
+          "labels": [],
+          "goal": "Aggregated from 490 feature requests across the [100-professions field guide](https://knitweb.github.io/professions100.html), deduplicated t",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 235,
+          "title": "p2p: Kademlia k-bucket source-diversity cap",
+          "url": "https://github.com/Knitweb/pulse/issues/235",
+          "state": "closed",
+          "labels": [],
+          "goal": "Slice of #70.",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 267,
+          "title": "fix(chemistry,pouw): PR #245 stalled — GOLDEN_CIDs must be literal strings + reject() state guard",
+          "url": "https://github.com/Knitweb/pulse/issues/267",
+          "state": "closed",
+          "labels": [],
+          "goal": "PR #245 (agent PR) has been open for 14+ hours with no reaction to 3 review reminders.",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 268,
+          "title": "fix(canonical): PR #260 incomplete — MAX_STRING_LEN + MAX_ARRAY_LEN missing from canonical.py",
+          "url": "https://github.com/Knitweb/pulse/issues/268",
+          "state": "closed",
+          "labels": [],
+          "goal": "PR #260 was opened with title \"fix(canonical): P2-7 — MAXSTRINGLEN + MAXARRAYLEN decoder budgets\" but the diff only contains tests/property/",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 270,
+          "title": "feat(agents): autonomous domain-expert analyst ring — 24/7 server node",
+          "url": "https://github.com/Knitweb/pulse/issues/270",
+          "state": "open",
+          "labels": [
+            "enhancement",
+            "track-p"
+          ],
+          "goal": "Besproken 2026-06-23: de home server (2x 8276L, 6TB Optane, 2x RTX 3090 NVLink) draait als permanent pulse-knooppunt en host een ring van sp",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 271,
+          "title": "feat(infra): local Ollama/Llama-70B endpoint integration for agent-loop inference",
+          "url": "https://github.com/Knitweb/pulse/issues/271",
+          "state": "open",
+          "labels": [
+            "enhancement",
+            "track-p"
+          ],
+          "goal": "De server heeft 2x RTX 3090 NVLinked (48 GB gecombineerd VRAM). Llama 3 70B op Q4 quantisatie (~38 GB) past hierin. Dit elimineert Anthropic",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 272,
+          "title": "infra: Numerai Tournament inference pipeline — autonomous daily submission",
+          "url": "https://github.com/Knitweb/pulse/issues/272",
+          "state": "open",
+          "labels": [
+            "enhancement"
+          ],
+          "goal": "De VirtualV home server (56 cores, 6TB Optane, 2x RTX 3090) draait een autonome Numerai Tournament pipeline als primaire inkomstenbron tijde",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 273,
+          "title": "feat(deploy): Live knitweb.art Chemistry Lens Agent demo — deploy server to 5mart.ml relay",
+          "url": "https://github.com/Knitweb/pulse/issues/273",
+          "state": "closed",
+          "labels": [],
+          "goal": "The Chemistry Lens Agent SSE server (examples/chemistryagentserver.py) is working and already on main. It needs to be deployed and embedded ",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 274,
+          "title": "feat(interpret): #155 provenance query-contract — relation-filter + missing-node visibility",
+          "url": "https://github.com/Knitweb/pulse/issues/274",
+          "state": "closed",
+          "labels": [],
+          "goal": "Tracked from Track-P p2p audit (session memory). Implement the provenance query-contract for interpret.retrieve:",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 275,
+          "title": "Sprint A1: RelayPool — multi-relay fanout with failover",
+          "url": "https://github.com/Knitweb/pulse/issues/275",
+          "state": "open",
+          "labels": [
+            "enhancement"
+          ],
+          "goal": "- Implement RelayPool in src/knitweb/p2p/relay.py — fans out over multiple RelayTransport instances via asyncio.gather, returns first succes",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 276,
+          "title": "Sprint A3: Region-aware bootstrap registry",
+          "url": "https://github.com/Knitweb/pulse/issues/276",
+          "state": "open",
+          "labels": [
+            "enhancement"
+          ],
+          "goal": "- BootstrapRegistry in src/knitweb/p2p/bootstrap.py backed by bootstrap.json: [{region, relayurl, pubkey, lastseenms: int}]",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 277,
+          "title": "Sprint B4: cross-repo version drift guard — knitweb vs molgang pinned version",
+          "url": "https://github.com/Knitweb/pulse/issues/277",
+          "state": "open",
+          "labels": [
+            "enhancement"
+          ],
+          "goal": "- tests/testversiondrift.py imports knitweb.version and reads the pinned version from molgang's pyproject.toml",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 305,
+          "title": "[WNW] Specify contract",
+          "url": "https://github.com/Knitweb/pulse/issues/305",
+          "state": "closed",
+          "labels": [
+            "P0",
+            "wnw"
+          ],
+          "goal": "Signed proposal record with terms, scope, columns, estimates, source layer, and accept/refine decision.",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 306,
+          "title": "[WNW] Fact table planner",
+          "url": "https://github.com/Knitweb/pulse/issues/306",
+          "state": "closed",
+          "labels": [
+            "P0",
+            "wnw"
+          ],
+          "goal": "Deterministic estimate-before-fetch planner with cached estimates per Pulse beat.",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 307,
+          "title": "[WNW] BC2 adapter",
+          "url": "https://github.com/Knitweb/pulse/issues/307",
+          "state": "closed",
+          "labels": [
+            "P1",
+            "wnw"
+          ],
+          "goal": "Two-line proposal capsules for bitchat-style field relay.",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 308,
+          "title": "[WNW] Quantum Weft schema",
+          "url": "https://github.com/Knitweb/pulse/issues/308",
+          "state": "closed",
+          "labels": [
+            "P1",
+            "wnw"
+          ],
+          "goal": "Canonical radial/angular address type with layer, theta, phi, beat, band, and relation digest.",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 309,
+          "title": "[WNW] AR/VR fabric view",
+          "url": "https://github.com/Knitweb/pulse/issues/309",
+          "state": "closed",
+          "labels": [
+            "P1",
+            "wnw"
+          ],
+          "goal": "WebXR demo that inspects shells, traverses 360 degrees, and opens detail cards.",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 310,
+          "title": "[WNW] Quantum circuit bridge",
+          "url": "https://github.com/Knitweb/pulse/issues/310",
+          "state": "closed",
+          "labels": [
+            "P2",
+            "wnw"
+          ],
+          "goal": "Circuit submissions mapped into weft coordinates and compared as signed QPU/GPU/TPU records.",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 311,
+          "title": "[WNW] Quantum Forge runs",
+          "url": "https://github.com/Knitweb/pulse/issues/311",
+          "state": "closed",
+          "labels": [
+            "P2",
+            "wnw"
+          ],
+          "goal": "MLflow-like run records for circuit code: params, backend, shots, result CID, score, and review signature.",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 312,
+          "title": "[WNW] Vank mesh orderbook",
+          "url": "https://github.com/Knitweb/pulse/issues/312",
+          "state": "open",
+          "labels": [
+            "P2",
+            "wnw"
+          ],
+          "goal": "Non-custodial signed order intents, gossip merge rules, expiry, escrow terms, and settlement proof states.",
+          "status": "queued",
+          "pr": null
+        }
+      ],
+      "counts": {
+        "docs": 3,
+        "open": 28,
+        "review": 0,
+        "done": 98
       }
     },
     {
