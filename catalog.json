@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-06T17:28:31.879Z",
+  "generated": "2026-07-06T19:22:54.344Z",
   "fieldCount": 12,
   "fields": [
     {
@@ -4209,7 +4209,7 @@
           "number": 93,
           "title": "feat(p2p): anti-entropy gossip uses Kademlia neighbours instead of the full peerbook",
           "url": "https://github.com/Knitweb/molgang/issues/93",
-          "state": "open",
+          "state": "closed",
           "labels": [
             "enhancement",
             "area:knitweb",
@@ -4219,7 +4219,7 @@
             "MoSCoW: Should"
           ],
           "goal": "The self-healing anti-entropy loop (FabricNode.startantientropy / antientropyrounds in src/knitweb/fabric/node.py, issue #44) re-pulls every",
-          "status": "queued",
+          "status": "done",
           "pr": null
         },
         {
@@ -5262,9 +5262,9 @@
       ],
       "counts": {
         "docs": 6,
-        "open": 51,
+        "open": 50,
         "review": 0,
-        "done": 74
+        "done": 75
       }
     },
     {
@@ -5348,7 +5348,7 @@
       "homepage": "https://knitweb.art",
       "project": "https://github.com/orgs/Knitweb/projects/2",
       "repo": "Knitweb/pulse",
-      "group_by": "",
+      "group_by": "MoSCoW: ",
       "docs": [
         {
           "title": "Architecture",
@@ -5798,11 +5798,8 @@
             "MoSCoW: Should"
           ],
           "goal": "From the #68 review: Kademlia derives nodeid = sha256(pubkey) and keys are free to mint, so an attacker can grind keypairs until their id la",
-          "status": "review",
-          "pr": {
-            "number": 329,
-            "url": "https://github.com/Knitweb/pulse/pull/329"
-          }
+          "status": "queued",
+          "pr": null
         },
         {
           "number": 71,
@@ -6809,11 +6806,8 @@
             "phase:P0"
           ],
           "goal": "Lock byte-stable CIDs for the chemistry node/edge canonical record types BEFORE the molgang plugin and its seed graph land — this is the hard coordination gate (molgang depends on stable CIDs).",
-          "status": "review",
-          "pr": {
-            "number": 328,
-            "url": "https://github.com/Knitweb/pulse/pull/328"
-          }
+          "status": "queued",
+          "pr": null
         },
         {
           "number": 211,
@@ -6989,16 +6983,13 @@
           "number": 277,
           "title": "Sprint B4: cross-repo version drift guard — knitweb vs molgang pinned version",
           "url": "https://github.com/Knitweb/pulse/issues/277",
-          "state": "open",
+          "state": "closed",
           "labels": [
             "enhancement"
           ],
           "goal": "- tests/testversiondrift.py imports knitweb.version and reads the pinned version from molgang's pyproject.toml",
-          "status": "review",
-          "pr": {
-            "number": 326,
-            "url": "https://github.com/Knitweb/pulse/pull/326"
-          }
+          "status": "done",
+          "pr": null
         },
         {
           "number": 305,
@@ -7107,9 +7098,9 @@
       ],
       "counts": {
         "docs": 3,
-        "open": 28,
-        "review": 3,
-        "done": 98
+        "open": 27,
+        "review": 0,
+        "done": 99
       }
     },
     {
