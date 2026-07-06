@@ -1,6 +1,6 @@
 {
-  "generated": "2026-07-06T11:49:18.537Z",
-  "fieldCount": 7,
+  "generated": "2026-07-06T11:58:01.142Z",
+  "fieldCount": 9,
   "fields": [
     {
       "field": "chemfield",
@@ -1206,13 +1206,13 @@
           "number": 6,
           "title": "KW-007 · vote/1-aggregatie + score-engine (§A5)",
           "url": "https://github.com/Knitweb/knitweb/issues/6",
-          "state": "open",
+          "state": "closed",
           "labels": [
             "agent",
             "nacht-3"
           ],
           "goal": "`score(records)` implementeert §A5 volledig deterministisch, gebruikt door build én field-pagina.",
-          "status": "queued",
+          "status": "done",
           "pr": null
         },
         {
@@ -1270,9 +1270,9 @@
       ],
       "counts": {
         "docs": 1,
-        "open": 6,
+        "open": 5,
         "review": 0,
-        "done": 4
+        "done": 5
       }
     },
     {
@@ -3772,6 +3772,53 @@
       "counts": {
         "docs": 2,
         "open": 2,
+        "review": 0,
+        "done": 0
+      }
+    },
+    {
+      "field": "news",
+      "name": "KnitWeb News",
+      "accent": "#e08a5b",
+      "summary": "The chemistry knowledge graph told as an evolving news story",
+      "homepage": "https://5mart.ml/news",
+      "project": "",
+      "repo": "Knitweb/news",
+      "group_by": "",
+      "docs": [],
+      "backlog": [],
+      "counts": {
+        "docs": 0,
+        "open": 0,
+        "review": 0,
+        "done": 0
+      }
+    },
+    {
+      "field": "vank",
+      "name": "vBank",
+      "accent": "#ffd479",
+      "summary": "Governance hub — voting, quorum & treasury for every knitweb field",
+      "homepage": "https://knitweb.art",
+      "project": "",
+      "repo": "Knitweb/vank",
+      "group_by": "",
+      "docs": [],
+      "backlog": [
+        {
+          "number": 1,
+          "title": "Role-driven feature backlog — from the 100-professions field guide",
+          "url": "https://github.com/Knitweb/vank/issues/1",
+          "state": "open",
+          "labels": [],
+          "goal": "Aggregated from 490 feature requests across the [100-professions field guide](https://knitweb.github.io/professions100.html), deduplicated t",
+          "status": "queued",
+          "pr": null
+        }
+      ],
+      "counts": {
+        "docs": 0,
+        "open": 1,
         "review": 0,
         "done": 0
       }
