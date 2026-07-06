@@ -1,6 +1,6 @@
 {
-  "generated": "2026-07-06T11:30:13.131Z",
-  "fieldCount": 2,
+  "generated": "2026-07-06T11:36:06.402Z",
+  "fieldCount": 3,
   "fields": [
     {
       "field": "chemfield",
@@ -10,7 +10,7 @@
       "homepage": "https://chemfield.github.io",
       "project": "",
       "repo": "ChemField/openchem",
-      "group_by": "nacht-",
+      "group_by": "",
       "docs": [
         {
           "title": "Vanadium recovery from steel slag",
@@ -246,6 +246,162 @@
         "open": 13,
         "review": 0,
         "done": 2
+      }
+    },
+    {
+      "field": "knitweb",
+      "name": "KnitWeb field-kit",
+      "accent": "#3fb6a8",
+      "summary": "Field-kit monorepo — one codebase, N niche portals over the hub",
+      "homepage": "https://knitweb.art",
+      "project": "",
+      "repo": "Knitweb/knitweb",
+      "group_by": "nacht-",
+      "docs": [
+        {
+          "title": "Field-Kit Spec v0.1",
+          "stage": "spec",
+          "url": "https://github.com/Knitweb/knitweb/blob/main/docs/SPEC-v0.1.md",
+          "path": "docs/SPEC-v0.1.md"
+        }
+      ],
+      "backlog": [
+        {
+          "number": 1,
+          "title": "KW-001 · Monorepo-scaffold + SSG-buildpijplijn",
+          "url": "https://github.com/Knitweb/knitweb/issues/1",
+          "state": "closed",
+          "labels": [
+            "agent",
+            "nacht-1"
+          ],
+          "goal": "`node src/build.mjs` bouwt uit een lege-maar-geldige repo een `dist/` met hub-placeholder, en `npm test` draait groen.",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 2,
+          "title": "KW-002 · field.schema.json + configloader/validator + zes field-configs",
+          "url": "https://github.com/Knitweb/knitweb/issues/2",
+          "state": "closed",
+          "labels": [
+            "agent",
+            "nacht-1"
+          ],
+          "goal": "Configs worden tegen het schema uit §A3 gevalideerd; chemfield (live), gangfield (teaser), ledgerfield (teaser) staan als fixtures in `fields/` — plus modelfield `#9d7ff4`, energyfield `#5cc08a`, codefield `#6ea8fe` als `status: \"hidden\"`. Alle drie blijven **hidden** tot een echte contentbron ze naar teaser flipt (§A6 filtert hidden fields uit de build; KW-004 badge-t teasers → géén extra nachten). *intelfield is geschrapt — modelfield vervangt het volledig (vervalt daarmee de Intel-merkenrechtcheck).*",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 3,
+          "title": "KW-003 · Designtokens + basiscomponenten-CSS (foundry-dark)",
+          "url": "https://github.com/Knitweb/knitweb/issues/3",
+          "state": "closed",
+          "labels": [
+            "agent",
+            "nacht-2"
+          ],
+          "goal": "`static/tokens.css` + componentstijlen die hub- en field-pagina's dekken, met per-field accent via `--accent`.",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 4,
+          "title": "KW-006 · lib/fabric.ts: canonicalisatie, keccak/secp256k1, records + golden vectors",
+          "url": "https://github.com/Knitweb/knitweb/issues/4",
+          "state": "closed",
+          "labels": [
+            "agent",
+            "nacht-2"
+          ],
+          "goal": "Parse/serialize/sign/verify voor knit/1, fiber/1, vote/1 exact volgens §A4, met bevroren golden vectors.",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 5,
+          "title": "KW-004 · Hub-pagina (knitweb.art) conform wireframe §2.1",
+          "url": "https://github.com/Knitweb/knitweb/issues/5",
+          "state": "open",
+          "labels": [
+            "agent",
+            "nacht-3"
+          ],
+          "goal": "`dist/index.html` toont hero, live fabric-strip (uit `stats.json`), field-grid (uit configs, gesorteerd op `order`, hidden uitgefilterd, teaser gebadged), explorer-teaser met client-side zoek over `*/knits.json`.",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 6,
+          "title": "KW-007 · vote/1-aggregatie + score-engine (§A5)",
+          "url": "https://github.com/Knitweb/knitweb/issues/6",
+          "state": "open",
+          "labels": [
+            "agent",
+            "nacht-3"
+          ],
+          "goal": "`score(records)` implementeert §A5 volledig deterministisch, gebruikt door build én field-pagina.",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 7,
+          "title": "KW-005 · Field-paginatemplate conform wireframe §2.2 (chemfield)",
+          "url": "https://github.com/Knitweb/knitweb/issues/7",
+          "state": "open",
+          "labels": [
+            "agent",
+            "nacht-4"
+          ],
+          "goal": "`/chemfield/` rendert Top-knits-lijst (sorteer: score/nieuw/betwist), knit-detailpaneel, fiber-kaart-placeholder (paneel met adjacency-lijst, nog geen graafviz), en het indien-formulier met **hash-preview vóór signeren**.",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 8,
+          "title": "KW-008 · Ingest v1: seed-loader + chemfield-seed + vank-report-adapter (stub)",
+          "url": "https://github.com/Knitweb/knitweb/issues/8",
+          "state": "open",
+          "labels": [
+            "agent",
+            "nacht-5"
+          ],
+          "goal": "Build leest `seeds/*.seed.f1`, verifieert en indexeert; chemfield krijgt een startset van 12 knits + 6 fibers; `vank-report`-adapter parseert een `vank.report.v1`-JSON en genereert daaruit concept-knits (nog niet getekend — output naar `seeds/_drafts/`).",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 9,
+          "title": "KW-009 · CI-pijplijn + deploy + PR-hygiëne",
+          "url": "https://github.com/Knitweb/knitweb/issues/9",
+          "state": "open",
+          "labels": [
+            "agent",
+            "nacht-5"
+          ],
+          "goal": "Elke PR draait tests/lint/licentie-scan/goldens; merge naar main bouwt en rsync't `dist/` naar anchor + Hetzner en publiceert een Pages-preview per PR.",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 10,
+          "title": "KW-010 · Mirrors + nachtrapport + devlog-feed + timelapse-render",
+          "url": "https://github.com/Knitweb/knitweb/issues/10",
+          "state": "open",
+          "labels": [
+            "agent",
+            "nacht-6"
+          ],
+          "goal": "(a) `mirrors.yml`: elke main-merge pusht naar GitLab en Radicle en naar de anchor-git; (b) nachtrapport-generator: per nacht één markdown (\"Nachtploeg-rapport <datum>\": PR's, diffstat, CI-status, open vragen) in `reports/`; (c) `feed.json` uit CHANGELOG.md voor de devlog-strip; (d) diff-slideshow-script (`reports/render.sh`, ffmpeg) dat van een nacht een 60–90 s mp4 maakt voor de shorts-pipeline.",
+          "status": "queued",
+          "pr": null
+        }
+      ],
+      "counts": {
+        "docs": 1,
+        "open": 6,
+        "review": 0,
+        "done": 4
       }
     },
     {
