@@ -1,7 +1,1505 @@
 {
-  "generated": "2026-07-06T11:58:01.142Z",
-  "fieldCount": 9,
+  "generated": "2026-07-06T12:13:14.670Z",
+  "fieldCount": 11,
   "fields": [
+    {
+      "field": "bt",
+      "name": "EURBT",
+      "accent": "#4aa3a3",
+      "summary": "EURBT Python P2P DEX prototype + top-100 DEX research",
+      "homepage": "https://knitweb.art",
+      "project": "https://github.com/orgs/Knitweb/projects/5",
+      "repo": "Knitweb/bt",
+      "group_by": "",
+      "docs": [],
+      "backlog": [
+        {
+          "number": 1,
+          "title": "Role-driven feature backlog — from the 100-professions field guide",
+          "url": "https://github.com/Knitweb/bt/issues/1",
+          "state": "open",
+          "labels": [],
+          "goal": "Aggregated from 490 feature requests across the [100-professions field guide](https://knitweb.github.io/professions100.html), deduplicated t",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 5,
+          "title": "[BT-001] Render a plain-language EUR-anchor basket breakdown card showing each component's weight, value, and freshness",
+          "url": "https://github.com/Knitweb/bt/issues/5",
+          "state": "open",
+          "labels": [
+            "epic:eur-anchor-basket-marketdata",
+            "P0"
+          ],
+          "goal": "Epic: eur-anchor-basket-marketdata · Priority: P0 · Demand: 9/100 roles · Levels: Low, Medium, High",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 6,
+          "title": "[BT-002] Build a deterministic basket target recomputation endpoint with cross-node match proof",
+          "url": "https://github.com/Knitweb/bt/issues/6",
+          "state": "open",
+          "labels": [
+            "epic:eur-anchor-basket-marketdata",
+            "P0"
+          ],
+          "goal": "Epic: eur-anchor-basket-marketdata · Priority: P0 · Demand: 6/100 roles · Levels: Medium, High",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 7,
+          "title": "[BT-003] Enforce normalise_weights to sum to exactly 1_000_000 ppm and prove it for all positive inputs",
+          "url": "https://github.com/Knitweb/bt/issues/7",
+          "state": "open",
+          "labels": [
+            "epic:eur-anchor-basket-marketdata",
+            "P0"
+          ],
+          "goal": "Epic: eur-anchor-basket-marketdata · Priority: P0 · Demand: 5/100 roles · Levels: High",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 8,
+          "title": "[BT-004] Verify that only the VoteBank DAO actor can sign and publish a basket spec",
+          "url": "https://github.com/Knitweb/bt/issues/8",
+          "state": "open",
+          "labels": [
+            "epic:eur-anchor-basket-marketdata",
+            "P0"
+          ],
+          "goal": "Epic: eur-anchor-basket-marketdata · Priority: P0 · Demand: 4/100 roles · Levels: Medium, High",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 9,
+          "title": "[BT-005] Reject expired and invalidly-signed knowledge claims from forming basket components",
+          "url": "https://github.com/Knitweb/bt/issues/9",
+          "state": "open",
+          "labels": [
+            "epic:eur-anchor-basket-marketdata",
+            "P0"
+          ],
+          "goal": "Epic: eur-anchor-basket-marketdata · Priority: P0 · Demand: 5/100 roles · Levels: Medium, High",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 10,
+          "title": "[BT-006] Prove integer quote rounding (ceil) never underpays the seller across indivisible fills",
+          "url": "https://github.com/Knitweb/bt/issues/10",
+          "state": "open",
+          "labels": [
+            "epic:eur-anchor-basket-marketdata",
+            "P0"
+          ],
+          "goal": "Epic: eur-anchor-basket-marketdata · Priority: P0 · Demand: 6/100 roles · Levels: Medium, High",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 11,
+          "title": "[BT-007] Display BT-quoted order prices in EUR-anchor numeraire alongside the raw price_atoms",
+          "url": "https://github.com/Knitweb/bt/issues/11",
+          "state": "open",
+          "labels": [
+            "epic:eur-anchor-basket-marketdata",
+            "P1"
+          ],
+          "goal": "Epic: eur-anchor-basket-marketdata · Priority: P1 · Demand: 8/100 roles · Levels: Low, Medium, High",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 12,
+          "title": "[BT-008] Ingest signed vBank weight points and apply recency/participation/confidence influence to derive live basket weights",
+          "url": "https://github.com/Knitweb/bt/issues/12",
+          "state": "open",
+          "labels": [
+            "epic:eur-anchor-basket-marketdata",
+            "P1"
+          ],
+          "goal": "Epic: eur-anchor-basket-marketdata · Priority: P1 · Demand: 4/100 roles · Levels: High",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 13,
+          "title": "[BT-009] Build a knowledge-claim source taxonomy with per-source expiry and outlier rejection for market-data feeds",
+          "url": "https://github.com/Knitweb/bt/issues/13",
+          "state": "open",
+          "labels": [
+            "epic:eur-anchor-basket-marketdata",
+            "P1"
+          ],
+          "goal": "Epic: eur-anchor-basket-marketdata · Priority: P1 · Demand: 4/100 roles · Levels: High",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 14,
+          "title": "[BT-010] Replay the basket target history from archived vBank and claim events and verify it reproduces published values",
+          "url": "https://github.com/Knitweb/bt/issues/14",
+          "state": "open",
+          "labels": [
+            "epic:eur-anchor-basket-marketdata",
+            "P1"
+          ],
+          "goal": "Epic: eur-anchor-basket-marketdata · Priority: P1 · Demand: 4/100 roles · Levels: High",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 15,
+          "title": "[BT-011] Add a feed-freshness indicator and stale-anchor warning to the quote display",
+          "url": "https://github.com/Knitweb/bt/issues/15",
+          "state": "open",
+          "labels": [
+            "epic:eur-anchor-basket-marketdata",
+            "P1"
+          ],
+          "goal": "Epic: eur-anchor-basket-marketdata · Priority: P1 · Demand: 7/100 roles · Levels: Low, Medium, High",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 16,
+          "title": "[BT-012] Implement a deterministic conflict-resolution rule for competing vBank weight series",
+          "url": "https://github.com/Knitweb/bt/issues/16",
+          "state": "open",
+          "labels": [
+            "epic:eur-anchor-basket-marketdata",
+            "P2"
+          ],
+          "goal": "Epic: eur-anchor-basket-marketdata · Priority: P2 · Demand: 3/100 roles · Levels: High",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 17,
+          "title": "[BT-013] Implement conflict-free event-log merge by canonical event ID (CRDT OR-Set semantics)",
+          "url": "https://github.com/Knitweb/bt/issues/17",
+          "state": "open",
+          "labels": [
+            "epic:offline-reconciliation-wallet",
+            "P0"
+          ],
+          "goal": "Epic: offline-reconciliation-wallet · Priority: P0 · Demand: 8/100 roles · Levels: Low, Medium, High",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 18,
+          "title": "[BT-014] Define deterministic total order over merged events (signed timestamp then canonical hash tie-break)",
+          "url": "https://github.com/Knitweb/bt/issues/18",
+          "state": "open",
+          "labels": [
+            "epic:offline-reconciliation-wallet",
+            "P0"
+          ],
+          "goal": "Epic: offline-reconciliation-wallet · Priority: P0 · Demand: 7/100 roles · Levels: Medium, High",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 19,
+          "title": "[BT-015] Build offline-first signed capture: sign orders/transfers/cancels with no network",
+          "url": "https://github.com/Knitweb/bt/issues/19",
+          "state": "open",
+          "labels": [
+            "epic:offline-reconciliation-wallet",
+            "P0"
+          ],
+          "goal": "Epic: offline-reconciliation-wallet · Priority: P0 · Demand: 9/100 roles · Levels: Low, Medium, High",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 20,
+          "title": "[BT-016] Add sealed-capture envelope: tamper-evident local seal over canonical bytes before sync",
+          "url": "https://github.com/Knitweb/bt/issues/20",
+          "state": "open",
+          "labels": [
+            "epic:offline-reconciliation-wallet",
+            "P1"
+          ],
+          "goal": "Epic: offline-reconciliation-wallet · Priority: P1 · Demand: 6/100 roles · Levels: Medium, High",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 21,
+          "title": "[BT-017] Write plain-language sync-status panel (captured / sealed / propagating / merged / replayed)",
+          "url": "https://github.com/Knitweb/bt/issues/21",
+          "state": "open",
+          "labels": [
+            "epic:offline-reconciliation-wallet",
+            "P1"
+          ],
+          "goal": "Epic: offline-reconciliation-wallet · Priority: P1 · Demand: 9/100 roles · Levels: Low, Medium, High",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 22,
+          "title": "[BT-018] Implement non-custodial wallet balance view from replayed integer-atom events",
+          "url": "https://github.com/Knitweb/bt/issues/22",
+          "state": "open",
+          "labels": [
+            "epic:offline-reconciliation-wallet",
+            "P0"
+          ],
+          "goal": "Epic: offline-reconciliation-wallet · Priority: P0 · Demand: 10/100 roles · Levels: Low, Medium, High",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 23,
+          "title": "[BT-019] Separate spendable vs reserved atoms so offline captures cannot double-spend on merge",
+          "url": "https://github.com/Knitweb/bt/issues/23",
+          "state": "open",
+          "labels": [
+            "epic:offline-reconciliation-wallet",
+            "P0"
+          ],
+          "goal": "Epic: offline-reconciliation-wallet · Priority: P0 · Demand: 7/100 roles · Levels: Medium, High",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 24,
+          "title": "[BT-020] Build local key management: actor keypair generation, owner-person linkage, encrypted-at-rest store",
+          "url": "https://github.com/Knitweb/bt/issues/24",
+          "state": "open",
+          "labels": [
+            "epic:offline-reconciliation-wallet",
+            "P0"
+          ],
+          "goal": "Epic: offline-reconciliation-wallet · Priority: P0 · Demand: 9/100 roles · Levels: Low, Medium, High",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 25,
+          "title": "[BT-021] Add seed-phrase backup and deterministic key recovery for offline wallets",
+          "url": "https://github.com/Knitweb/bt/issues/25",
+          "state": "open",
+          "labels": [
+            "epic:offline-reconciliation-wallet",
+            "P1"
+          ],
+          "goal": "Epic: offline-reconciliation-wallet · Priority: P1 · Demand: 8/100 roles · Levels: Low, Medium, High",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 26,
+          "title": "[BT-022] Implement light-client header/checkpoint verification without full event-log download",
+          "url": "https://github.com/Knitweb/bt/issues/26",
+          "state": "open",
+          "labels": [
+            "epic:offline-reconciliation-wallet",
+            "P1"
+          ],
+          "goal": "Epic: offline-reconciliation-wallet · Priority: P1 · Demand: 6/100 roles · Levels: Medium, High",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 27,
+          "title": "[BT-023] Detect and surface replay-divergence after merge with a plain-language untrusted-view warning",
+          "url": "https://github.com/Knitweb/bt/issues/27",
+          "state": "open",
+          "labels": [
+            "epic:offline-reconciliation-wallet",
+            "P1"
+          ],
+          "goal": "Epic: offline-reconciliation-wallet · Priority: P1 · Demand: 7/100 roles · Levels: Low, Medium, High",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 28,
+          "title": "[BT-024] Show offline settlement-timeline state per captured trade (signed -> instant_accepted not final)",
+          "url": "https://github.com/Knitweb/bt/issues/28",
+          "state": "open",
+          "labels": [
+            "epic:offline-reconciliation-wallet",
+            "P1"
+          ],
+          "goal": "Epic: offline-reconciliation-wallet · Priority: P1 · Demand: 8/100 roles · Levels: Low, Medium, High",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 29,
+          "title": "[BT-025] Generate per-capture Proof Passport offline (identity, signature, integer-amount, replay hash)",
+          "url": "https://github.com/Knitweb/bt/issues/29",
+          "state": "open",
+          "labels": [
+            "epic:offline-reconciliation-wallet",
+            "P2"
+          ],
+          "goal": "Epic: offline-reconciliation-wallet · Priority: P2 · Demand: 6/100 roles · Levels: Low, Medium, High",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 30,
+          "title": "[BT-026] Enforce real-funds readiness gate on offline-captured orders at sync time",
+          "url": "https://github.com/Knitweb/bt/issues/30",
+          "state": "open",
+          "labels": [
+            "epic:offline-reconciliation-wallet",
+            "P0"
+          ],
+          "goal": "Epic: offline-reconciliation-wallet · Priority: P0 · Demand: 7/100 roles · Levels: Medium, High",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 31,
+          "title": "[BT-027] Capture trust-evidence snapshot offline and re-evaluate trust minimums on merge",
+          "url": "https://github.com/Knitweb/bt/issues/31",
+          "state": "open",
+          "labels": [
+            "epic:offline-reconciliation-wallet",
+            "P2"
+          ],
+          "goal": "Epic: offline-reconciliation-wallet · Priority: P2 · Demand: 5/100 roles · Levels: Medium, High",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 32,
+          "title": "[BT-028] Bound stale-capture influence: expire offline captures by signed capture-age and reject replayed envelopes",
+          "url": "https://github.com/Knitweb/bt/issues/32",
+          "state": "open",
+          "labels": [
+            "epic:offline-reconciliation-wallet",
+            "P1"
+          ],
+          "goal": "Epic: offline-reconciliation-wallet · Priority: P1 · Demand: 6/100 roles · Levels: Medium, High",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 33,
+          "title": "[BT-029] Add `bt sync` reconciliation CLI with deterministic dry-run diff before applying merge",
+          "url": "https://github.com/Knitweb/bt/issues/33",
+          "state": "open",
+          "labels": [
+            "epic:offline-reconciliation-wallet",
+            "P2"
+          ],
+          "goal": "Epic: offline-reconciliation-wallet · Priority: P2 · Demand: 5/100 roles · Levels: Medium, High",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 34,
+          "title": "[BT-030] Enforce the three-actor authorisation rule in the signer-validation path",
+          "url": "https://github.com/Knitweb/bt/issues/34",
+          "state": "open",
+          "labels": [
+            "epic:identity-trust-votebank",
+            "P0"
+          ],
+          "goal": "Epic: identity-trust-votebank · Priority: P0 · Demand: 10/100 roles · Levels: Low, Medium, High",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 35,
+          "title": "[BT-031] Link owner-agents to their owner person and verify the chain at submit time",
+          "url": "https://github.com/Knitweb/bt/issues/35",
+          "state": "open",
+          "labels": [
+            "epic:identity-trust-votebank",
+            "P0"
+          ],
+          "goal": "Epic: identity-trust-votebank · Priority: P0 · Demand: 7/100 roles · Levels: Medium, High",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 36,
+          "title": "[BT-032] Restrict basket-spec publication to the VoteBank DAO actor only",
+          "url": "https://github.com/Knitweb/bt/issues/36",
+          "state": "open",
+          "labels": [
+            "epic:identity-trust-votebank",
+            "P0"
+          ],
+          "goal": "Epic: identity-trust-votebank · Priority: P0 · Demand: 4/100 roles · Levels: Medium, High",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 37,
+          "title": "[BT-033] Gate match eligibility on a counterparty trust minimum",
+          "url": "https://github.com/Knitweb/bt/issues/37",
+          "state": "open",
+          "labels": [
+            "epic:identity-trust-votebank",
+            "P0"
+          ],
+          "goal": "Epic: identity-trust-votebank · Priority: P0 · Demand: 9/100 roles · Levels: Low, Medium, High",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 38,
+          "title": "[BT-034] Surface the dry-run vs real-funds readiness verdict as a first-class trust signal",
+          "url": "https://github.com/Knitweb/bt/issues/38",
+          "state": "open",
+          "labels": [
+            "epic:identity-trust-votebank",
+            "P0"
+          ],
+          "goal": "Epic: identity-trust-votebank · Priority: P0 · Demand: 9/100 roles · Levels: Low, Medium, High",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 39,
+          "title": "[BT-035] Communicate that instant_accepted is not finality across the settlement timeline",
+          "url": "https://github.com/Knitweb/bt/issues/39",
+          "state": "open",
+          "labels": [
+            "epic:identity-trust-votebank",
+            "P0"
+          ],
+          "goal": "Epic: identity-trust-votebank · Priority: P0 · Demand: 10/100 roles · Levels: Low, Medium, High",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 40,
+          "title": "[BT-036] Record signed actor-registration and trust-evidence events in the replayable log",
+          "url": "https://github.com/Knitweb/bt/issues/40",
+          "state": "open",
+          "labels": [
+            "epic:identity-trust-votebank",
+            "P0"
+          ],
+          "goal": "Epic: identity-trust-votebank · Priority: P0 · Demand: 6/100 roles · Levels: Medium, High",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 41,
+          "title": "[BT-037] Verify each authorised actor's signature against its registry-bound public key on the canonical record",
+          "url": "https://github.com/Knitweb/bt/issues/41",
+          "state": "open",
+          "labels": [
+            "epic:identity-trust-votebank",
+            "P0"
+          ],
+          "goal": "Epic: identity-trust-votebank · Priority: P0 · Demand: 6/100 roles · Levels: Medium, High",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 42,
+          "title": "[BT-038] Compose the explainable composite trust score from five signed attestation classes",
+          "url": "https://github.com/Knitweb/bt/issues/42",
+          "state": "open",
+          "labels": [
+            "epic:identity-trust-votebank",
+            "P1"
+          ],
+          "goal": "Epic: identity-trust-votebank · Priority: P1 · Demand: 9/100 roles · Levels: Low, Medium, High",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 43,
+          "title": "[BT-039] Generate plain-language trust explanations that never hide input signals",
+          "url": "https://github.com/Knitweb/bt/issues/43",
+          "state": "open",
+          "labels": [
+            "epic:identity-trust-votebank",
+            "P1"
+          ],
+          "goal": "Epic: identity-trust-votebank · Priority: P1 · Demand: 10/100 roles · Levels: Low, Medium, High",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 44,
+          "title": "[BT-040] Render trust and risk at three literacy tiers (Low/Medium/High)",
+          "url": "https://github.com/Knitweb/bt/issues/44",
+          "state": "open",
+          "labels": [
+            "epic:identity-trust-votebank",
+            "P1"
+          ],
+          "goal": "Epic: identity-trust-votebank · Priority: P1 · Demand: 10/100 roles · Levels: Low, Medium, High",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 45,
+          "title": "[BT-041] Compute a per-order risk score that separates protocol risk from counterparty risk",
+          "url": "https://github.com/Knitweb/bt/issues/45",
+          "state": "open",
+          "labels": [
+            "epic:identity-trust-votebank",
+            "P1"
+          ],
+          "goal": "Epic: identity-trust-votebank · Priority: P1 · Demand: 8/100 roles · Levels: Low, Medium, High",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 46,
+          "title": "[BT-042] Reject expired or invalidly-signed identity and trust attestations",
+          "url": "https://github.com/Knitweb/bt/issues/46",
+          "state": "open",
+          "labels": [
+            "epic:identity-trust-votebank",
+            "P1"
+          ],
+          "goal": "Epic: identity-trust-votebank · Priority: P1 · Demand: 7/100 roles · Levels: Medium, High",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 47,
+          "title": "[BT-043] Derive maker reputation from settlement-receipt and dispute history rather than self-claims",
+          "url": "https://github.com/Knitweb/bt/issues/47",
+          "state": "open",
+          "labels": [
+            "epic:identity-trust-votebank",
+            "P1"
+          ],
+          "goal": "Epic: identity-trust-votebank · Priority: P1 · Demand: 8/100 roles · Levels: Medium, High",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 48,
+          "title": "[BT-044] Build a reserve-evidence attestation panel linking each maker's reserve claims to its trust contribution",
+          "url": "https://github.com/Knitweb/bt/issues/48",
+          "state": "open",
+          "labels": [
+            "epic:identity-trust-votebank",
+            "P1"
+          ],
+          "goal": "Epic: identity-trust-votebank · Priority: P1 · Demand: 6/100 roles · Levels: Medium, High",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 49,
+          "title": "[BT-045] Add an uptime and responsiveness reputation signal from signed envelope timestamps",
+          "url": "https://github.com/Knitweb/bt/issues/49",
+          "state": "open",
+          "labels": [
+            "epic:identity-trust-votebank",
+            "P2"
+          ],
+          "goal": "Epic: identity-trust-votebank · Priority: P2 · Demand: 5/100 roles · Levels: Medium, High",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 50,
+          "title": "[BT-046] Expose vBank participation and confidence provenance behind the basket the user trades against",
+          "url": "https://github.com/Knitweb/bt/issues/50",
+          "state": "open",
+          "labels": [
+            "epic:identity-trust-votebank",
+            "P1"
+          ],
+          "goal": "Epic: identity-trust-votebank · Priority: P1 · Demand: 6/100 roles · Levels: Medium, High",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 51,
+          "title": "[BT-047] Build the per-trade Proof Passport bundling identity, signature, amount, trust, readiness, route, and replay hash",
+          "url": "https://github.com/Knitweb/bt/issues/51",
+          "state": "open",
+          "labels": [
+            "epic:identity-trust-votebank",
+            "P1"
+          ],
+          "goal": "Epic: identity-trust-votebank · Priority: P1 · Demand: 9/100 roles · Levels: Low, Medium, High",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 52,
+          "title": "[BT-048] Add accessible multi-language UX for the Proof Passport, trust explanations, and Fairness/Settlement panels (i18n + a11y)",
+          "url": "https://github.com/Knitweb/bt/issues/52",
+          "state": "open",
+          "labels": [
+            "epic:identity-trust-votebank",
+            "P1"
+          ],
+          "goal": "Epic: identity-trust-votebank · Priority: P1 · Demand: 9/100 roles · Levels: Low, Medium, High",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 53,
+          "title": "[BT-049] Define SignedOrder schema with integer-only price/quantity/min-quantity atom fields",
+          "url": "https://github.com/Knitweb/bt/issues/53",
+          "state": "open",
+          "labels": [
+            "epic:orders-and-matching",
+            "P0"
+          ],
+          "goal": "Epic: orders-and-matching · Priority: P0 · Demand: 9/100 roles · Levels: Low, Medium, High",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 54,
+          "title": "[BT-050] Canonically serialize and Ed25519-sign each order so any node can verify it offline",
+          "url": "https://github.com/Knitweb/bt/issues/54",
+          "state": "open",
+          "labels": [
+            "epic:orders-and-matching",
+            "P0"
+          ],
+          "goal": "Epic: orders-and-matching · Priority: P0 · Demand: 8/100 roles · Levels: Medium, High",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 55,
+          "title": "[BT-051] Verify order signer is an authorised actor before the order enters the book",
+          "url": "https://github.com/Knitweb/bt/issues/55",
+          "state": "open",
+          "labels": [
+            "epic:orders-and-matching",
+            "P0"
+          ],
+          "goal": "Epic: orders-and-matching · Priority: P0 · Demand: 7/100 roles · Levels: Medium, High",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 56,
+          "title": "[BT-052] Enforce order expiry so stale orders never match",
+          "url": "https://github.com/Knitweb/bt/issues/56",
+          "state": "open",
+          "labels": [
+            "epic:orders-and-matching",
+            "P0"
+          ],
+          "goal": "Epic: orders-and-matching · Priority: P0 · Demand: 7/100 roles · Levels: Low, Medium, High",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 57,
+          "title": "[BT-053] Compute quote_atoms with ceiling rounding so a fill never underpays the seller",
+          "url": "https://github.com/Knitweb/bt/issues/57",
+          "state": "open",
+          "labels": [
+            "epic:orders-and-matching",
+            "P0"
+          ],
+          "goal": "Epic: orders-and-matching · Priority: P0 · Demand: 6/100 roles · Levels: Medium, High",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 58,
+          "title": "[BT-054] Match crossing orders by deterministic price-time priority",
+          "url": "https://github.com/Knitweb/bt/issues/58",
+          "state": "open",
+          "labels": [
+            "epic:orders-and-matching",
+            "P0"
+          ],
+          "goal": "Epic: orders-and-matching · Priority: P0 · Demand: 8/100 roles · Levels: Medium, High",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 59,
+          "title": "[BT-055] Guarantee remaining order quantity can never go below zero under duplicate fills",
+          "url": "https://github.com/Knitweb/bt/issues/59",
+          "state": "open",
+          "labels": [
+            "epic:orders-and-matching",
+            "P0"
+          ],
+          "goal": "Epic: orders-and-matching · Priority: P0 · Demand: 6/100 roles · Levels: Medium, High",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 60,
+          "title": "[BT-056] Maintain deterministic open order book state keyed by signed order id",
+          "url": "https://github.com/Knitweb/bt/issues/60",
+          "state": "open",
+          "labels": [
+            "epic:orders-and-matching",
+            "P0"
+          ],
+          "goal": "Epic: orders-and-matching · Priority: P0 · Demand: 7/100 roles · Levels: Medium, High",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 61,
+          "title": "[BT-057] Emit a signed Match event that records exact integer fill amounts for replay",
+          "url": "https://github.com/Knitweb/bt/issues/61",
+          "state": "open",
+          "labels": [
+            "epic:orders-and-matching",
+            "P0"
+          ],
+          "goal": "Epic: orders-and-matching · Priority: P0 · Demand: 6/100 roles · Levels: Medium, High",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 62,
+          "title": "[BT-058] Rebuild the full order book and fills from the signed event log via bt replay",
+          "url": "https://github.com/Knitweb/bt/issues/62",
+          "state": "open",
+          "labels": [
+            "epic:orders-and-matching",
+            "P0"
+          ],
+          "goal": "Epic: orders-and-matching · Priority: P0 · Demand: 5/100 roles · Levels: Medium, High",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 63,
+          "title": "[BT-059] Label every order and fill dry-run unless the real-funds readiness gate passes",
+          "url": "https://github.com/Knitweb/bt/issues/63",
+          "state": "open",
+          "labels": [
+            "epic:orders-and-matching",
+            "P1"
+          ],
+          "goal": "Epic: orders-and-matching · Priority: P1 · Demand: 6/100 roles · Levels: Low, Medium, High",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 64,
+          "title": "[BT-060] Support partial fills honouring each order's min_quantity_atoms floor",
+          "url": "https://github.com/Knitweb/bt/issues/64",
+          "state": "open",
+          "labels": [
+            "epic:orders-and-matching",
+            "P1"
+          ],
+          "goal": "Epic: orders-and-matching · Priority: P1 · Demand: 6/100 roles · Levels: Medium, High",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 65,
+          "title": "[BT-061] Sign and apply order cancellations so a maker can withdraw resting intent",
+          "url": "https://github.com/Knitweb/bt/issues/65",
+          "state": "open",
+          "labels": [
+            "epic:orders-and-matching",
+            "P1"
+          ],
+          "goal": "Epic: orders-and-matching · Priority: P1 · Demand: 7/100 roles · Levels: Low, Medium, High",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 66,
+          "title": "[BT-062] Block matches when a counterparty's explainable trust score is below the pair minimum",
+          "url": "https://github.com/Knitweb/bt/issues/66",
+          "state": "open",
+          "labels": [
+            "epic:orders-and-matching",
+            "P1"
+          ],
+          "goal": "Epic: orders-and-matching · Priority: P1 · Demand: 6/100 roles · Levels: Low, Medium, High",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 67,
+          "title": "[BT-063] Show a per-order Proof Passport explaining why the order and its fill are valid",
+          "url": "https://github.com/Knitweb/bt/issues/67",
+          "state": "open",
+          "labels": [
+            "epic:orders-and-matching",
+            "P1"
+          ],
+          "goal": "Epic: orders-and-matching · Priority: P1 · Demand: 7/100 roles · Levels: Low, Medium, High",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 68,
+          "title": "[BT-064] Reject self-trades where maker and taker resolve to the same owner person",
+          "url": "https://github.com/Knitweb/bt/issues/68",
+          "state": "open",
+          "labels": [
+            "epic:orders-and-matching",
+            "P2"
+          ],
+          "goal": "Epic: orders-and-matching · Priority: P2 · Demand: 4/100 roles · Levels: Medium, High",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 69,
+          "title": "[BT-065] Add a deterministic batch-auction matching mode with a single clearing price",
+          "url": "https://github.com/Knitweb/bt/issues/69",
+          "state": "open",
+          "labels": [
+            "epic:orders-and-matching",
+            "P2"
+          ],
+          "goal": "Epic: orders-and-matching · Priority: P2 · Demand: 4/100 roles · Levels: High",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 70,
+          "title": "[BT-066] Define and freeze the signed gossip Envelope wire format",
+          "url": "https://github.com/Knitweb/bt/issues/70",
+          "state": "open",
+          "labels": [
+            "epic:p2p-transport-and-mesh",
+            "P0"
+          ],
+          "goal": "Epic: p2p-transport-and-mesh · Priority: P0 · Demand: 7/100 roles · Levels: Low, Medium, High",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 71,
+          "title": "[BT-067] Persist PeerStore to a durable append-only envelope log",
+          "url": "https://github.com/Knitweb/bt/issues/71",
+          "state": "open",
+          "labels": [
+            "epic:p2p-transport-and-mesh",
+            "P0"
+          ],
+          "goal": "Epic: p2p-transport-and-mesh · Priority: P0 · Demand: 8/100 roles · Levels: Low, Medium, High",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 72,
+          "title": "[BT-068] Implement multi-hop gossip fan-out with per-peer seen-set suppression",
+          "url": "https://github.com/Knitweb/bt/issues/72",
+          "state": "open",
+          "labels": [
+            "epic:p2p-transport-and-mesh",
+            "P0"
+          ],
+          "goal": "Epic: p2p-transport-and-mesh · Priority: P0 · Demand: 6/100 roles · Levels: Medium, High",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 73,
+          "title": "[BT-069] Add a mailbox relay that stores envelopes for offline peers and replays on reconnect",
+          "url": "https://github.com/Knitweb/bt/issues/73",
+          "state": "open",
+          "labels": [
+            "epic:p2p-transport-and-mesh",
+            "P0"
+          ],
+          "goal": "Epic: p2p-transport-and-mesh · Priority: P0 · Demand: 6/100 roles · Levels: Low, Medium, High",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 74,
+          "title": "[BT-070] Implement a Bluetooth-mesh transport adapter for the envelope store",
+          "url": "https://github.com/Knitweb/bt/issues/74",
+          "state": "open",
+          "labels": [
+            "epic:p2p-transport-and-mesh",
+            "P0"
+          ],
+          "goal": "Epic: p2p-transport-and-mesh · Priority: P0 · Demand: 8/100 roles · Levels: Low, Medium, High",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 75,
+          "title": "[BT-071] Build a peer-discovery exchange of signed peer-descriptor records",
+          "url": "https://github.com/Knitweb/bt/issues/75",
+          "state": "open",
+          "labels": [
+            "epic:p2p-transport-and-mesh",
+            "P0"
+          ],
+          "goal": "Epic: p2p-transport-and-mesh · Priority: P0 · Demand: 6/100 roles · Levels: Medium, High",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 76,
+          "title": "[BT-072] Enforce per-peer anti-spam rate limiting at envelope ingest",
+          "url": "https://github.com/Knitweb/bt/issues/76",
+          "state": "open",
+          "labels": [
+            "epic:p2p-transport-and-mesh",
+            "P0"
+          ],
+          "goal": "Epic: p2p-transport-and-mesh · Priority: P0 · Demand: 6/100 roles · Levels: Medium, High",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 77,
+          "title": "[BT-073] Add proof-of-actor admission so only authorised-actor envelopes enter the order/transfer mesh",
+          "url": "https://github.com/Knitweb/bt/issues/77",
+          "state": "open",
+          "labels": [
+            "epic:p2p-transport-and-mesh",
+            "P0"
+          ],
+          "goal": "Epic: p2p-transport-and-mesh · Priority: P0 · Demand: 6/100 roles · Levels: Medium, High",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 78,
+          "title": "[BT-074] Detect and drop replayed and stale envelopes with a nonce+id replay cache",
+          "url": "https://github.com/Knitweb/bt/issues/78",
+          "state": "open",
+          "labels": [
+            "epic:p2p-transport-and-mesh",
+            "P0"
+          ],
+          "goal": "Epic: p2p-transport-and-mesh · Priority: P0 · Demand: 6/100 roles · Levels: Medium, High",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 79,
+          "title": "[BT-075] Bound and validate envelope timestamps with a max-clock-skew window",
+          "url": "https://github.com/Knitweb/bt/issues/79",
+          "state": "open",
+          "labels": [
+            "epic:p2p-transport-and-mesh",
+            "P1"
+          ],
+          "goal": "Epic: p2p-transport-and-mesh · Priority: P1 · Demand: 5/100 roles · Levels: Medium, High",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 80,
+          "title": "[BT-076] Add an explicit envelope schema_version field with forward-compatible rejection",
+          "url": "https://github.com/Knitweb/bt/issues/80",
+          "state": "open",
+          "labels": [
+            "epic:p2p-transport-and-mesh",
+            "P1"
+          ],
+          "goal": "Epic: p2p-transport-and-mesh · Priority: P1 · Demand: 4/100 roles · Levels: Medium, High",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 81,
+          "title": "[BT-077] Prioritize critical envelopes in the Bluetooth-mesh forwarding queue",
+          "url": "https://github.com/Knitweb/bt/issues/81",
+          "state": "open",
+          "labels": [
+            "epic:p2p-transport-and-mesh",
+            "P1"
+          ],
+          "goal": "Epic: p2p-transport-and-mesh · Priority: P1 · Demand: 3/100 roles · Levels: Medium, High",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 82,
+          "title": "[BT-078] Implement NAT traversal via hole-punching with relay fallback",
+          "url": "https://github.com/Knitweb/bt/issues/82",
+          "state": "open",
+          "labels": [
+            "epic:p2p-transport-and-mesh",
+            "P1"
+          ],
+          "goal": "Epic: p2p-transport-and-mesh · Priority: P1 · Demand: 5/100 roles · Levels: High",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 83,
+          "title": "[BT-079] Implement deterministic anti-entropy sync to reconcile divergent envelope sets",
+          "url": "https://github.com/Knitweb/bt/issues/83",
+          "state": "open",
+          "labels": [
+            "epic:p2p-transport-and-mesh",
+            "P1"
+          ],
+          "goal": "Epic: p2p-transport-and-mesh · Priority: P1 · Demand: 5/100 roles · Levels: Medium, High",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 84,
+          "title": "[BT-080] Provide a plain-language mesh/relay status surface for the trade UI",
+          "url": "https://github.com/Knitweb/bt/issues/84",
+          "state": "open",
+          "labels": [
+            "epic:p2p-transport-and-mesh",
+            "P1"
+          ],
+          "goal": "Epic: p2p-transport-and-mesh · Priority: P1 · Demand: 4/100 roles · Levels: Low, Medium",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 85,
+          "title": "[BT-081] Build a transport-conformance test suite proving relays cannot alter or forge market state",
+          "url": "https://github.com/Knitweb/bt/issues/85",
+          "state": "open",
+          "labels": [
+            "epic:p2p-transport-and-mesh",
+            "P1"
+          ],
+          "goal": "Epic: p2p-transport-and-mesh · Priority: P1 · Demand: 5/100 roles · Levels: High",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 86,
+          "title": "[BT-082] Add a Kademlia-style DHT binding for content-addressed envelope lookup",
+          "url": "https://github.com/Knitweb/bt/issues/86",
+          "state": "open",
+          "labels": [
+            "epic:p2p-transport-and-mesh",
+            "P2"
+          ],
+          "goal": "Epic: p2p-transport-and-mesh · Priority: P2 · Demand: 4/100 roles · Levels: High",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 87,
+          "title": "[BT-083] Add a bounded expiry/TTL policy for relayed envelopes",
+          "url": "https://github.com/Knitweb/bt/issues/87",
+          "state": "open",
+          "labels": [
+            "epic:p2p-transport-and-mesh",
+            "P2"
+          ],
+          "goal": "Epic: p2p-transport-and-mesh · Priority: P2 · Demand: 4/100 roles · Levels: Medium, High",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 88,
+          "title": "[BT-084] Define the signed SettlementPlan artifact separating non-custodial crypto locks from anchor-currency payment proofs",
+          "url": "https://github.com/Knitweb/bt/issues/88",
+          "state": "open",
+          "labels": [
+            "epic:settlement-and-knit",
+            "P0"
+          ],
+          "goal": "Epic: settlement-and-knit · Priority: P0 · Demand: 9/100 roles · Levels: Low, Medium, High",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 89,
+          "title": "[BT-085] Implement the full settlement timeline state machine signed -> instant_accepted -> settlement_planned -> lock_seen -> receipt_verified -> final",
+          "url": "https://github.com/Knitweb/bt/issues/89",
+          "state": "open",
+          "labels": [
+            "epic:settlement-and-knit",
+            "P0"
+          ],
+          "goal": "Epic: settlement-and-knit · Priority: P0 · Demand: 9/100 roles · Levels: Low, Medium, High",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 90,
+          "title": "[BT-086] Build the Knitweb/PULSE settlement receipt verifier that gates every final label (R4)",
+          "url": "https://github.com/Knitweb/bt/issues/90",
+          "state": "open",
+          "labels": [
+            "epic:settlement-and-knit",
+            "P0"
+          ],
+          "goal": "Epic: settlement-and-knit · Priority: P0 · Demand: 8/100 roles · Levels: Medium, High",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 91,
+          "title": "[BT-087] Implement the pluggable settlement adapter interface with a non-custodial Knitweb escrow adapter for same-chain PULSE markets",
+          "url": "https://github.com/Knitweb/bt/issues/91",
+          "state": "open",
+          "labels": [
+            "epic:settlement-and-knit",
+            "P0"
+          ],
+          "goal": "Epic: settlement-and-knit · Priority: P0 · Demand: 8/100 roles · Levels: Medium, High",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 92,
+          "title": "[BT-088] Enforce the real-funds readiness gate for settlement so submit_real_funds_order cannot bypass any blocker (I9)",
+          "url": "https://github.com/Knitweb/bt/issues/92",
+          "state": "open",
+          "labels": [
+            "epic:settlement-and-knit",
+            "P0"
+          ],
+          "goal": "Epic: settlement-and-knit · Priority: P0 · Demand: 8/100 roles · Levels: Medium, High",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 93,
+          "title": "[BT-089] Emit settlement_plan and settlement_receipt canonical events into the signed event log and reconstruct settlement state on replay",
+          "url": "https://github.com/Knitweb/bt/issues/93",
+          "state": "open",
+          "labels": [
+            "epic:settlement-and-knit",
+            "P0"
+          ],
+          "goal": "Epic: settlement-and-knit · Priority: P0 · Demand: 8/100 roles · Levels: Medium, High",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 94,
+          "title": "[BT-090] Prove duplicate settlement-receipt and duplicate-fill events cannot over-release funds or drive remaining quantity below zero",
+          "url": "https://github.com/Knitweb/bt/issues/94",
+          "state": "open",
+          "labels": [
+            "epic:settlement-and-knit",
+            "P0"
+          ],
+          "goal": "Epic: settlement-and-knit · Priority: P0 · Demand: 8/100 roles · Levels: High",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 95,
+          "title": "[BT-091] Implement an HTLC atomic-swap adapter for cross-chain crypto legs with the same plan/execute interface",
+          "url": "https://github.com/Knitweb/bt/issues/95",
+          "state": "open",
+          "labels": [
+            "epic:settlement-and-knit",
+            "P1"
+          ],
+          "goal": "Epic: settlement-and-knit · Priority: P1 · Demand: 6/100 roles · Levels: High",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 96,
+          "title": "[BT-092] Implement the anchor-currency payment-proof leg with a pluggable proof-requirement and proof-submission model",
+          "url": "https://github.com/Knitweb/bt/issues/96",
+          "state": "open",
+          "labels": [
+            "epic:settlement-and-knit",
+            "P1"
+          ],
+          "goal": "Epic: settlement-and-knit · Priority: P1 · Demand: 7/100 roles · Levels: Low, Medium, High",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 97,
+          "title": "[BT-093] Register PULSE as a Knitweb settlement asset with 18-decimal integer atoms and wire the PULSE/BT settlement route",
+          "url": "https://github.com/Knitweb/bt/issues/97",
+          "state": "open",
+          "labels": [
+            "epic:settlement-and-knit",
+            "P1"
+          ],
+          "goal": "Epic: settlement-and-knit · Priority: P1 · Demand: 6/100 roles · Levels: Medium, High",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 98,
+          "title": "[BT-094] Build the tradable-token registry requiring symbol, contract address, decimals, source, and risk profile before a settlement route is accepted",
+          "url": "https://github.com/Knitweb/bt/issues/98",
+          "state": "open",
+          "labels": [
+            "epic:settlement-and-knit",
+            "P1"
+          ],
+          "goal": "Epic: settlement-and-knit · Priority: P1 · Demand: 6/100 roles · Levels: Medium, High",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 99,
+          "title": "[BT-095] Implement cancellation and timeout recovery paths for in-flight settlements",
+          "url": "https://github.com/Knitweb/bt/issues/99",
+          "state": "open",
+          "labels": [
+            "epic:settlement-and-knit",
+            "P1"
+          ],
+          "goal": "Epic: settlement-and-knit · Priority: P1 · Demand: 7/100 roles · Levels: Medium, High",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 100,
+          "title": "[BT-096] Build the dispute-evidence model that records signed dispute events and feeds dispute history into the trust score",
+          "url": "https://github.com/Knitweb/bt/issues/100",
+          "state": "open",
+          "labels": [
+            "epic:settlement-and-knit",
+            "P1"
+          ],
+          "goal": "Epic: settlement-and-knit · Priority: P1 · Demand: 7/100 roles · Levels: Low, Medium, High",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 101,
+          "title": "[BT-097] Generate the settlement section of the Proof Passport: settlement route, leg breakdown, readiness blockers, timeline state, and replay hash",
+          "url": "https://github.com/Knitweb/bt/issues/101",
+          "state": "open",
+          "labels": [
+            "epic:settlement-and-knit",
+            "P1"
+          ],
+          "goal": "Epic: settlement-and-knit · Priority: P1 · Demand: 9/100 roles · Levels: Low, Medium, High",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 102,
+          "title": "[BT-098] Enforce trust-minimum gating at settlement-plan creation, not just at match time",
+          "url": "https://github.com/Knitweb/bt/issues/102",
+          "state": "open",
+          "labels": [
+            "epic:settlement-and-knit",
+            "P2"
+          ],
+          "goal": "Epic: settlement-and-knit · Priority: P2 · Demand: 6/100 roles · Levels: Medium, High",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 103,
+          "title": "[BT-099] Implement the manual_otc negotiated settlement path that produces a signed SettlementPlan from an off-book agreement",
+          "url": "https://github.com/Knitweb/bt/issues/103",
+          "state": "open",
+          "labels": [
+            "epic:settlement-and-knit",
+            "P2"
+          ],
+          "goal": "Epic: settlement-and-knit · Priority: P2 · Demand: 5/100 roles · Levels: Medium, High",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 104,
+          "title": "[BT-100] Enforce actor-authorisation Sybil gate: reject orders whose signer is not a registered person, owner-linked agent, or the VoteBank DAO",
+          "url": "https://github.com/Knitweb/bt/issues/104",
+          "state": "open",
+          "labels": [
+            "epic:security-formal-ops-ux-docs",
+            "P0"
+          ],
+          "goal": "Epic: security-formal-ops-ux-docs · Priority: P0 · Demand: 9/100 roles · Levels: Low, Medium, High",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 105,
+          "title": "[BT-101] Add replay/duplicate-fill protection so a re-submitted match or stale envelope cannot drive remaining order quantity below zero",
+          "url": "https://github.com/Knitweb/bt/issues/105",
+          "state": "open",
+          "labels": [
+            "epic:security-formal-ops-ux-docs",
+            "P0"
+          ],
+          "goal": "Epic: security-formal-ops-ux-docs · Priority: P0 · Demand: 7/100 roles · Levels: Medium, High",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 106,
+          "title": "[BT-102] Defend P2P envelopes against spam, expiry, and replay: signed envelope with nonce, observed/expiry timestamps, and per-peer rate budget",
+          "url": "https://github.com/Knitweb/bt/issues/106",
+          "state": "open",
+          "labels": [
+            "epic:security-formal-ops-ux-docs",
+            "P1"
+          ],
+          "goal": "Epic: security-formal-ops-ux-docs · Priority: P1 · Demand: 6/100 roles · Levels: Medium, High",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 107,
+          "title": "[BT-103] Prove submit_real_funds_order cannot bypass any readiness blocker (asset profiles, deployed adapter, audit reference, chain receipt checks)",
+          "url": "https://github.com/Knitweb/bt/issues/107",
+          "state": "open",
+          "labels": [
+            "epic:security-formal-ops-ux-docs",
+            "P0"
+          ],
+          "goal": "Epic: security-formal-ops-ux-docs · Priority: P0 · Demand: 5/100 roles · Levels: High",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 108,
+          "title": "[BT-104] Encode FORMAL_SPEC invariants I1-I10 as a dedicated tests/test_invariants.py suite wired into CI",
+          "url": "https://github.com/Knitweb/bt/issues/108",
+          "state": "open",
+          "labels": [
+            "epic:security-formal-ops-ux-docs",
+            "P0"
+          ],
+          "goal": "Epic: security-formal-ops-ux-docs · Priority: P0 · Demand: 4/100 roles · Levels: High",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 109,
+          "title": "[BT-105] Prove normalise_weights always sums to exactly 1_000_000 ppm and that the four required components are present",
+          "url": "https://github.com/Knitweb/bt/issues/109",
+          "state": "open",
+          "labels": [
+            "epic:security-formal-ops-ux-docs",
+            "P0"
+          ],
+          "goal": "Epic: security-formal-ops-ux-docs · Priority: P0 · Demand: 3/100 roles · Levels: High",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 110,
+          "title": "[BT-106] Prove stale vBank points retain bounded influence and cannot dominate fresh high-participation points",
+          "url": "https://github.com/Knitweb/bt/issues/110",
+          "state": "open",
+          "labels": [
+            "epic:security-formal-ops-ux-docs",
+            "P1"
+          ],
+          "goal": "Epic: security-formal-ops-ux-docs · Priority: P1 · Demand: 3/100 roles · Levels: High",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 111,
+          "title": "[BT-107] Reject any unsigned or non-DAO basket spec, and require every policy change to be a signed event with replayable inputs",
+          "url": "https://github.com/Knitweb/bt/issues/111",
+          "state": "open",
+          "labels": [
+            "epic:security-formal-ops-ux-docs",
+            "P0"
+          ],
+          "goal": "Epic: security-formal-ops-ux-docs · Priority: P0 · Demand: 4/100 roles · Levels: High",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 112,
+          "title": "[BT-108] Ship bt replay events.jsonl CLI and prove deterministic reconstruction of actors, book, fills, settlement, and basket",
+          "url": "https://github.com/Knitweb/bt/issues/112",
+          "state": "open",
+          "labels": [
+            "epic:security-formal-ops-ux-docs",
+            "P0"
+          ],
+          "goal": "Epic: security-formal-ops-ux-docs · Priority: P0 · Demand: 5/100 roles · Levels: Medium, High",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 113,
+          "title": "[BT-109] Implement batch_auction fairness mode with a single deterministic clearing price and signed-order-ID tie-breaker",
+          "url": "https://github.com/Knitweb/bt/issues/113",
+          "state": "open",
+          "labels": [
+            "epic:security-formal-ops-ux-docs",
+            "P1"
+          ],
+          "goal": "Epic: security-formal-ops-ux-docs · Priority: P1 · Demand: 4/100 roles · Levels: High",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 114,
+          "title": "[BT-110] Reject expired or invalidly-signed knowledge claims from forming basket components (I5 enforcement + source/expiry taxonomy)",
+          "url": "https://github.com/Knitweb/bt/issues/114",
+          "state": "open",
+          "labels": [
+            "epic:security-formal-ops-ux-docs",
+            "P1"
+          ],
+          "goal": "Epic: security-formal-ops-ux-docs · Priority: P1 · Demand: 4/100 roles · Levels: Medium, High",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 115,
+          "title": "[BT-111] Encode the settlement-finality formal invariant 'every final state references a valid receipt and passed readiness at submission' as a test/proof",
+          "url": "https://github.com/Knitweb/bt/issues/115",
+          "state": "open",
+          "labels": [
+            "epic:security-formal-ops-ux-docs",
+            "P1"
+          ],
+          "goal": "Epic: security-formal-ops-ux-docs · Priority: P1 · Demand: 6/100 roles · Levels: High",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 116,
+          "title": "[BT-112] Implement scripts/make_source_bundle.py and a sovereign-release checklist producing a verifiable bundle + manifest recoverable without GitHub",
+          "url": "https://github.com/Knitweb/bt/issues/116",
+          "state": "open",
+          "labels": [
+            "epic:security-formal-ops-ux-docs",
+            "P1"
+          ],
+          "goal": "Epic: security-formal-ops-ux-docs · Priority: P1 · Demand: 4/100 roles · Levels: High",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 117,
+          "title": "[BT-113] Generate the MiCA / FSB regulatory disclosure appendix (no custody, no redemption, no production settlement) without changing code semantics",
+          "url": "https://github.com/Knitweb/bt/issues/117",
+          "state": "open",
+          "labels": [
+            "epic:security-formal-ops-ux-docs",
+            "P2"
+          ],
+          "goal": "Epic: security-formal-ops-ux-docs · Priority: P2 · Demand: 3/100 roles · Levels: High",
+          "status": "queued",
+          "pr": null
+        }
+      ],
+      "counts": {
+        "docs": 0,
+        "open": 114,
+        "review": 0,
+        "done": 0
+      }
+    },
     {
       "field": "chemfield",
       "name": "ChemField · OpenChem",
@@ -246,6 +1744,54 @@
         "open": 13,
         "review": 0,
         "done": 2
+      }
+    },
+    {
+      "field": "ecosystem",
+      "name": "Ecosystem docs",
+      "accent": "#8a99ad",
+      "summary": "Cross-cutting docs — repository map, engineering standards, markets-of-truth",
+      "homepage": "https://knitweb.art",
+      "project": "",
+      "repo": "Knitweb/docs",
+      "group_by": "",
+      "docs": [
+        {
+          "title": "Repository map",
+          "stage": "reference",
+          "url": "https://github.com/Knitweb/docs/blob/main/REPOSITORIES.md",
+          "path": "REPOSITORIES.md"
+        },
+        {
+          "title": "Agent engineering standards",
+          "stage": "reference",
+          "url": "https://github.com/Knitweb/docs/blob/main/AGENT_ENGINEERING_STANDARDS.md",
+          "path": "AGENT_ENGINEERING_STANDARDS.md"
+        },
+        {
+          "title": "Markets of Truth — development plan",
+          "stage": "roadmap",
+          "url": "https://github.com/Knitweb/docs/blob/main/markets-of-truth/development-plan.md",
+          "path": "markets-of-truth/development-plan.md"
+        }
+      ],
+      "backlog": [
+        {
+          "number": 1,
+          "title": "Role-driven feature backlog — from the 100-professions field guide",
+          "url": "https://github.com/Knitweb/docs/issues/1",
+          "state": "open",
+          "labels": [],
+          "goal": "Aggregated from 490 feature requests across the [100-professions field guide](https://knitweb.github.io/professions100.html), deduplicated t",
+          "status": "queued",
+          "pr": null
+        }
+      ],
+      "counts": {
+        "docs": 3,
+        "open": 1,
+        "review": 0,
+        "done": 0
       }
     },
     {
@@ -2611,7 +4157,7 @@
           "number": 90,
           "title": "feat(fabric): equivocation quarantine in FabricNode ingest path",
           "url": "https://github.com/Knitweb/molgang/issues/90",
-          "state": "open",
+          "state": "closed",
           "labels": [
             "area:knitweb",
             "type:p2p",
@@ -2621,7 +4167,7 @@
             "MoSCoW: Must"
           ],
           "goal": "FabricNode (src/knitweb/fabric/node.py) verifies an author signature on each gossiped record but its own docstring states \"Conflict quaranti",
-          "status": "queued",
+          "status": "done",
           "pr": null
         },
         {
@@ -3716,9 +5262,9 @@
       ],
       "counts": {
         "docs": 6,
-        "open": 55,
+        "open": 54,
         "review": 0,
-        "done": 70
+        "done": 71
       }
     },
     {
