@@ -1,6 +1,6 @@
 {
-  "generated": "2026-07-06T11:36:06.402Z",
-  "fieldCount": 3,
+  "generated": "2026-07-06T11:39:04.058Z",
+  "fieldCount": 5,
   "fields": [
     {
       "field": "chemfield",
@@ -249,6 +249,877 @@
       }
     },
     {
+      "field": "gither",
+      "name": "Gither",
+      "accent": "#f05133",
+      "summary": "Serverless code-forge & review gate — the ownership layer of the knowledge economy",
+      "homepage": "https://knitweb.github.io",
+      "project": "https://github.com/orgs/Knitweb/projects/3",
+      "repo": "Knitweb/gither",
+      "group_by": "",
+      "docs": [
+        {
+          "title": "Overview",
+          "stage": "reference",
+          "url": "https://github.com/Knitweb/docs/blob/main/gither/overview.md",
+          "path": "Knitweb/docs/blob/main/gither/overview.md"
+        },
+        {
+          "title": "Commercial strategy",
+          "stage": "strategy",
+          "url": "https://github.com/Knitweb/docs/blob/main/gither/commercial-strategy.md",
+          "path": "Knitweb/docs/blob/main/gither/commercial-strategy.md"
+        },
+        {
+          "title": "Launch plan",
+          "stage": "roadmap",
+          "url": "https://github.com/Knitweb/docs/blob/main/gither/launch-plan.md",
+          "path": "Knitweb/docs/blob/main/gither/launch-plan.md"
+        }
+      ],
+      "backlog": [
+        {
+          "number": 1,
+          "title": "Role-driven feature backlog — from the 100-professions field guide",
+          "url": "https://github.com/Knitweb/gither/issues/1",
+          "state": "open",
+          "labels": [],
+          "goal": "Aggregated from 490 feature requests across the [100-professions field guide](https://knitweb.github.io/professions100.html), deduplicated t",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 2,
+          "title": "[Epic] Fase 1: Git-compatibele objectstore en CLI",
+          "url": "https://github.com/Knitweb/gither/issues/2",
+          "state": "open",
+          "labels": [
+            "epic",
+            "storage",
+            "cli"
+          ],
+          "goal": "Doel: bouw de fundamentele storage-laag en command-line interface voor Gither.",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 3,
+          "title": "[Epic] Fase 2: P2P-netwerklaag met libp2p",
+          "url": "https://github.com/Knitweb/gither/issues/3",
+          "state": "open",
+          "labels": [
+            "epic",
+            "network"
+          ],
+          "goal": "Doel: implementeer de peer-to-peer netwerklaag voor repository-uitwisseling.",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 4,
+          "title": "[Epic] Fase 3: CRDT-gebaseerde metadata voor issues/PRs",
+          "url": "https://github.com/Knitweb/gither/issues/4",
+          "state": "open",
+          "labels": [
+            "epic",
+            "crdt"
+          ],
+          "goal": "Doel: realiseer gedistribueerde social-coding metadata zonder centrale autoriteit.",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 5,
+          "title": "[Epic] Fase 4: Serverless CI/FaaS integratie",
+          "url": "https://github.com/Knitweb/gither/issues/5",
+          "state": "open",
+          "labels": [
+            "epic",
+            "faas"
+          ],
+          "goal": "Doel: voeg optionele, event-gedreven serverless verwerking toe aan Gither.",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 6,
+          "title": "[Epic] Fase 5: IDE-integratie (VS Code, Cursor, PyCharm)",
+          "url": "https://github.com/Knitweb/gither/issues/6",
+          "state": "open",
+          "labels": [
+            "epic",
+            "ide"
+          ],
+          "goal": "Doel: integreer Gither als volwaardige SCM-provider in populaire IDE's.",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 7,
+          "title": "[Epic] Fase 6: Evaluatie en optimalisatie",
+          "url": "https://github.com/Knitweb/gither/issues/7",
+          "state": "open",
+          "labels": [
+            "epic"
+          ],
+          "goal": "Doel: evalueer Gither op functionele en niet-functionele criteria en optimaliseer.",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 8,
+          "title": "Implementeer SHA-256 content-addressable storage",
+          "url": "https://github.com/Knitweb/gither/issues/8",
+          "state": "open",
+          "labels": [
+            "storage"
+          ],
+          "goal": "Bouw de storage layer met SHA-256 als standaard hash.",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 9,
+          "title": "Implementeer Gither CLI met basiscommando's",
+          "url": "https://github.com/Knitweb/gither/issues/9",
+          "state": "open",
+          "labels": [
+            "storage",
+            "cli"
+          ],
+          "goal": "Ontwikkel de command-line interface voor Gither.",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 10,
+          "title": "Implementeer libp2p peer discovery en transport",
+          "url": "https://github.com/Knitweb/gither/issues/10",
+          "state": "open",
+          "labels": [
+            "network"
+          ],
+          "goal": "Realiseer peer discovery en transport voor het Gither netwerk.",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 11,
+          "title": "Implementeer CRDT-refs voor branches",
+          "url": "https://github.com/Knitweb/gither/issues/11",
+          "state": "open",
+          "labels": [
+            "crdt"
+          ],
+          "goal": "Ontwikkel branch referenties die gelijktijdige updates van meerdere peers kunnen samenvoegen.",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 12,
+          "title": "Implementeer Gither daemon en JSON-RPC API",
+          "url": "https://github.com/Knitweb/gither/issues/12",
+          "state": "open",
+          "labels": [
+            "storage",
+            "network"
+          ],
+          "goal": "Bouw de lokale Gither daemon die CLI en IDE-extensies bedient.",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 13,
+          "title": "Implementeer VS Code SCM extensie",
+          "url": "https://github.com/Knitweb/gither/issues/13",
+          "state": "open",
+          "labels": [
+            "ide"
+          ],
+          "goal": "Ontwikkel een Visual Studio Code extensie voor Gither.",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 14,
+          "title": "Implementeer Cursor extensiecompatibiliteit",
+          "url": "https://github.com/Knitweb/gither/issues/14",
+          "state": "open",
+          "labels": [
+            "ide"
+          ],
+          "goal": "Zorg dat de VS Code Gither-extensie direct werkt in Cursor.",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 15,
+          "title": "Implementeer PyCharm / JetBrains plugin",
+          "url": "https://github.com/Knitweb/gither/issues/15",
+          "state": "open",
+          "labels": [
+            "ide"
+          ],
+          "goal": "Ontwikkel een IntelliJ-platform plugin voor Gither.",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 16,
+          "title": "Definieer gither.yml voor serverless CI",
+          "url": "https://github.com/Knitweb/gither/issues/16",
+          "state": "open",
+          "labels": [
+            "faas"
+          ],
+          "goal": "Ontwerp en implementeer het configuratieformaat voor Gither serverless functies.",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 17,
+          "title": "Ontwerp beveiligingsmodel: signed refs en verifieerbaarheid",
+          "url": "https://github.com/Knitweb/gither/issues/17",
+          "state": "open",
+          "labels": [
+            "security"
+          ],
+          "goal": "Definieer het cryptografische beveiligingsmodel voor Gither.",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 18,
+          "title": "Schrijf Gither whitepaper en architectuurdocumentatie",
+          "url": "https://github.com/Knitweb/gither/issues/18",
+          "state": "open",
+          "labels": [
+            "documentation"
+          ],
+          "goal": "Werk de academische paper en technische documentatie bij naar de Knitweb docs.",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 19,
+          "title": "Migratiepad van bestaande Git repositories",
+          "url": "https://github.com/Knitweb/gither/issues/19",
+          "state": "open",
+          "labels": [
+            "documentation",
+            "migration"
+          ],
+          "goal": "Ontwerp een migratiestrategie voor bestaande Git repositories naar Gither.",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 21,
+          "title": "[Launch] Prepare public alpha release",
+          "url": "https://github.com/Knitweb/gither/issues/21",
+          "state": "open",
+          "labels": [
+            "launch",
+            "commercial"
+          ],
+          "goal": "Prepare and ship the first public alpha of Gither.",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 22,
+          "title": "[Launch] Create landing page at knitweb.github.io/gither",
+          "url": "https://github.com/Knitweb/gither/issues/22",
+          "state": "open",
+          "labels": [
+            "launch",
+            "commercial"
+          ],
+          "goal": "Build a dedicated landing page for Gither on the Knitweb site.\\n\\nContent:\\n- One-line pitch and problem statement.\\n- Key differentiators v",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 23,
+          "title": "[Launch] Write positioning page vs GitHub/GitLab",
+          "url": "https://github.com/Knitweb/gither/issues/23",
+          "state": "open",
+          "labels": [
+            "launch",
+            "commercial"
+          ],
+          "goal": "Publish a clear comparison page that explains why Gither is not \"yet another GitHub.\"",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 24,
+          "title": "[Commercial] Define managed Relay service pricing",
+          "url": "https://github.com/Knitweb/gither/issues/24",
+          "state": "open",
+          "labels": [
+            "launch",
+            "commercial"
+          ],
+          "goal": "Design the pricing and packaging for Gither Relay (managed bootstrap/relay nodes).",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 25,
+          "title": "[Commercial] Design open-core feature boundary",
+          "url": "https://github.com/Knitweb/gither/issues/25",
+          "state": "open",
+          "labels": [
+            "launch",
+            "commercial"
+          ],
+          "goal": "Document which features stay in open-source Core and which move to commercial tiers.",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 26,
+          "title": "[Commercial] Draft terms of service for managed services",
+          "url": "https://github.com/Knitweb/gither/issues/26",
+          "state": "open",
+          "labels": [
+            "launch",
+            "commercial"
+          ],
+          "goal": "Create legal terms for Gither Relay, Build, and Cloud Namespace.",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 27,
+          "title": "[Launch] Produce 3-minute demo video",
+          "url": "https://github.com/Knitweb/gither/issues/27",
+          "state": "open",
+          "labels": [
+            "launch",
+            "commercial"
+          ],
+          "goal": "Create a concise demo video showing Gither in action.",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 28,
+          "title": "[Launch] Set up beta signup for managed tiers",
+          "url": "https://github.com/Knitweb/gither/issues/28",
+          "state": "open",
+          "labels": [
+            "launch",
+            "commercial"
+          ],
+          "goal": "Create a waitlist/signup flow for teams interested in managed Relay and Build tiers.",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 29,
+          "title": "[G2-01] Stand up a two-peer Knitweb light-client node on each box (febuz + fillslava)",
+          "url": "https://github.com/Knitweb/gither/issues/29",
+          "state": "open",
+          "labels": [
+            "epic:fabric",
+            "P0"
+          ],
+          "goal": "Epic: fabric · Priority: P0",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 30,
+          "title": "[G2-02] Establish febuz↔fillslava P2P mesh peering with mutual identity gating",
+          "url": "https://github.com/Knitweb/gither/issues/30",
+          "state": "open",
+          "labels": [
+            "epic:federation",
+            "P0"
+          ],
+          "goal": "Epic: federation · Priority: P0",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 31,
+          "title": "[G2-03] Prove fabric convergence: identical web_state_root across both peers",
+          "url": "https://github.com/Knitweb/gither/issues/31",
+          "state": "open",
+          "labels": [
+            "epic:fabric",
+            "P0"
+          ],
+          "goal": "Epic: fabric · Priority: P0",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 32,
+          "title": "[G2-04] Federate the two Gither forges into a P2P git-object exchange",
+          "url": "https://github.com/Knitweb/gither/issues/32",
+          "state": "open",
+          "labels": [
+            "epic:gither",
+            "P0"
+          ],
+          "goal": "Epic: gither · Priority: P0",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 33,
+          "title": "[G2-05] Implement signed refs and an ownership ledger for Gither releases",
+          "url": "https://github.com/Knitweb/gither/issues/33",
+          "state": "open",
+          "labels": [
+            "epic:gither",
+            "P0"
+          ],
+          "goal": "Epic: gither · Priority: P0",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 34,
+          "title": "[G2-06] Build CRDT-backed issues and PRs for conflict-free cross-peer collaboration",
+          "url": "https://github.com/Knitweb/gither/issues/34",
+          "state": "open",
+          "labels": [
+            "epic:gither",
+            "P1"
+          ],
+          "goal": "Epic: gither · Priority: P1",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 35,
+          "title": "[G2-07] Deliver serverless CI / FaaS for the federated forge via Synaptic edge bytecode",
+          "url": "https://github.com/Knitweb/gither/issues/35",
+          "state": "open",
+          "labels": [
+            "epic:gither",
+            "P1"
+          ],
+          "goal": "Epic: gither · Priority: P1",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 36,
+          "title": "[G2-08] Wire IDE integration so developers commit through Gither, not GitHub",
+          "url": "https://github.com/Knitweb/gither/issues/36",
+          "state": "open",
+          "labels": [
+            "epic:gither",
+            "P2"
+          ],
+          "goal": "Epic: gither · Priority: P2",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 37,
+          "title": "[G2-09] Mirror the federated forge outward to GitHub/GitLab as optional, non-authoritative copies",
+          "url": "https://github.com/Knitweb/gither/issues/37",
+          "state": "open",
+          "labels": [
+            "epic:gither",
+            "P2"
+          ],
+          "goal": "Epic: gither · Priority: P2",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 38,
+          "title": "[G2-10] Run cross-peer work as paid, verifiable PoUW jobs settled in PLS",
+          "url": "https://github.com/Knitweb/gither/issues/38",
+          "state": "open",
+          "labels": [
+            "epic:settlement",
+            "P0"
+          ],
+          "goal": "Epic: settlement · Priority: P0",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 39,
+          "title": "[G2-11] Enforce demand-gated, conserved PLS minting across the federation",
+          "url": "https://github.com/Knitweb/gither/issues/39",
+          "state": "open",
+          "labels": [
+            "epic:settlement",
+            "P1"
+          ],
+          "goal": "Epic: settlement · Priority: P1",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 40,
+          "title": "[G2-12] Settle cross-peer value with two-party Knit transfers committed in Fiber",
+          "url": "https://github.com/Knitweb/gither/issues/40",
+          "state": "open",
+          "labels": [
+            "epic:settlement",
+            "P1"
+          ],
+          "goal": "Epic: settlement · Priority: P1",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 41,
+          "title": "[G2-13] Converge federated state changes by BFT quorum k=⌊2n/3⌋+1",
+          "url": "https://github.com/Knitweb/gither/issues/41",
+          "state": "open",
+          "labels": [
+            "epic:governance",
+            "P0"
+          ],
+          "goal": "Epic: governance · Priority: P0",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 42,
+          "title": "[G2-14] Define the federation governance charter and equal-sovereignty policy",
+          "url": "https://github.com/Knitweb/gither/issues/42",
+          "state": "open",
+          "labels": [
+            "epic:governance",
+            "P1"
+          ],
+          "goal": "Epic: governance · Priority: P1",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 43,
+          "title": "[G2-15] Co-own and bidirectionally replicate knowledge through the knit-safe publish gate",
+          "url": "https://github.com/Knitweb/gither/issues/43",
+          "state": "open",
+          "labels": [
+            "epic:knowledge",
+            "P0"
+          ],
+          "goal": "Epic: knowledge · Priority: P0",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 44,
+          "title": "[G2-16] Stand up per-peer spider fleets that mine knowledge into the knit-safe gate",
+          "url": "https://github.com/Knitweb/gither/issues/44",
+          "state": "open",
+          "labels": [
+            "epic:knowledge",
+            "P2"
+          ],
+          "goal": "Epic: knowledge · Priority: P2",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 45,
+          "title": "[G2-17] Commit Synaptic edge bytecode bundles as the shared knowledge/relation format",
+          "url": "https://github.com/Knitweb/gither/issues/45",
+          "state": "open",
+          "labels": [
+            "epic:knowledge",
+            "P2"
+          ],
+          "goal": "Epic: knowledge · Priority: P2",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 46,
+          "title": "[G2-18] Anchor both peers' agents to vBank personhood for sybil-resistant participation",
+          "url": "https://github.com/Knitweb/gither/issues/46",
+          "state": "open",
+          "labels": [
+            "epic:identity",
+            "P0"
+          ],
+          "goal": "Epic: identity · Priority: P0",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 47,
+          "title": "[G2-19] Implement revocation with sorted-Merkle non-membership across the federation",
+          "url": "https://github.com/Knitweb/gither/issues/47",
+          "state": "open",
+          "labels": [
+            "epic:identity",
+            "P1"
+          ],
+          "goal": "Epic: identity · Priority: P1",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 48,
+          "title": "[G2-20] Add an eIDAS/EUDI trusted-RP verifier seam for external identity assurance",
+          "url": "https://github.com/Knitweb/gither/issues/48",
+          "state": "open",
+          "labels": [
+            "epic:identity",
+            "P3"
+          ],
+          "goal": "Epic: identity · Priority: P3",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 49,
+          "title": "[G2-21] Build a federation observability dashboard for fabric, settlement, and forge health",
+          "url": "https://github.com/Knitweb/gither/issues/49",
+          "state": "open",
+          "labels": [
+            "epic:ops",
+            "P1"
+          ],
+          "goal": "Epic: ops · Priority: P1",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 50,
+          "title": "[G2-22] Schedule periodic cross-peer convergence + settlement smoke tests",
+          "url": "https://github.com/Knitweb/gither/issues/50",
+          "state": "open",
+          "labels": [
+            "epic:ops",
+            "P2"
+          ],
+          "goal": "Epic: ops · Priority: P2",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 51,
+          "title": "[G2-23] Package a reproducible 'federate two peers' bootstrap and run the end-to-end demo",
+          "url": "https://github.com/Knitweb/gither/issues/51",
+          "state": "open",
+          "labels": [
+            "epic:ops",
+            "P1"
+          ],
+          "goal": "Epic: ops · Priority: P1",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 52,
+          "title": "[CG-01] Port codegraph's symbol index to content-addressed code-atoms on the Knitweb fabric",
+          "url": "https://github.com/Knitweb/gither/issues/52",
+          "state": "open",
+          "labels": [
+            "epic:code-graph",
+            "P0"
+          ],
+          "goal": "Epic: code-graph · Priority: P0 · Demand: 7/100 roles · Levels: High",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 53,
+          "title": "[CG-02] Model imports/dependencies as typed edges (depends-on / derived-from) gossiped as deltas",
+          "url": "https://github.com/Knitweb/gither/issues/53",
+          "state": "open",
+          "labels": [
+            "epic:code-graph",
+            "P0"
+          ],
+          "goal": "Epic: code-graph · Priority: P0 · Demand: 6/100 roles · Levels: High",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 54,
+          "title": "[CG-03] Expose references & call-graph as P2P-queryable edges over the fabric",
+          "url": "https://github.com/Knitweb/gither/issues/54",
+          "state": "open",
+          "labels": [
+            "epic:code-graph",
+            "P1"
+          ],
+          "goal": "Epic: code-graph · Priority: P1 · Demand: 6/100 roles · Levels: High",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 55,
+          "title": "[CG-04] Deterministic No-LLM code-graph update on commit (content_sha + mtime diff, 0 tokens)",
+          "url": "https://github.com/Knitweb/gither/issues/55",
+          "state": "open",
+          "labels": [
+            "epic:code-graph",
+            "P0"
+          ],
+          "goal": "Epic: code-graph · Priority: P0 · Demand: 8/100 roles · Levels: Medium, High",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 56,
+          "title": "[CG-05] Incremental auto-sync hook: re-derive only changed atoms on each gither commit",
+          "url": "https://github.com/Knitweb/gither/issues/56",
+          "state": "open",
+          "labels": [
+            "epic:code-graph",
+            "P1"
+          ],
+          "goal": "Epic: code-graph · Priority: P1 · Demand: 5/100 roles · Levels: High",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 57,
+          "title": "[CG-06] Gossip code-graph deltas P2P with multiproof verification",
+          "url": "https://github.com/Knitweb/gither/issues/57",
+          "state": "open",
+          "labels": [
+            "epic:code-graph",
+            "P1"
+          ],
+          "goal": "Epic: code-graph · Priority: P1 · Demand: 5/100 roles · Levels: High",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 58,
+          "title": "[CG-07] Attribute ownership: every code-atom carries its author's pairwise DID",
+          "url": "https://github.com/Knitweb/gither/issues/58",
+          "state": "open",
+          "labels": [
+            "epic:code-graph",
+            "P1"
+          ],
+          "goal": "Epic: code-graph · Priority: P1 · Demand: 6/100 roles · Levels: High",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 59,
+          "title": "[CG-08] P2P query API: symbol-search / find-references / dependents / ancestry (Lens/RLM-style)",
+          "url": "https://github.com/Knitweb/gither/issues/59",
+          "state": "open",
+          "labels": [
+            "epic:code-graph",
+            "P1"
+          ],
+          "goal": "Epic: code-graph · Priority: P1 · Demand: 7/100 roles · Levels: Medium, High",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 61,
+          "title": "[CG-09] Light-client code-graph queries: fetch atoms on demand, never hold the full graph",
+          "url": "https://github.com/Knitweb/gither/issues/61",
+          "state": "open",
+          "labels": [
+            "epic:code-graph",
+            "P1"
+          ],
+          "goal": "Epic: code-graph · Priority: P1 · Demand: 5/100 roles · Levels: High",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 62,
+          "title": "[CG-10] Zero-token agent context-pack assembled from the P2P code graph",
+          "url": "https://github.com/Knitweb/gither/issues/62",
+          "state": "open",
+          "labels": [
+            "epic:code-graph",
+            "P0"
+          ],
+          "goal": "Epic: code-graph · Priority: P0 · Demand: 8/100 roles · Levels: Medium, High",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 63,
+          "title": "[CG-11] Cross-peer federated code graph: febuz + fillslava forges merge by BFT quorum",
+          "url": "https://github.com/Knitweb/gither/issues/63",
+          "state": "open",
+          "labels": [
+            "epic:federation",
+            "P1"
+          ],
+          "goal": "Epic: federation · Priority: P1 · Demand: 4/100 roles · Levels: High",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 64,
+          "title": "[CG-12] Replace the JSON cache with a content-addressed Braid/Fiber store",
+          "url": "https://github.com/Knitweb/gither/issues/64",
+          "state": "open",
+          "labels": [
+            "epic:code-graph",
+            "P2"
+          ],
+          "goal": "Epic: code-graph · Priority: P2 · Demand: 4/100 roles · Levels: High",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 65,
+          "title": "[CG-13] Crypto-agile atom hashing/signing that tracks the secp256k1 -> PQC SHA2 dynamic transition",
+          "url": "https://github.com/Knitweb/gither/issues/65",
+          "state": "open",
+          "labels": [
+            "epic:identity",
+            "P0"
+          ],
+          "goal": "Epic: identity · Priority: P0 · Demand: 5/100 roles · Levels: High",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 66,
+          "title": "[CG-14] GitNexus/codegraph import adapter: ingest an existing code-graph JSON into the P2P graph",
+          "url": "https://github.com/Knitweb/gither/issues/66",
+          "state": "open",
+          "labels": [
+            "epic:code-graph",
+            "P2"
+          ],
+          "goal": "Epic: code-graph · Priority: P2 · Demand: 3/100 roles · Levels: High",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 67,
+          "title": "[CG-15] 3D code-graph viewer over the P2P atoms (Begrippen/Familie-style)",
+          "url": "https://github.com/Knitweb/gither/issues/67",
+          "state": "open",
+          "labels": [
+            "epic:knowledge",
+            "P2"
+          ],
+          "goal": "Epic: knowledge · Priority: P2 · Demand: 4/100 roles · Levels: Low, Medium, High",
+          "status": "queued",
+          "pr": null
+        }
+      ],
+      "counts": {
+        "docs": 3,
+        "open": 65,
+        "review": 0,
+        "done": 0
+      }
+    },
+    {
       "field": "knitweb",
       "name": "KnitWeb field-kit",
       "accent": "#3fb6a8",
@@ -402,6 +1273,195 @@
         "open": 6,
         "review": 0,
         "done": 4
+      }
+    },
+    {
+      "field": "ledgerfield",
+      "name": "LedgerField",
+      "accent": "#d4a017",
+      "summary": "P2P global accounting, tax engine & payroll",
+      "homepage": "",
+      "project": "",
+      "repo": "ledgerfield/ledgerfield",
+      "group_by": "",
+      "docs": [],
+      "backlog": [
+        {
+          "number": 9,
+          "title": "Package ruleset JSONs in normal builds",
+          "url": "https://github.com/ledgerfield/ledgerfield/issues/9",
+          "state": "closed",
+          "labels": [
+            "backlog"
+          ],
+          "goal": "Backlog from post-merge PR review (#2-#8).\\n\\nProblem:\\n- The publish workflow copies top-level rulesets into src/ledgerfield/rulesets befor",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 10,
+          "title": "Add source-backed tax metadata for all jurisdictions",
+          "url": "https://github.com/ledgerfield/ledgerfield/issues/10",
+          "state": "closed",
+          "labels": [
+            "backlog"
+          ],
+          "goal": "Backlog from post-merge PR review (#3-#8).\\n\\nProblem:\\n- The new jurisdiction params and rulesets encode tax rates and thresholds, but they",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 11,
+          "title": "Harden aggregate marketplace k-anonymity against per-node skew",
+          "url": "https://github.com/ledgerfield/ledgerfield/issues/11",
+          "state": "closed",
+          "labels": [
+            "backlog"
+          ],
+          "goal": "Backlog from post-merge PR review (#6).\\n\\nProblem:\\n- Aggregator.aggregate gates publication on >= KMIN distinct node IDs, but then compute",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 12,
+          "title": "Add settlement guard for DataMarket purchases",
+          "url": "https://github.com/ledgerfield/ledgerfield/issues/12",
+          "state": "closed",
+          "labels": [
+            "backlog"
+          ],
+          "goal": "Backlog from post-merge PR review (#6).\\n\\nProblem:\\n- DataMarket.purchase explicitly allows buyer balances to go negative and settles later",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 13,
+          "title": "Normalize non-positive CIT inputs for JP and CN",
+          "url": "https://github.com/ledgerfield/ledgerfield/issues/13",
+          "state": "closed",
+          "labels": [
+            "backlog"
+          ],
+          "goal": "Backlog from post-merge PR review (#4, #7).\\n\\nProblem:\\n- Canada, Singapore, and Australia calculators guard winst <= 0 and return zero tax",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 29,
+          "title": "backlog: deep tax modules — Tier 2 majors (IN/BR/CH/NO/SE/DK/FI/BE/AT/ES/IT/NZ/MX/KR/HK/TW/AR)",
+          "url": "https://github.com/ledgerfield/ledgerfield/issues/29",
+          "state": "open",
+          "labels": [],
+          "goal": "Countries have schema + params.json. Need deep implementation:",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 30,
+          "title": "backlog: deep tax modules — EU East + Baltics (PL/CZ/HU/RO/BG/HR/SK/SI/LT/LV/EE/LU/MT/CY/GR)",
+          "url": "https://github.com/ledgerfield/ledgerfield/issues/30",
+          "state": "open",
+          "labels": [],
+          "goal": "Countries have schema + params.json. Need cit.py + iit.py + vat.py.",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 31,
+          "title": "backlog: deep tax modules — Middle East + Turkey + Israel (SA/AE/QA/KW/BH/OM/IL/TR/JO)",
+          "url": "https://github.com/ledgerfield/ledgerfield/issues/31",
+          "state": "open",
+          "labels": [],
+          "goal": "Countries have schema + params.json. Need:",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 32,
+          "title": "backlog: deep tax modules — Southeast + South Asia (ID/TH/MY/PH/VN/PK/BD/LK/MM/KH)",
+          "url": "https://github.com/ledgerfield/ledgerfield/issues/32",
+          "state": "open",
+          "labels": [],
+          "goal": "Countries have schema + params.json. Need cit.py + iit.py + vat.py.",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 33,
+          "title": "backlog: deep tax modules — Africa (NG/EG/KE/GH/ET/TZ/MA/MU/ZM/RW/ZW/UG/SN/CI/CM/AO/MZ)",
+          "url": "https://github.com/ledgerfield/ledgerfield/issues/33",
+          "state": "open",
+          "labels": [],
+          "goal": "Countries have schema + params.json. Need cit.py + iit.py + vat.py.",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 34,
+          "title": "backlog: deep tax modules — Latin America (CL/CO/PE/VE/EC/BO/PY/UY/CR/PA/GT/HN/NI/SV/DO/JM/TT)",
+          "url": "https://github.com/ledgerfield/ledgerfield/issues/34",
+          "state": "open",
+          "labels": [],
+          "goal": "Countries have schema + params.json. Need cit.py + iit.py + vat.py.",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 35,
+          "title": "backlog: payroll modules — JP/CN/CA/SG/AU",
+          "url": "https://github.com/ledgerfield/ledgerfield/issues/35",
+          "state": "open",
+          "labels": [],
+          "goal": "Only NL has a full payslip generator. Add for deep-tax countries:",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 36,
+          "title": "backlog: market GUI tab — add to ledgerfield.html",
+          "url": "https://github.com/ledgerfield/ledgerfield/issues/36",
+          "state": "closed",
+          "labels": [],
+          "goal": "Add tab 8 '📊 Datamarkt' to src/ledgerfield/static/ledgerfield.html:",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 37,
+          "title": "backlog: filing / tax-return modules — UK/US/DE/FR/JP/CN",
+          "url": "https://github.com/ledgerfield/ledgerfield/issues/37",
+          "state": "open",
+          "labels": [],
+          "goal": "NL has VPBAangifte + IBAangifte. Add for:",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 38,
+          "title": "backlog: knitweb P2P integration — gossip rulesets + market packages",
+          "url": "https://github.com/ledgerfield/ledgerfield/issues/38",
+          "state": "open",
+          "labels": [],
+          "goal": "Wire ledgerfield into knitweb/pulse:",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 39,
+          "title": "backlog: verify + complete remaining 80+ country stubs (AL/AM/AZ/BA/GE/KG/KZ/ME/MK/MN/TJ/TM/UA/UZ/RS/RU/FJ/PG/NP + OHADA)",
+          "url": "https://github.com/ledgerfield/ledgerfield/issues/39",
+          "state": "open",
+          "labels": [],
+          "goal": "Countries currently have schema.py (20-account template) but params.json is AI-estimated, not source-verified. Need:",
+          "status": "queued",
+          "pr": null
+        }
+      ],
+      "counts": {
+        "docs": 0,
+        "open": 10,
+        "review": 0,
+        "done": 6
       }
     },
     {
