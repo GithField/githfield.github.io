@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GithField · product-management field</title>
+<style>
+  :root{
+    --bg:#0b0e14; --panel:#141a24; --panel2:#1a2230; --line:#26303f; --line2:#33425a;
+    --ink:#e9eef5; --dim:#8a99ad; --accent:#7c8cff; --good:#38d39f; --amber:#f4b41a;
+    --mono:ui-monospace,"SF Mono",Menlo,monospace;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:radial-gradient(1100px 640px at 78% -8%,#161f30 0%,var(--bg) 58%);
+    color:var(--ink);font:15px/1.6 -apple-system,"Segoe UI",system-ui,sans-serif;padding-bottom:5rem}
+  a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
+  header{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;padding:1.5rem 2rem;border-bottom:1px solid var(--line)}
+  header .mark{color:var(--accent);font-weight:700;letter-spacing:.05em;font-size:1.3rem}
+  header .sub{color:var(--dim)}
+  header nav{margin-left:auto;display:flex;gap:1.1rem;font-size:.9rem}
+  .strip{font-family:var(--mono);font-size:.9rem;color:var(--accent);background:var(--panel);
+    border:1px solid var(--line);border-radius:8px;margin:1.4rem 2rem;padding:.7rem 1.1rem;display:flex;gap:1.8rem;flex-wrap:wrap}
+  .strip b{color:var(--ink)}
+  main{padding:0 2rem;max-width:1240px}
+  h2{font-size:.95rem;letter-spacing:.09em;text-transform:uppercase;color:var(--dim);margin:2.2rem 0 1rem}
+  .tabs{display:flex;gap:8px;margin:1.4rem 2rem 0}
+  .tabs button{background:var(--panel);border:1px solid var(--line);color:var(--dim);border-radius:9px;
+    padding:8px 16px;cursor:pointer;font-size:.92rem}
+  .tabs button.on{border-color:var(--accent);color:var(--ink);background:var(--panel2)}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px}
+  .fcard{background:var(--panel);border:1px solid var(--line);border-left:3px solid var(--fa,var(--accent));
+    border-radius:11px;padding:14px 16px}
+  .fcard h3{font-size:1.05rem;margin-bottom:2px}
+  .fcard .sum{color:var(--dim);font-size:.88rem;margin:4px 0 10px}
+  .fcard .nums{font-family:var(--mono);font-size:.82rem;color:var(--dim);display:flex;gap:12px;flex-wrap:wrap}
+  .fcard .nums b{color:var(--ink)}
+  .fcard .flinks{margin-top:9px;display:flex;gap:12px;font-size:.82rem}
+  .field-block{margin-bottom:2rem}
+  .field-head{display:flex;align-items:baseline;gap:10px;margin:1.4rem 0 .7rem;border-bottom:1px solid var(--line);padding-bottom:6px}
+  .field-head .dot{width:10px;height:10px;border-radius:3px;background:var(--fa)}
+  .field-head h3{font-size:1.05rem}.field-head .r{font-family:var(--mono);font-size:.78rem;color:var(--dim);margin-left:auto}
+  .bucket-lbl{font-family:var(--mono);color:var(--amber);font-size:.8rem;margin:.9rem 0 .4rem;text-transform:uppercase;letter-spacing:.05em}
+  .card{background:var(--panel);border:1px solid var(--line);border-left:3px solid var(--fa,var(--accent));
+    border-radius:8px;padding:.7rem 1rem;margin-bottom:.5rem;display:flex;gap:.8rem;align-items:baseline;flex-wrap:wrap}
+  .card .num{font-family:var(--mono);color:var(--dim);min-width:2.8rem}
+  .card .t{font-weight:600;flex:1;min-width:14rem}
+  .card .goal{flex-basis:100%;color:var(--dim);font-size:.85rem;margin-top:.1rem}
+  .badge{font-family:var(--mono);font-size:.7rem;padding:.05rem .5rem;border-radius:99px;border:1px solid var(--line2);color:var(--dim)}
+  .st{font-family:var(--mono);font-size:.72rem;padding:.05rem .5rem;border-radius:99px}
+  .st.review{color:var(--amber);border:1px solid var(--amber)}
+  .st.queued{color:var(--accent);border:1px solid var(--line2)}
+  .st.done{color:var(--good);border:1px solid var(--good)}
+  .doc{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:.6rem .9rem;margin-bottom:.45rem;display:flex;gap:.7rem;align-items:baseline}
+  .doc .stage{font-family:var(--mono);font-size:.7rem;color:var(--dim);border:1px solid var(--line2);border-radius:99px;padding:.05rem .5rem}
+  .doc .p{font-family:var(--mono);font-size:.74rem;color:var(--dim);margin-left:auto}
+  details summary{cursor:pointer;color:var(--dim);font-size:.85rem;margin:.4rem 0}
+  .empty{color:var(--dim);font-style:italic;padding:.6rem 0}
+  footer{margin:3rem 2rem 0;padding-top:1rem;border-top:1px solid var(--line);color:var(--dim);font-size:.84rem}
+  .hide{display:none}
+  @media(max-width:640px){header,.strip,main,.tabs,footer{margin-left:1rem;margin-right:1rem;padding-left:0;padding-right:0}}
+</style>
+</head>
+<body>
+<header>
+  <span class="mark">◆ GITHFIELD</span>
+  <span class="sub">the product-management field · docs &amp; backlog across the knitweb ecosystem</span>
+  <nav>
+    <a href="#" id="nav-refresh">↻ refresh</a>
+    <a href="https://github.com/GithField">org</a>
+    <a href="https://github.com/GithField/githfield.github.io/blob/main/docs/CONVENTION.md">link a repo</a>
+  </nav>
+</header>
+
+<div class="strip" id="strip"><span>loading catalog…</span></div>
+
+<div class="tabs" id="tabs">
+  <button data-tab="fields" class="on">◆ Fields</button>
+  <button data-tab="backlog">🗒 Backlog</button>
+  <button data-tab="docs">📚 Docs</button>
+</div>
+
+<main>
+  <section id="tab-fields"><div class="grid" id="fields-grid"></div></section>
+  <section id="tab-backlog" class="hide"></section>
+  <section id="tab-docs" class="hide"></section>
+</main>
+
+<footer>
+  Built by the <b>githfield</b> harvester from every repo carrying a <code>githfield.yml</code> manifest —
+  <a href="https://github.com/GithField/githfield.github.io/blob/main/docs/CONVENTION.md">how to link a repo</a>. Docs are linked in place; backlog is live GitHub issues.
+  Part of the KnitWeb hub-and-fields ecosystem.
+</footer>
+
+<script>
+const esc=s=>(s==null?"":String(s)).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const $=s=>document.querySelector(s);
+
+function bucketOf(item, prefix){
+  if(!prefix) return "all";
+  const l=(item.labels||[]).find(n=>n.startsWith(prefix));
+  return l || "ungrouped";
+}
+
+function render(cat){
+  const fields=cat.fields||[];
+  const totOpen=fields.reduce((n,f)=>n+f.counts.open,0);
+  const totDocs=fields.reduce((n,f)=>n+f.counts.docs,0);
+  $("#strip").innerHTML=
+    `<span>fields: <b>${fields.length}</b></span>`+
+    `<span>docs linked: <b>${totDocs}</b></span>`+
+    `<span>open backlog: <b>${totOpen}</b></span>`+
+    `<span>updated: <b>${(cat.generated||'').slice(0,16).replace('T',' ')}</b></span>`;
+
+  // Fields grid
+  $("#fields-grid").innerHTML=fields.map(f=>`
+    <div class="fcard" style="--fa:${esc(f.accent)}">
+      <h3>${esc(f.name)}</h3>
+      <div class="sum">${esc(f.summary||'')}</div>
+      <div class="nums"><span><b>${f.counts.open}</b> open</span>
+        <span><b>${f.counts.done}</b> done</span><span><b>${f.counts.docs}</b> docs</span></div>
+      <div class="flinks">
+        <a href="https://github.com/${esc(f.repo)}">${esc(f.repo)}</a>
+        ${f.homepage?`<a href="${esc(f.homepage)}">site</a>`:''}
+        ${f.project?`<a href="${esc(f.project)}">project</a>`:''}
+      </div>
+    </div>`).join("")||`<div class="empty">no fields yet — add a githfield.yml to a repo</div>`;
+
+  // Backlog board: per field → group_by buckets → open cards, closed collapsed
+  $("#tab-backlog").innerHTML=fields.map(f=>{
+    const open=f.backlog.filter(b=>b.state==="open");
+    const done=f.backlog.filter(b=>b.state==="closed");
+    const buckets={};
+    open.forEach(b=>{const k=bucketOf(b,f.group_by);(buckets[k]=buckets[k]||[]).push(b);});
+    const order=Object.keys(buckets).sort();
+    const cards=b=>`<div class="card" style="--fa:${esc(f.accent)}">
+        <span class="num">#${b.number}</span>
+        <a class="t" href="${esc(b.url)}">${esc(b.title)}</a>
+        <span class="st ${b.status}">${b.status==='review'?'⟳ review'+(b.pr?' · PR #'+b.pr.number:''):b.status==='done'?'✓ done':'queued'}</span>
+        ${(b.labels||[]).filter(l=>l!=='agent').slice(0,4).map(l=>`<span class="badge">${esc(l)}</span>`).join('')}
+        ${b.goal?`<span class="goal">${esc(b.goal)}</span>`:''}
+      </div>`;
+    return `<div class="field-block">
+      <div class="field-head"><span class="dot" style="--fa:${esc(f.accent)}"></span>
+        <h3>${esc(f.name)}</h3><span class="r">${open.length} open · ${done.length} done</span></div>
+      ${order.length?order.map(k=>`
+        ${f.group_by?`<div class="bucket-lbl">▸ ${esc(k)}</div>`:''}
+        ${buckets[k].map(cards).join('')}`).join(''):`<div class="empty">nothing open</div>`}
+      ${done.length?`<details><summary>${done.length} done</summary>${done.map(cards).join('')}</details>`:''}
+    </div>`;
+  }).join("");
+
+  // Docs catalog: per field → doc cards linking in place
+  $("#tab-docs").innerHTML=fields.map(f=>`
+    <div class="field-block">
+      <div class="field-head"><span class="dot" style="--fa:${esc(f.accent)}"></span>
+        <h3>${esc(f.name)}</h3><span class="r">${f.docs.length} docs</span></div>
+      ${f.docs.length?f.docs.map(d=>`
+        <div class="doc" style="--fa:${esc(f.accent)}">
+          <a href="${esc(d.url)}">${esc(d.title)}</a>
+          ${d.stage?`<span class="stage">${esc(d.stage)}</span>`:''}
+          <span class="p">${esc(d.path)}</span>
+        </div>`).join(''):`<div class="empty">no docs declared</div>`}
+    </div>`).join("");
+}
+
+// tab switching
+document.querySelectorAll("#tabs button").forEach(b=>b.onclick=()=>{
+  document.querySelectorAll("#tabs button").forEach(x=>x.classList.toggle("on",x===b));
+  ["fields","backlog","docs"].forEach(t=>$("#tab-"+t).classList.toggle("hide",t!==b.dataset.tab));
+});
+
+async function load(){
+  try{
+    const cat=await fetch("catalog.json?"+Date.now()).then(r=>{if(!r.ok)throw new Error(r.status);return r.json();});
+    render(cat);
+  }catch(e){
+    $("#strip").innerHTML=`<span style="color:var(--amber)">catalog.json not found — run the harvester (npm run harvest) or wait for the Action.</span>`;
+  }
+}
+$("#nav-refresh").onclick=e=>{e.preventDefault();load();};
+load();
+</script>
+</body>
+</html>

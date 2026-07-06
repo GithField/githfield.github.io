@@ -1,0 +1,7 @@
+{
+  "name": "githfield-site",
+  "private": true,
+  "type": "module",
+  "scripts": { "harvest": "node scripts/harvest.mjs" },
+  "dependencies": { "js-yaml": "^4.1.0" }
+}

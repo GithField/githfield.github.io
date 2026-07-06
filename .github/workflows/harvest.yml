@@ -1,0 +1,48 @@
+name: harvest
+# Rebuild catalog.json from every repo carrying a githfield.yml manifest, then
+# publish the board to GitHub Pages. The default GITHUB_TOKEN can read public
+# repos across orgs (5000 req/hr). To scan private repos, set a GITHFIELD_PAT
+# secret (fine-grained, read contents+issues on the scanned orgs) and it is used
+# in preference to GITHUB_TOKEN below.
+on:
+  schedule:
+    - cron: "17,47 * * * *"      # twice an hour, off the :00/:30 rush
+  workflow_dispatch: {}
+  repository_dispatch:
+    types: [harvest]
+  push:
+    branches: [main]
+    paths: ["scripts/**", "config.json", "index.html", "docs/**"]
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: harvest
+  cancel-in-progress: true
+
+jobs:
+  harvest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: "20" }
+      - run: npm ci || npm install
+      - name: Build catalog.json
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHFIELD_PAT || secrets.GITHUB_TOKEN }}
+        run: node scripts/harvest.mjs
+      - name: Commit catalog if changed
+        run: |
+          git config user.name  "githfield-bot"
+          git config user.email "bot@githfield"
+          git add catalog.json
+          git diff --cached --quiet || git commit -m "harvest: refresh catalog.json"
+          git push || true
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with: { path: "." }
+      - uses: actions/deploy-pages@v4
