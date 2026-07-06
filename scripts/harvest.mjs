@@ -95,11 +95,13 @@ function backlogFor(m, issues, prs) {
 }
 
 function docsFor(m, fullName, branch) {
+  // d.path → linked in-place in this repo; d.url → an absolute link, for docs
+  // that live elsewhere (e.g. the central Knitweb/docs repo).
   return (m.docs || []).map((d) => ({
-    title: d.title || d.path,
+    title: d.title || d.path || d.url,
     stage: d.stage || "",
-    url: `https://github.com/${fullName}/blob/${branch}/${d.path}`,
-    path: d.path,
+    url: d.url || `https://github.com/${fullName}/blob/${branch}/${d.path}`,
+    path: d.path || (d.url || "").replace(/^https?:\/\/github\.com\//, ""),
   }));
 }
 
