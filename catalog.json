@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-06T19:22:54.344Z",
+  "generated": "2026-07-06T21:14:34.318Z",
   "fieldCount": 12,
   "fields": [
     {
@@ -2733,7 +2733,10 @@
           ],
           "goal": "Parse/serialize/sign/verify voor knit/1, fiber/1, vote/1 exact volgens §A4, met bevroren golden vectors.",
           "status": "done",
-          "pr": null
+          "pr": {
+            "number": 20,
+            "url": "https://github.com/Knitweb/knitweb/pull/20"
+          }
         },
         {
           "number": 5,
@@ -2745,8 +2748,11 @@
             "nacht-3"
           ],
           "goal": "`dist/index.html` toont hero, live fabric-strip (uit `stats.json`), field-grid (uit configs, gesorteerd op `order`, hidden uitgefilterd, teaser gebadged), explorer-teaser met client-side zoek over `*/knits.json`.",
-          "status": "queued",
-          "pr": null
+          "status": "review",
+          "pr": {
+            "number": 21,
+            "url": "https://github.com/Knitweb/knitweb/pull/21"
+          }
         },
         {
           "number": 6,
@@ -2817,7 +2823,7 @@
       "counts": {
         "docs": 1,
         "open": 5,
-        "review": 0,
+        "review": 1,
         "done": 5
       }
     },
@@ -3756,7 +3762,7 @@
           "number": 56,
           "title": "feat: seed the shared fabric with a full elementary-science/chemistry knowledge graph (machine-woven)",
           "url": "https://github.com/Knitweb/molgang/issues/56",
-          "state": "open",
+          "state": "closed",
           "labels": [
             "area:molgang",
             "area:knitweb",
@@ -3766,7 +3772,7 @@
             "MoSCoW: Could"
           ],
           "goal": "Weave a comprehensive elementary chemistry graph (elements, compounds, properties, classifications, reactions) into the real p2p fabric show",
-          "status": "queued",
+          "status": "done",
           "pr": null
         },
         {
@@ -4627,7 +4633,7 @@
           "number": 119,
           "title": "feat: accessibility pass + RTL/base-direction in the bar chrome (a11y)",
           "url": "https://github.com/Knitweb/molgang/issues/119",
-          "state": "open",
+          "state": "closed",
           "labels": [
             "enhancement",
             "area:molgang",
@@ -4636,7 +4642,7 @@
             "MoSCoW: Should"
           ],
           "goal": "The bar relies on colour, emoji and title attributes with no ARIA, the vote/knit controls are not announced, focus order is unmanaged, and b",
-          "status": "queued",
+          "status": "done",
           "pr": null
         },
         {
@@ -4731,7 +4737,7 @@
           "number": 125,
           "title": "feat: define and enforce latency + quorum-settle budgets (SLOs) with alerts",
           "url": "https://github.com/Knitweb/molgang/issues/125",
-          "state": "open",
+          "state": "closed",
           "labels": [
             "documentation",
             "area:molgang",
@@ -4741,7 +4747,7 @@
             "track-m"
           ],
           "goal": "Load numbers are meaningless without a target. There is no definition anywhere of how fast a knit must settle or how slow /api may get befor",
-          "status": "queued",
+          "status": "done",
           "pr": null
         },
         {
@@ -4783,7 +4789,7 @@
           "number": 128,
           "title": "docs: define the 1M-concurrent measurement standard and the GTA6 win condition",
           "url": "https://github.com/Knitweb/molgang/issues/128",
-          "state": "open",
+          "state": "closed",
           "labels": [
             "documentation",
             "area:molgang",
@@ -4792,7 +4798,7 @@
             "MoSCoW: Must"
           ],
           "goal": "Before we can claim we beat GTA6 we need an unambiguous, auditable definition of what \"concurrent peer\" means and what counts as the win. GT",
-          "status": "queued",
+          "status": "done",
           "pr": null
         },
         {
@@ -4903,7 +4909,7 @@
           "number": 135,
           "title": "docs: launch runbook, on-call rotation, and post-launch live-ops",
           "url": "https://github.com/Knitweb/molgang/issues/135",
-          "state": "open",
+          "state": "closed",
           "labels": [
             "documentation",
             "area:molgang",
@@ -4913,7 +4919,7 @@
             "MoSCoW: Should"
           ],
           "goal": "A 1M-peer wave must be operable, not just provable. We need a single launch runbook covering go/no-go, region scale-up/down, faucet dial con",
-          "status": "queued",
+          "status": "done",
           "pr": null
         },
         {
@@ -4972,7 +4978,7 @@
           "number": 139,
           "title": "docs/legal: COPPA/GDPR-K compliance — age gate, consent, data-retention, right-to-erasure",
           "url": "https://github.com/Knitweb/molgang/issues/139",
-          "state": "open",
+          "state": "closed",
           "labels": [
             "documentation",
             "area:molgang",
@@ -4982,14 +4988,14 @@
             "area:safety"
           ],
           "goal": "Gap issue G4 — surfaced by the Sprint 3-10 coherence/gap analysis (road to 1M concurrent peers).",
-          "status": "queued",
+          "status": "done",
           "pr": null
         },
         {
           "number": 140,
           "title": "security/safety: content moderation — report/quarantine/takedown + profanity/PII filter on woven terms",
           "url": "https://github.com/Knitweb/molgang/issues/140",
-          "state": "open",
+          "state": "closed",
           "labels": [
             "area:molgang",
             "type:security",
@@ -4998,14 +5004,14 @@
             "area:safety"
           ],
           "goal": "Gap issue G3 — surfaced by the Sprint 3-10 coherence/gap analysis (road to 1M concurrent peers).",
-          "status": "queued",
+          "status": "done",
           "pr": null
         },
         {
           "number": 141,
           "title": "security: account/identity recovery — recovery phrase / social-attestation rebind (non-custodial)",
           "url": "https://github.com/Knitweb/molgang/issues/141",
-          "state": "open",
+          "state": "closed",
           "labels": [
             "area:molgang",
             "type:security",
@@ -5013,7 +5019,7 @@
             "MoSCoW: Should"
           ],
           "goal": "Gap issue G2 — surfaced by the Sprint 3-10 coherence/gap analysis (road to 1M concurrent peers).",
-          "status": "queued",
+          "status": "done",
           "pr": null
         },
         {
@@ -5069,7 +5075,7 @@
           "number": 145,
           "title": "docs: cost model + peer-relay incentive crossover (bound launch $; decentralization economics)",
           "url": "https://github.com/Knitweb/molgang/issues/145",
-          "state": "open",
+          "state": "closed",
           "labels": [
             "area:molgang",
             "type:docs",
@@ -5078,7 +5084,7 @@
             "type:economy"
           ],
           "goal": "Gap issue G7 — surfaced by the Sprint 3-10 coherence/gap analysis (road to 1M concurrent peers).",
-          "status": "queued",
+          "status": "done",
           "pr": null
         },
         {
@@ -5253,18 +5259,18 @@
           "number": 225,
           "title": "lab-3d: join without device id — PLS balance is guest-only and dies on server restart",
           "url": "https://github.com/Knitweb/molgang/issues/225",
-          "state": "open",
+          "state": "closed",
           "labels": [],
           "goal": "Found while fixing the certificate 0-PLS bug (#224). web/lab-3d.html calls /api/join without a device id (unlike web/app.js, which sends the",
-          "status": "queued",
+          "status": "done",
           "pr": null
         }
       ],
       "counts": {
         "docs": 6,
-        "open": 50,
+        "open": 40,
         "review": 0,
-        "done": 75
+        "done": 85
       }
     },
     {
@@ -5793,12 +5799,12 @@
           "number": 70,
           "title": "p2p: DHT keyspace eclipse — node_id=sha256(pubkey) is grindable; consider S/Kademlia crypto-puzzle (Refs #60 #68)",
           "url": "https://github.com/Knitweb/pulse/issues/70",
-          "state": "open",
+          "state": "closed",
           "labels": [
             "MoSCoW: Should"
           ],
           "goal": "From the #68 review: Kademlia derives nodeid = sha256(pubkey) and keys are free to mint, so an attacker can grind keypairs until their id la",
-          "status": "queued",
+          "status": "done",
           "pr": null
         },
         {
@@ -5893,14 +5899,14 @@
           "number": 88,
           "title": "📋 COORDINATION — two-track dev plan (Codex=molgang · Claude Code=pulse)",
           "url": "https://github.com/Knitweb/pulse/issues/88",
-          "state": "open",
+          "state": "closed",
           "labels": [
             "MoSCoW: Should",
             "track-p",
             "coordination"
           ],
           "goal": "Collision-free decomposition for two parallel dev sessions across separate GitHub repositories. Verified disjoint file trees ⇒ zero edit col",
-          "status": "queued",
+          "status": "done",
           "pr": null
         },
         {
@@ -6242,7 +6248,7 @@
           "number": 120,
           "title": "[IL-110] Canonical quantization of reputation → integer bytecode weight",
           "url": "https://github.com/Knitweb/pulse/issues/120",
-          "state": "open",
+          "state": "closed",
           "labels": [
             "MoSCoW: Could",
             "track-p",
@@ -6250,7 +6256,7 @@
             "settlement"
           ],
           "goal": "⛔ Blocked by: #119 (IL-109)",
-          "status": "queued",
+          "status": "done",
           "pr": null
         },
         {
@@ -6763,24 +6769,24 @@
           "number": 202,
           "title": "settlement: payee-pull refund claims over p2p",
           "url": "https://github.com/Knitweb/pulse/issues/202",
-          "state": "open",
+          "state": "closed",
           "labels": [
             "MoSCoW: Should"
           ],
           "goal": "Follows the merged settlement RFC #187.",
-          "status": "queued",
+          "status": "done",
           "pr": null
         },
         {
           "number": 203,
           "title": "settlement: optional expiry, forfeiture, and fee policies",
           "url": "https://github.com/Knitweb/pulse/issues/203",
-          "state": "open",
+          "state": "closed",
           "labels": [
             "MoSCoW: Could"
           ],
           "goal": "Follows the merged settlement RFC #187.",
-          "status": "queued",
+          "status": "done",
           "pr": null
         },
         {
@@ -7094,13 +7100,23 @@
           "goal": "Non-custodial signed order intents, gossip merge rules, expiry, escrow terms, and settlement proof states.",
           "status": "queued",
           "pr": null
+        },
+        {
+          "number": 337,
+          "title": "5mart.ml relay API not reachable: 404 on /api/relay/{send,fetch,health}",
+          "url": "https://github.com/Knitweb/pulse/issues/337",
+          "state": "open",
+          "labels": [],
+          "goal": "FinField's feed-head announce hits 404 on https://5mart.ml/api/relay/send (also /fetch and /health, and www + /relay/ variants — Apache erro",
+          "status": "queued",
+          "pr": null
         }
       ],
       "counts": {
         "docs": 3,
-        "open": 27,
+        "open": 23,
         "review": 0,
-        "done": 99
+        "done": 104
       }
     },
     {
