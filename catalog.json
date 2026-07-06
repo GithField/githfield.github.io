@@ -1,6 +1,6 @@
 {
-  "generated": "2026-07-06T11:40:26.533Z",
-  "fieldCount": 5,
+  "generated": "2026-07-06T11:49:18.537Z",
+  "fieldCount": 7,
   "fields": [
     {
       "field": "chemfield",
@@ -1462,6 +1462,257 @@
         "open": 10,
         "review": 0,
         "done": 6
+      }
+    },
+    {
+      "field": "lens",
+      "name": "Lens",
+      "accent": "#b07fd0",
+      "summary": "Reasoning lobe — retrieve + distill, provenance-cited, calibrated confidence",
+      "homepage": "https://knitweb.art",
+      "project": "",
+      "repo": "Knitweb/lens",
+      "group_by": "",
+      "docs": [
+        {
+          "title": "Lens overview",
+          "stage": "reference",
+          "url": "https://github.com/Knitweb/docs/blob/main/lens/README.md",
+          "path": "Knitweb/docs/blob/main/lens/README.md"
+        }
+      ],
+      "backlog": [
+        {
+          "number": 1,
+          "title": "Add LightRAG/Neo4j graph-row adapter examples",
+          "url": "https://github.com/Knitweb/lens/issues/1",
+          "state": "closed",
+          "labels": [
+            "documentation",
+            "good first issue",
+            "area:adapter",
+            "type:test"
+          ],
+          "goal": "Add docs and tests showing how MappingRowsAdapter consumes graph query rows from LightRAG or Neo4j-style responses. No live database depende",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 2,
+          "title": "Add Pulse JSON-LD fixture from a real Web export",
+          "url": "https://github.com/Knitweb/lens/issues/2",
+          "state": "closed",
+          "labels": [
+            "enhancement",
+            "good first issue",
+            "area:adapter",
+            "type:test",
+            "prio:med"
+          ],
+          "goal": "Create a small fixture that mirrors Pulse exportweb output and add an integration test proving JsonLdAdapter preserves CIDs, records, outgoi",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 3,
+          "title": "Improve GitHub Pages with runnable examples",
+          "url": "https://github.com/Knitweb/lens/issues/3",
+          "state": "closed",
+          "labels": [
+            "documentation",
+            "good first issue",
+            "area:docs"
+          ],
+          "goal": "Extend docs/index.html or linked docs with concise runnable CLI/API examples and a clearer contribution path. Keep the page static and avoid",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 4,
+          "title": "Design optional live LLM adapter boundary",
+          "url": "https://github.com/Knitweb/lens/issues/4",
+          "state": "closed",
+          "labels": [
+            "enhancement",
+            "help wanted",
+            "type:spec",
+            "control-surface",
+            "area:server"
+          ],
+          "goal": "Draft a small proposal for optional live LLM adapters while keeping OfflineLLMAdapter as the default. The proposal should cover API keys, te",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 5,
+          "title": "Epic: Reliability layer for the Lens LRM — calibrated confidence, abstention & source-trust",
+          "url": "https://github.com/Knitweb/lens/issues/5",
+          "state": "closed",
+          "labels": [
+            "enhancement",
+            "help wanted",
+            "type:spec",
+            "area:reliability",
+            "prio:high"
+          ],
+          "goal": "Lens returns provenance-cited answers by deterministically ranking fabric chunks. For an agentic consumer driving a MeTTa/Hyperon-inspired L",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 6,
+          "title": "Calibrated confidence score on /interpret answers (integer, deterministic)",
+          "url": "https://github.com/Knitweb/lens/issues/6",
+          "state": "closed",
+          "labels": [
+            "enhancement",
+            "good first issue",
+            "help wanted",
+            "area:reliability",
+            "prio:med"
+          ],
+          "goal": "Part of the reliability epic (#5).",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 7,
+          "title": "Abstention gate: return 'insufficient grounded support' below a confidence/citation threshold",
+          "url": "https://github.com/Knitweb/lens/issues/7",
+          "state": "closed",
+          "labels": [
+            "enhancement",
+            "good first issue",
+            "area:reliability",
+            "prio:med"
+          ],
+          "goal": "Part of the reliability epic (#5). Builds on the confidence score.",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 8,
+          "title": "Source-trust weighting + reliability eval harness (calibration, abstention, citation-faithfulness)",
+          "url": "https://github.com/Knitweb/lens/issues/8",
+          "state": "closed",
+          "labels": [
+            "enhancement",
+            "help wanted",
+            "area:reliability",
+            "prio:high",
+            "type:test"
+          ],
+          "goal": "Part of the reliability epic (#5).",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 9,
+          "title": "Add ActivityStreams fixture set for human/agent social exports",
+          "url": "https://github.com/Knitweb/lens/issues/9",
+          "state": "closed",
+          "labels": [
+            "good first issue",
+            "help wanted",
+            "area:adapter",
+            "type:test"
+          ],
+          "goal": "",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 10,
+          "title": "Add OriginTrail resolved Knowledge Asset fixture examples",
+          "url": "https://github.com/Knitweb/lens/issues/10",
+          "state": "closed",
+          "labels": [
+            "good first issue",
+            "help wanted",
+            "area:adapter",
+            "type:test"
+          ],
+          "goal": "",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 11,
+          "title": "Add Hyperon/MeTTa atom export adapter example",
+          "url": "https://github.com/Knitweb/lens/issues/11",
+          "state": "closed",
+          "labels": [
+            "documentation",
+            "help wanted",
+            "area:adapter",
+            "type:test"
+          ],
+          "goal": "",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 13,
+          "title": "Complete the AS/OriginTrail fixtures from #12 (assertion/asset ids, urn:agent, adapter tests)",
+          "url": "https://github.com/Knitweb/lens/issues/13",
+          "state": "closed",
+          "labels": [
+            "enhancement",
+            "good first issue"
+          ],
+          "goal": "Follow-up to #12 (merged) — captures the round-1 review points that landed after the fixtures were already merged, so #9/#10's acceptance cr",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 14,
+          "title": "LENS agentic player loop: NPCs as first-class peers",
+          "url": "https://github.com/Knitweb/lens/issues/14",
+          "state": "open",
+          "labels": [
+            "roadmap:top10",
+            "phase:P2"
+          ],
+          "goal": "Make agentic LLMs first-class molgang players via LENS (plan §7, §10) — they knit the same records, sign with the same keys, pass the same gates.",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 15,
+          "title": "[Epic] Content-addressed agent memory: one shared memory for Claude Code / Cursor / Aider / Codex",
+          "url": "https://github.com/Knitweb/lens/issues/15",
+          "state": "open",
+          "labels": [],
+          "goal": "Make Knitweb the single, content-addressed memory that every AI coding agent reads from and writes back to, so Claude Code, Cursor, Aider, a",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 16,
+          "title": "Role-driven feature backlog — from the 100-professions field guide",
+          "url": "https://github.com/Knitweb/lens/issues/16",
+          "state": "closed",
+          "labels": [],
+          "goal": "Aggregated from 490 feature requests across the [100-professions field guide](https://knitweb.github.io/professions100.html), deduplicated t",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 20,
+          "title": "feat(lens): relevance gate + triangular bridge synthesis API for multi-agent ring",
+          "url": "https://github.com/Knitweb/lens/issues/20",
+          "state": "open",
+          "labels": [],
+          "goal": "Vereist voor de autonome agent-ring (pulse#270). Lens moet twee nieuwe capabilities bieden:",
+          "status": "queued",
+          "pr": null
+        }
+      ],
+      "counts": {
+        "docs": 1,
+        "open": 3,
+        "review": 0,
+        "done": 13
       }
     },
     {
@@ -3468,6 +3719,61 @@
         "open": 55,
         "review": 0,
         "done": 70
+      }
+    },
+    {
+      "field": "monitor",
+      "name": "Monitor",
+      "accent": "#46c4ad",
+      "summary": "Observability — health, explorer, trustless state-root",
+      "homepage": "https://knitweb.art",
+      "project": "",
+      "repo": "Knitweb/monitor",
+      "group_by": "",
+      "docs": [
+        {
+          "title": "Overview",
+          "stage": "reference",
+          "url": "https://github.com/Knitweb/docs/blob/main/monitor/overview.md",
+          "path": "Knitweb/docs/blob/main/monitor/overview.md"
+        },
+        {
+          "title": "Select a chem web",
+          "stage": "guide",
+          "url": "https://github.com/Knitweb/docs/blob/main/monitor/how-to-select-chem-web.md",
+          "path": "Knitweb/docs/blob/main/monitor/how-to-select-chem-web.md"
+        }
+      ],
+      "backlog": [
+        {
+          "number": 1,
+          "title": "MONITOR-as-product: locally-verifiable trust dashboards",
+          "url": "https://github.com/Knitweb/monitor/issues/1",
+          "state": "open",
+          "labels": [
+            "roadmap:top10",
+            "phase:P1"
+          ],
+          "goal": "Turn `monitor` into a user-facing **trust instrument** — for a serverless dapp, users need trust without a central authority (plan §8).",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 4,
+          "title": "Role-driven feature backlog — from the 100-professions field guide",
+          "url": "https://github.com/Knitweb/monitor/issues/4",
+          "state": "open",
+          "labels": [],
+          "goal": "Aggregated from 490 feature requests across the [100-professions field guide](https://knitweb.github.io/professions100.html), deduplicated t",
+          "status": "queued",
+          "pr": null
+        }
+      ],
+      "counts": {
+        "docs": 2,
+        "open": 2,
+        "review": 0,
+        "done": 0
       }
     }
   ]
