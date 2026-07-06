@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-06T22:37:57.646Z",
+  "generated": "2026-07-06T23:44:05.178Z",
   "fieldCount": 12,
   "fields": [
     {
@@ -2906,10 +2906,10 @@
           "number": 30,
           "title": "backlog: deep tax modules — EU East + Baltics (PL/CZ/HU/RO/BG/HR/SK/SI/LT/LV/EE/LU/MT/CY/GR)",
           "url": "https://github.com/ledgerfield/ledgerfield/issues/30",
-          "state": "open",
+          "state": "closed",
           "labels": [],
           "goal": "Countries have schema + params.json. Need cit.py + iit.py + vat.py.",
-          "status": "queued",
+          "status": "done",
           "pr": null
         },
         {
@@ -3005,9 +3005,9 @@
       ],
       "counts": {
         "docs": 0,
-        "open": 8,
+        "open": 7,
         "review": 0,
-        "done": 8
+        "done": 9
       }
     },
     {
