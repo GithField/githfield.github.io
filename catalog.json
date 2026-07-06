@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-06T15:25:25.937Z",
+  "generated": "2026-07-06T17:28:31.879Z",
   "fieldCount": 12,
   "fields": [
     {
@@ -4123,7 +4123,7 @@
           "number": 88,
           "title": "feat(p2p): structured Kademlia routing table over the existing PEX directory",
           "url": "https://github.com/Knitweb/molgang/issues/88",
-          "state": "open",
+          "state": "closed",
           "labels": [
             "enhancement",
             "area:knitweb",
@@ -4133,14 +4133,14 @@
             "MoSCoW: Must"
           ],
           "goal": "Peer discovery today is flat peer-exchange (src/knitweb/p2p/discovery.py): a node merges every peer it hears about into an unbounded PeerDir",
-          "status": "queued",
+          "status": "done",
           "pr": null
         },
         {
           "number": 89,
           "title": "feat(p2p): STUN-assisted hole-punch transport so NAT'd peers serve without the relay",
           "url": "https://github.com/Knitweb/molgang/issues/89",
-          "state": "open",
+          "state": "closed",
           "labels": [
             "enhancement",
             "area:knitweb",
@@ -4150,7 +4150,7 @@
             "MoSCoW: Must"
           ],
           "goal": "Home peers sit behind NAT, so today they can only be reached via the RelayTransport HTTP store-and-forward mailbox on 5mart.ml (src/knitweb/",
-          "status": "queued",
+          "status": "done",
           "pr": null
         },
         {
@@ -4174,7 +4174,7 @@
           "number": 91,
           "title": "feat(fabric): partial Merkle range proofs for FabricNode catch-up sync",
           "url": "https://github.com/Knitweb/molgang/issues/91",
-          "state": "open",
+          "state": "closed",
           "labels": [
             "enhancement",
             "area:knitweb",
@@ -4184,7 +4184,7 @@
             "MoSCoW: Must"
           ],
           "goal": "When a node joins late it calls FabricNode.syncfrom, which pulls the peer's entire record set (servesync re-signs and ships every node in th",
-          "status": "queued",
+          "status": "done",
           "pr": null
         },
         {
@@ -5262,9 +5262,9 @@
       ],
       "counts": {
         "docs": 6,
-        "open": 54,
+        "open": 51,
         "review": 0,
-        "done": 71
+        "done": 74
       }
     },
     {
@@ -5798,8 +5798,11 @@
             "MoSCoW: Should"
           ],
           "goal": "From the #68 review: Kademlia derives nodeid = sha256(pubkey) and keys are free to mint, so an attacker can grind keypairs until their id la",
-          "status": "queued",
-          "pr": null
+          "status": "review",
+          "pr": {
+            "number": 329,
+            "url": "https://github.com/Knitweb/pulse/pull/329"
+          }
         },
         {
           "number": 71,
@@ -6806,8 +6809,11 @@
             "phase:P0"
           ],
           "goal": "Lock byte-stable CIDs for the chemistry node/edge canonical record types BEFORE the molgang plugin and its seed graph land — this is the hard coordination gate (molgang depends on stable CIDs).",
-          "status": "queued",
-          "pr": null
+          "status": "review",
+          "pr": {
+            "number": 328,
+            "url": "https://github.com/Knitweb/pulse/pull/328"
+          }
         },
         {
           "number": 211,
@@ -6988,8 +6994,11 @@
             "enhancement"
           ],
           "goal": "- tests/testversiondrift.py imports knitweb.version and reads the pinned version from molgang's pyproject.toml",
-          "status": "queued",
-          "pr": null
+          "status": "review",
+          "pr": {
+            "number": 326,
+            "url": "https://github.com/Knitweb/pulse/pull/326"
+          }
         },
         {
           "number": 305,
@@ -7099,7 +7108,7 @@
       "counts": {
         "docs": 3,
         "open": 28,
-        "review": 0,
+        "review": 3,
         "done": 98
       }
     },
