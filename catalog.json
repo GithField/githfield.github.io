@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-06T21:14:34.318Z",
+  "generated": "2026-07-06T22:37:57.646Z",
   "fieldCount": 12,
   "fields": [
     {
@@ -2733,26 +2733,20 @@
           ],
           "goal": "Parse/serialize/sign/verify voor knit/1, fiber/1, vote/1 exact volgens §A4, met bevroren golden vectors.",
           "status": "done",
-          "pr": {
-            "number": 20,
-            "url": "https://github.com/Knitweb/knitweb/pull/20"
-          }
+          "pr": null
         },
         {
           "number": 5,
           "title": "KW-004 · Hub-pagina (knitweb.art) conform wireframe §2.1",
           "url": "https://github.com/Knitweb/knitweb/issues/5",
-          "state": "open",
+          "state": "closed",
           "labels": [
             "agent",
             "nacht-3"
           ],
           "goal": "`dist/index.html` toont hero, live fabric-strip (uit `stats.json`), field-grid (uit configs, gesorteerd op `order`, hidden uitgefilterd, teaser gebadged), explorer-teaser met client-side zoek over `*/knits.json`.",
-          "status": "review",
-          "pr": {
-            "number": 21,
-            "url": "https://github.com/Knitweb/knitweb/pull/21"
-          }
+          "status": "done",
+          "pr": null
         },
         {
           "number": 6,
@@ -2771,13 +2765,13 @@
           "number": 7,
           "title": "KW-005 · Field-paginatemplate conform wireframe §2.2 (chemfield)",
           "url": "https://github.com/Knitweb/knitweb/issues/7",
-          "state": "open",
+          "state": "closed",
           "labels": [
             "agent",
             "nacht-4"
           ],
           "goal": "`/chemfield/` rendert Top-knits-lijst (sorteer: score/nieuw/betwist), knit-detailpaneel, fiber-kaart-placeholder (paneel met adjacency-lijst, nog geen graafviz), en het indien-formulier met **hash-preview vóór signeren**.",
-          "status": "queued",
+          "status": "done",
           "pr": null
         },
         {
@@ -2822,9 +2816,9 @@
       ],
       "counts": {
         "docs": 1,
-        "open": 5,
-        "review": 1,
-        "done": 5
+        "open": 3,
+        "review": 0,
+        "done": 7
       }
     },
     {
@@ -2922,20 +2916,20 @@
           "number": 31,
           "title": "backlog: deep tax modules — Middle East + Turkey + Israel (SA/AE/QA/KW/BH/OM/IL/TR/JO)",
           "url": "https://github.com/ledgerfield/ledgerfield/issues/31",
-          "state": "open",
+          "state": "closed",
           "labels": [],
           "goal": "Countries have schema + params.json. Need:",
-          "status": "queued",
+          "status": "done",
           "pr": null
         },
         {
           "number": 32,
           "title": "backlog: deep tax modules — Southeast + South Asia (ID/TH/MY/PH/VN/PK/BD/LK/MM/KH)",
           "url": "https://github.com/ledgerfield/ledgerfield/issues/32",
-          "state": "open",
+          "state": "closed",
           "labels": [],
           "goal": "Countries have schema + params.json. Need cit.py + iit.py + vat.py.",
-          "status": "queued",
+          "status": "done",
           "pr": null
         },
         {
@@ -3011,9 +3005,9 @@
       ],
       "counts": {
         "docs": 0,
-        "open": 10,
+        "open": 8,
         "review": 0,
-        "done": 6
+        "done": 8
       }
     },
     {
@@ -5264,11 +5258,21 @@
           "goal": "Found while fixing the certificate 0-PLS bug (#224). web/lab-3d.html calls /api/join without a device id (unlike web/app.js, which sends the",
           "status": "done",
           "pr": null
+        },
+        {
+          "number": 255,
+          "title": "Classic render layer: sanitize innerHTML sinks (11 CodeQL js/xss, web/app.js + i18n.js — mirrored in serverless/web vendored copies)",
+          "url": "https://github.com/Knitweb/molgang/issues/255",
+          "state": "open",
+          "labels": [],
+          "goal": "CodeQL has 11 open js/xss errors in web/app.js (lines ~474–811) plus js/xss-through-dom in web/i18n.js:100 — player-influenced values (names",
+          "status": "queued",
+          "pr": null
         }
       ],
       "counts": {
         "docs": 6,
-        "open": 40,
+        "open": 41,
         "review": 0,
         "done": 85
       }
@@ -7110,11 +7114,21 @@
           "goal": "FinField's feed-head announce hits 404 on https://5mart.ml/api/relay/send (also /fetch and /health, and www + /relay/ variants — Apache erro",
           "status": "queued",
           "pr": null
+        },
+        {
+          "number": 338,
+          "title": "Feed.append mints+signs a FeedHead per append — O(n²) rebuild for large feeds",
+          "url": "https://github.com/Knitweb/pulse/issues/338",
+          "state": "open",
+          "labels": [],
+          "goal": "Feed.append ends with return self.head(): every append recomputes the merkle root over all entries AND signs a head. Rebuilding a 93k-record",
+          "status": "queued",
+          "pr": null
         }
       ],
       "counts": {
         "docs": 3,
-        "open": 23,
+        "open": 24,
         "review": 0,
         "done": 104
       }
