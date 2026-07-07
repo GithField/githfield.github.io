@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-07T02:40:15.054Z",
+  "generated": "2026-07-07T05:50:36.907Z",
   "fieldCount": 20,
   "fields": [
     {
@@ -1873,11 +1873,21 @@
           "goal": "The MacroLens (FinField/lens) reads macro facts — convention: entities \"XX MACRO\" (asset=\"macro\"), concepts finfield:policyrate, finfield:cp",
           "status": "done",
           "pr": null
+        },
+        {
+          "number": 7,
+          "title": "stooq-eod degraded: stooq.com now fronts a JS proof-of-work anti-bot wall",
+          "url": "https://github.com/FinField/scrapers/issues/7",
+          "state": "open",
+          "labels": [],
+          "goal": "As of tonight (2026-07-07), https://stooq.com/q/d/l/?s=aapl.us&i=d no longer returns CSV to plain HTTP clients — it serves a JavaScript SHA-",
+          "status": "queued",
+          "pr": null
         }
       ],
       "counts": {
         "docs": 0,
-        "open": 1,
+        "open": 2,
         "review": 0,
         "done": 2
       }
@@ -3153,20 +3163,20 @@
           "number": 34,
           "title": "backlog: deep tax modules — Latin America (CL/CO/PE/VE/EC/BO/PY/UY/CR/PA/GT/HN/NI/SV/DO/JM/TT)",
           "url": "https://github.com/ledgerfield/ledgerfield/issues/34",
-          "state": "open",
+          "state": "closed",
           "labels": [],
           "goal": "Countries have schema + params.json. Need cit.py + iit.py + vat.py.",
-          "status": "queued",
+          "status": "done",
           "pr": null
         },
         {
           "number": 35,
           "title": "backlog: payroll modules — JP/CN/CA/SG/AU",
           "url": "https://github.com/ledgerfield/ledgerfield/issues/35",
-          "state": "open",
+          "state": "closed",
           "labels": [],
           "goal": "Only NL has a full payslip generator. Add for deep-tax countries:",
-          "status": "queued",
+          "status": "done",
           "pr": null
         },
         {
@@ -3183,10 +3193,10 @@
           "number": 37,
           "title": "backlog: filing / tax-return modules — UK/US/DE/FR/JP/CN",
           "url": "https://github.com/ledgerfield/ledgerfield/issues/37",
-          "state": "open",
+          "state": "closed",
           "labels": [],
           "goal": "NL has VPBAangifte + IBAangifte. Add for:",
-          "status": "queued",
+          "status": "done",
           "pr": null
         },
         {
@@ -3203,18 +3213,18 @@
           "number": 39,
           "title": "backlog: verify + complete remaining 80+ country stubs (AL/AM/AZ/BA/GE/KG/KZ/ME/MK/MN/TJ/TM/UA/UZ/RS/RU/FJ/PG/NP + OHADA)",
           "url": "https://github.com/ledgerfield/ledgerfield/issues/39",
-          "state": "open",
+          "state": "closed",
           "labels": [],
           "goal": "Countries currently have schema.py (20-account template) but params.json is AI-estimated, not source-verified. Need:",
-          "status": "queued",
+          "status": "done",
           "pr": null
         }
       ],
       "counts": {
         "docs": 0,
-        "open": 6,
+        "open": 2,
         "review": 0,
-        "done": 10
+        "done": 14
       }
     },
     {
