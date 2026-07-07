@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-07T15:34:39.102Z",
+  "generated": "2026-07-07T17:36:37.400Z",
   "fieldCount": 20,
   "fields": [
     {
@@ -3801,7 +3801,7 @@
           "number": 33,
           "title": "Commit the 4-language chemistry dataset + weave script + MULTILINGUAL.md",
           "url": "https://github.com/Knitweb/molgang/issues/33",
-          "state": "open",
+          "state": "closed",
           "labels": [
             "documentation",
             "area:molgang",
@@ -3810,7 +3810,7 @@
             "MoSCoW: Should"
           ],
           "goal": "Capture the workflow artifacts as repo assets: the 523-concept EN/RU/ZH/AR curriculum (13 topics, currently /tmp/chemcurriculum/), the weave",
-          "status": "queued",
+          "status": "done",
           "pr": null
         },
         {
@@ -5500,9 +5500,9 @@
       ],
       "counts": {
         "docs": 6,
-        "open": 41,
+        "open": 40,
         "review": 0,
-        "done": 85
+        "done": 86
       }
     },
     {
