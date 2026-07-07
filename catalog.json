@@ -1,6 +1,6 @@
 {
-  "generated": "2026-07-07T01:23:41.009Z",
-  "fieldCount": 12,
+  "generated": "2026-07-07T02:40:15.054Z",
+  "fieldCount": 20,
   "fields": [
     {
       "field": "bt",
@@ -1795,6 +1795,213 @@
       }
     },
     {
+      "field": "finfield",
+      "name": "FinField · facts",
+      "accent": "#3fb6a8",
+      "summary": "FinField data model — scaled-integer FinFacts (never floats), deterministic CIDs, 20k+ company universe, exact derived metrics",
+      "homepage": "https://finfield.github.io",
+      "project": "",
+      "repo": "FinField/facts",
+      "group_by": "",
+      "docs": [],
+      "backlog": [
+        {
+          "number": 1,
+          "title": "Derived pack: Fama–French ratios on free-float mcap, geo revenue segmentation, capex/opex",
+          "url": "https://github.com/FinField/facts/issues/1",
+          "state": "open",
+          "labels": [],
+          "goal": "Owner requirement (2026-07-06): extend finfacts.derive with: Fama & French-style ratios computed on FREE-FLOAT market capitalization (owner ",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 2,
+          "title": "Shares outstanding & crypto supply: integer, date-keyed facts",
+          "url": "https://github.com/FinField/facts/issues/2",
+          "state": "closed",
+          "labels": [],
+          "goal": "Owner requirement (2026-07-06): publish shares outstanding (equities) and circulating/total supply (crypto, base units) as INTEGER facts — t",
+          "status": "done",
+          "pr": null
+        }
+      ],
+      "counts": {
+        "docs": 0,
+        "open": 1,
+        "review": 0,
+        "done": 1
+      }
+    },
+    {
+      "field": "finfield",
+      "name": "FinField · scrapers",
+      "accent": "#3fb6a8",
+      "summary": "Ready-to-run FinField scrapers: SEC EDGAR fundamentals, Stooq equity prices, CoinGecko crypto — pure Python, normalized to FinFacts",
+      "homepage": "https://finfield.github.io",
+      "project": "",
+      "repo": "FinField/scrapers",
+      "group_by": "",
+      "docs": [],
+      "backlog": [
+        {
+          "number": 1,
+          "title": "Worldwide filing sources beyond SEC",
+          "url": "https://github.com/FinField/scrapers/issues/1",
+          "state": "open",
+          "labels": [],
+          "goal": "Owner requirement (2026-07-06): non-US filings are as important as SEC. Add FactSource adapters for: Europe (ESEF via filings.xbrl.org), Jap",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 4,
+          "title": "SIC classification facts from SEC submissions",
+          "url": "https://github.com/FinField/scrapers/issues/4",
+          "state": "closed",
+          "labels": [],
+          "goal": "The lens layer (FinField/lens, SectorLens/IndustryLens) consumes finfield:sic facts (integer SIC code, scale 0, unit \"pure\") but nothing pro",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 5,
+          "title": "Macro-economy source: ECB SDMX (rates, FX, HICP) for the MacroLens",
+          "url": "https://github.com/FinField/scrapers/issues/5",
+          "state": "closed",
+          "labels": [],
+          "goal": "The MacroLens (FinField/lens) reads macro facts — convention: entities \"XX MACRO\" (asset=\"macro\"), concepts finfield:policyrate, finfield:cp",
+          "status": "done",
+          "pr": null
+        }
+      ],
+      "counts": {
+        "docs": 0,
+        "open": 1,
+        "review": 0,
+        "done": 2
+      }
+    },
+    {
+      "field": "finfield",
+      "name": "FinField · knit",
+      "accent": "#3fb6a8",
+      "summary": "FinField knitweb domain plugin — knit your own financial facts P2P and vote on truth: pulse polls for exact facts, vank consensus for floats",
+      "homepage": "https://finfield.github.io",
+      "project": "",
+      "repo": "FinField/knit",
+      "group_by": "",
+      "docs": [],
+      "backlog": [],
+      "counts": {
+        "docs": 0,
+        "open": 0,
+        "review": 0,
+        "done": 0
+      }
+    },
+    {
+      "field": "finfield",
+      "name": "FinField · agents",
+      "accent": "#3fb6a8",
+      "summary": "FinField knitting agents — the 5mart.ml/finfield deployment where every scraper signs and weaves fresh facts on a schedule",
+      "homepage": "https://finfield.github.io",
+      "project": "",
+      "repo": "FinField/agents",
+      "group_by": "",
+      "docs": [],
+      "backlog": [
+        {
+          "number": 1,
+          "title": "Server deploy on 5mart.ml/finfield",
+          "url": "https://github.com/FinField/agents/issues/1",
+          "state": "open",
+          "labels": [],
+          "goal": "The package ships deploy/ (systemd unit, config.example.json, README) — the actual server step is open: create the finfield user, venv-insta",
+          "status": "queued",
+          "pr": null
+        }
+      ],
+      "counts": {
+        "docs": 0,
+        "open": 1,
+        "review": 0,
+        "done": 0
+      }
+    },
+    {
+      "field": "finfield",
+      "name": "FinField · signals",
+      "accent": "#3fb6a8",
+      "summary": "Numerai Signals features from FinField p2p field data — exact-math momentum/volatility/fundamentals, submit-ready exports",
+      "homepage": "https://finfield.github.io",
+      "project": "",
+      "repo": "FinField/signals",
+      "group_by": "",
+      "docs": [],
+      "backlog": [],
+      "counts": {
+        "docs": 0,
+        "open": 0,
+        "review": 0,
+        "done": 0
+      }
+    },
+    {
+      "field": "finfield",
+      "name": "FinField · crypto",
+      "accent": "#3fb6a8",
+      "summary": "Numerai Crypto features from vank-consensus crypto facts — exact math, tournament submission exports",
+      "homepage": "https://finfield.github.io",
+      "project": "",
+      "repo": "FinField/crypto",
+      "group_by": "",
+      "docs": [],
+      "backlog": [],
+      "counts": {
+        "docs": 0,
+        "open": 0,
+        "review": 0,
+        "done": 0
+      }
+    },
+    {
+      "field": "finfield",
+      "name": "FinField · web",
+      "accent": "#3fb6a8",
+      "summary": "FinField explorer — static provenance-first company pages built from the p2p field (per-fact source, CID, derived_from chain)",
+      "homepage": "https://finfield.github.io",
+      "project": "",
+      "repo": "FinField/web",
+      "group_by": "",
+      "docs": [],
+      "backlog": [],
+      "counts": {
+        "docs": 0,
+        "open": 0,
+        "review": 0,
+        "done": 0
+      }
+    },
+    {
+      "field": "finfield",
+      "name": "FinField · lens",
+      "accent": "#3fb6a8",
+      "summary": "FinField analyst lenses — sector/industry, country and macro digests for LLMs: read-only over the p2p web, every answer citing fact CIDs + snapshot state root (pulse Lens/RLM contract)",
+      "homepage": "https://finfield.github.io",
+      "project": "",
+      "repo": "FinField/lens",
+      "group_by": "",
+      "docs": [],
+      "backlog": [],
+      "counts": {
+        "docs": 0,
+        "open": 0,
+        "review": 0,
+        "done": 0
+      }
+    },
+    {
       "field": "gither",
       "name": "Gither",
       "accent": "#f05133",
@@ -2778,13 +2985,13 @@
           "number": 8,
           "title": "KW-008 · Ingest v1: seed-loader + chemfield-seed + vank-report-adapter (stub)",
           "url": "https://github.com/Knitweb/knitweb/issues/8",
-          "state": "open",
+          "state": "closed",
           "labels": [
             "agent",
             "nacht-5"
           ],
           "goal": "Build leest `seeds/*.seed.f1`, verifieert en indexeert; chemfield krijgt een startset van 12 knits + 6 fibers; `vank-report`-adapter parseert een `vank.report.v1`-JSON en genereert daaruit concept-knits (nog niet getekend — output naar `seeds/_drafts/`).",
-          "status": "queued",
+          "status": "done",
           "pr": null
         },
         {
@@ -2816,9 +3023,9 @@
       ],
       "counts": {
         "docs": 1,
-        "open": 3,
+        "open": 2,
         "review": 0,
-        "done": 7
+        "done": 8
       }
     },
     {
@@ -2936,10 +3143,10 @@
           "number": 33,
           "title": "backlog: deep tax modules — Africa (NG/EG/KE/GH/ET/TZ/MA/MU/ZM/RW/ZW/UG/SN/CI/CM/AO/MZ)",
           "url": "https://github.com/ledgerfield/ledgerfield/issues/33",
-          "state": "open",
+          "state": "closed",
           "labels": [],
           "goal": "Countries have schema + params.json. Need cit.py + iit.py + vat.py.",
-          "status": "queued",
+          "status": "done",
           "pr": null
         },
         {
@@ -3005,9 +3212,9 @@
       ],
       "counts": {
         "docs": 0,
-        "open": 7,
+        "open": 6,
         "review": 0,
-        "done": 9
+        "done": 10
       }
     },
     {
