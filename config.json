@@ -1,5 +1,11 @@
 {
-  "orgs": ["Knitweb", "ChemField", "ledgerfield", "fieldintelligence"],
+  "orgs": [
+    "Knitweb",
+    "ChemField",
+    "ledgerfield",
+    "fieldintelligence",
+    "FinField"
+  ],
   "manifest": "githfield.yml",
   "site": "https://githfield.github.io"
 }
