@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-08T20:08:29.490Z",
+  "generated": "2026-07-08T21:22:30.667Z",
   "fieldCount": 20,
   "fields": [
     {
@@ -3752,7 +3752,7 @@
           "number": 29,
           "title": "Django: live tables via Channels/websockets (drop polling)",
           "url": "https://github.com/Knitweb/molgang/issues/29",
-          "state": "open",
+          "state": "closed",
           "labels": [
             "area:molgang",
             "type:ui",
@@ -3762,7 +3762,7 @@
             "MoSCoW: Could"
           ],
           "goal": "Push table/spiral updates over Channels/websockets so tables update live without the 1.5s poll. molgangweb/molgangweb/asgi.py is stubbed as ",
-          "status": "queued",
+          "status": "done",
           "pr": null
         },
         {
@@ -3785,7 +3785,7 @@
           "number": 32,
           "title": "Multilingual term-nodes: tag with lang + base-direction (W3C design)",
           "url": "https://github.com/Knitweb/molgang/issues/32",
-          "state": "open",
+          "state": "closed",
           "labels": [
             "area:molgang",
             "area:knitweb",
@@ -3794,7 +3794,7 @@
             "MoSCoW: Should"
           ],
           "goal": "From the 4-language workflow's design (prior art = W3C RDF langString + BCP-47 + base-direction; OriginTrail/JSON-LD inherit it; no crypto d",
-          "status": "queued",
+          "status": "done",
           "pr": null
         },
         {
@@ -5500,9 +5500,9 @@
       ],
       "counts": {
         "docs": 6,
-        "open": 40,
+        "open": 38,
         "review": 0,
-        "done": 86
+        "done": 88
       }
     },
     {
