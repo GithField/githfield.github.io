@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-08T23:44:06.092Z",
+  "generated": "2026-07-09T01:15:46.309Z",
   "fieldCount": 20,
   "fields": [
     {
@@ -4504,7 +4504,7 @@
           "number": 97,
           "title": "feat(p2p): partition the knowledge graph into concept shards (no node holds all 523+ concepts)",
           "url": "https://github.com/Knitweb/molgang/issues/97",
-          "state": "open",
+          "state": "closed",
           "labels": [
             "enhancement",
             "area:molgang",
@@ -4515,7 +4515,7 @@
             "MoSCoW: Should"
           ],
           "goal": "Every relay's relaymessage table and every peer's World currently carry the WHOLE concept graph. At 1M peers and a growing multilingual KG (",
-          "status": "queued",
+          "status": "done",
           "pr": null
         },
         {
@@ -5500,9 +5500,9 @@
       ],
       "counts": {
         "docs": 6,
-        "open": 38,
+        "open": 37,
         "review": 0,
-        "done": 88
+        "done": 89
       }
     },
     {
