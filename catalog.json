@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-20T17:07:54.457Z",
+  "generated": "2026-07-20T19:06:11.945Z",
   "fieldCount": 17,
   "fields": [
     {
@@ -3600,8 +3600,8 @@
           "goal": "CodeQL has 11 open js/xss errors in web/app.js (lines ~474–811) plus js/xss-through-dom in web/i18n.js:100 — player-influenced values (names",
           "status": "review",
           "pr": {
-            "number": 276,
-            "url": "https://github.com/Knitweb/molgang/pull/276"
+            "number": 279,
+            "url": "https://github.com/Knitweb/molgang/pull/279"
           }
         }
       ],
