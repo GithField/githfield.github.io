@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-20T21:48:31.986Z",
+  "generated": "2026-07-20T23:13:35.017Z",
   "fieldCount": 17,
   "fields": [
     {
@@ -2383,7 +2383,7 @@
           "number": 83,
           "title": "PHP-UI Monitor tab parity — add the Monitor tab to the PHP/static dapp",
           "url": "https://github.com/Knitweb/molgang/issues/83",
-          "state": "open",
+          "state": "closed",
           "labels": [
             "enhancement",
             "area:molgang",
@@ -2395,7 +2395,7 @@
             "track-m"
           ],
           "goal": "The static web/ UI has a Monitor tab (data-view='monitor'), but the PHP/static dapp under php/public/ has Relay + Onboard endpoints and no M",
-          "status": "queued",
+          "status": "done",
           "pr": null
         },
         {
@@ -2570,7 +2570,7 @@
           "number": 95,
           "title": "feat(relay): multi-relay client — RelaySync fans out across a relay pool with failover",
           "url": "https://github.com/Knitweb/molgang/issues/95",
-          "state": "open",
+          "state": "closed",
           "labels": [
             "enhancement",
             "area:molgang",
@@ -2579,17 +2579,14 @@
             "MoSCoW: Must"
           ],
           "goal": "MOLGANG's RelaySync (src/molgang/relaysync.py) is bound to exactly one relay base (--relay), and webserver.py::startrelay wires a single Rel",
-          "status": "review",
-          "pr": {
-            "number": 271,
-            "url": "https://github.com/Knitweb/molgang/pull/271"
-          }
+          "status": "done",
+          "pr": null
         },
         {
           "number": 96,
           "title": "feat(relay): relay-to-relay anti-entropy reconciliation (gossip between relays)",
           "url": "https://github.com/Knitweb/molgang/issues/96",
-          "state": "open",
+          "state": "closed",
           "labels": [
             "enhancement",
             "area:molgang",
@@ -2598,11 +2595,8 @@
             "MoSCoW: Must"
           ],
           "goal": "Each relay (php/src/Relay.php over the relaymessage table) is an island: a message POSTed to 5mart.ml never reaches a second relay, so peers",
-          "status": "review",
-          "pr": {
-            "number": 274,
-            "url": "https://github.com/Knitweb/molgang/pull/274"
-          }
+          "status": "done",
+          "pr": null
         },
         {
           "number": 97,
@@ -2626,7 +2620,7 @@
           "number": 98,
           "title": "feat(p2p): region-aware load-balanced bootstrap + cross-region node registry",
           "url": "https://github.com/Knitweb/molgang/issues/98",
-          "state": "open",
+          "state": "closed",
           "labels": [
             "enhancement",
             "area:molgang",
@@ -2635,14 +2629,14 @@
             "MoSCoW: Should"
           ],
           "goal": "Bootstrap and presence live in one MySQL noderegistry on 5mart.ml (php/noderegistry.sql, Relay::online()/info()), so every new peer worldwid",
-          "status": "queued",
+          "status": "done",
           "pr": null
         },
         {
           "number": 99,
           "title": "feat(monitor): mesh dashboard — show all relays, regions, queue depth and convergence lag",
           "url": "https://github.com/Knitweb/molgang/issues/99",
-          "state": "open",
+          "state": "closed",
           "labels": [
             "area:molgang",
             "type:ui",
@@ -2652,14 +2646,14 @@
             "track-m"
           ],
           "goal": "The Monitor tab (src/molgang/monitor.py, /api/monitor) shows local node/p2p status and the KG, but assumes a single relay. As the mesh grows",
-          "status": "queued",
+          "status": "done",
           "pr": null
         },
         {
           "number": 100,
           "title": "test(e2e): multi-relay convergence + failover proof under concurrent load",
           "url": "https://github.com/Knitweb/molgang/issues/100",
-          "state": "open",
+          "state": "closed",
           "labels": [
             "area:molgang",
             "type:ci",
@@ -2669,7 +2663,7 @@
             "MoSCoW: Should"
           ],
           "goal": "There is convergence coverage for ONE relay (tests/testrelaysync.py FakeRelay; tests/e2e/molgange2e.py walk-in→knit→woven), but nothing prov",
-          "status": "queued",
+          "status": "done",
           "pr": null
         },
         {
@@ -3027,7 +3021,7 @@
           "number": 123,
           "title": "feat: Grafana dashboard + Prometheus scrape config for molgang peers and relays",
           "url": "https://github.com/Knitweb/molgang/issues/123",
-          "state": "open",
+          "state": "closed",
           "labels": [
             "enhancement",
             "area:molgang",
@@ -3038,7 +3032,7 @@
             "track-m"
           ],
           "goal": "Once /metrics exists (metrics issue) the numbers need a home. There is no monitoring/ or dashboard config in the repo. This issue ships a co",
-          "status": "queued",
+          "status": "done",
           "pr": null
         },
         {
@@ -3165,7 +3159,7 @@
           "number": 131,
           "title": "feat: public GTA6-comparison dashboard fed by real fleet telemetry",
           "url": "https://github.com/Knitweb/molgang/issues/131",
-          "state": "open",
+          "state": "closed",
           "labels": [
             "enhancement",
             "area:molgang",
@@ -3175,7 +3169,7 @@
             "MoSCoW: Must"
           ],
           "goal": "The headline marketing/proof surface: a public, live dashboard showing peers online, knits/sec, and useful-work throughput against the GTA6 ",
-          "status": "queued",
+          "status": "done",
           "pr": null
         },
         {
@@ -3595,21 +3589,18 @@
           "number": 255,
           "title": "Classic render layer: sanitize innerHTML sinks (11 CodeQL js/xss, web/app.js + i18n.js — mirrored in serverless/web vendored copies)",
           "url": "https://github.com/Knitweb/molgang/issues/255",
-          "state": "open",
+          "state": "closed",
           "labels": [],
           "goal": "CodeQL has 11 open js/xss errors in web/app.js (lines ~474–811) plus js/xss-through-dom in web/i18n.js:100 — player-influenced values (names",
-          "status": "review",
-          "pr": {
-            "number": 279,
-            "url": "https://github.com/Knitweb/molgang/pull/279"
-          }
+          "status": "done",
+          "pr": null
         }
       ],
       "counts": {
         "docs": 6,
-        "open": 37,
-        "review": 3,
-        "done": 89
+        "open": 28,
+        "review": 0,
+        "done": 98
       }
     },
     {
