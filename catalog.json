@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-20T08:17:32.473Z",
+  "generated": "2026-07-20T11:15:02.923Z",
   "fieldCount": 20,
   "fields": [
     {
@@ -6459,7 +6459,10 @@
           ],
           "goal": "⛔ Blocked by: #111, #115 (IL-101, IL-105)",
           "status": "done",
-          "pr": null
+          "pr": {
+            "number": 342,
+            "url": "https://github.com/Knitweb/pulse/pull/342"
+          }
         },
         {
           "number": 119,
