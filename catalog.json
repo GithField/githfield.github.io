@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-20T23:13:35.017Z",
+  "generated": "2026-07-21T00:08:23.609Z",
   "fieldCount": 17,
   "fields": [
     {
@@ -2647,7 +2647,10 @@
           ],
           "goal": "The Monitor tab (src/molgang/monitor.py, /api/monitor) shows local node/p2p status and the KG, but assumes a single relay. As the mesh grows",
           "status": "done",
-          "pr": null
+          "pr": {
+            "number": 287,
+            "url": "https://github.com/Knitweb/molgang/pull/287"
+          }
         },
         {
           "number": 100,
@@ -2969,7 +2972,7 @@
           "number": 120,
           "title": "test: e2e coverage for PWA install, offline, i18n, and mobile viewport",
           "url": "https://github.com/Knitweb/molgang/issues/120",
-          "state": "open",
+          "state": "closed",
           "labels": [
             "area:molgang",
             "type:ci",
@@ -2979,7 +2982,7 @@
             "MoSCoW: Should"
           ],
           "goal": "The existing headless e2e (tests/e2e/molgange2e.py) only covers walk-in → sit → knit → woven on a desktop viewport. None of this sprint's cl",
-          "status": "queued",
+          "status": "done",
           "pr": null
         },
         {
@@ -3598,9 +3601,9 @@
       ],
       "counts": {
         "docs": 6,
-        "open": 28,
+        "open": 27,
         "review": 0,
-        "done": 98
+        "done": 99
       }
     },
     {
@@ -3841,10 +3844,7 @@
           ],
           "goal": "The DePIN core: a spider advertises GPU/RAM, takes a job through pouw/scheduler, returns a verifiable result, and earns PLS via proof-of-use",
           "status": "done",
-          "pr": {
-            "number": 345,
-            "url": "https://github.com/Knitweb/pulse/pull/345"
-          }
+          "pr": null
         },
         {
           "number": 19,
