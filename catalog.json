@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-22T19:59:38.526Z",
+  "generated": "2026-07-22T21:21:27.665Z",
   "fieldCount": 17,
   "fields": [
     {
@@ -4271,7 +4271,10 @@
           ],
           "goal": "Severity: HIGH  ·  Track P (pulse)",
           "status": "done",
-          "pr": null
+          "pr": {
+            "number": 369,
+            "url": "https://github.com/Knitweb/pulse/pull/369"
+          }
         },
         {
           "number": 91,
