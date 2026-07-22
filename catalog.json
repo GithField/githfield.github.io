@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-22T21:21:27.665Z",
+  "generated": "2026-07-22T22:39:30.271Z",
   "fieldCount": 17,
   "fields": [
     {
@@ -380,18 +380,18 @@
           "number": 7,
           "title": "stooq-eod degraded: stooq.com now fronts a JS proof-of-work anti-bot wall",
           "url": "https://github.com/FinField/scrapers/issues/7",
-          "state": "open",
+          "state": "closed",
           "labels": [],
           "goal": "As of tonight (2026-07-07), https://stooq.com/q/d/l/?s=aapl.us&i=d no longer returns CSV to plain HTTP clients — it serves a JavaScript SHA-",
-          "status": "queued",
+          "status": "done",
           "pr": null
         }
       ],
       "counts": {
         "docs": 0,
-        "open": 2,
+        "open": 1,
         "review": 0,
-        "done": 2
+        "done": 3
       }
     },
     {
@@ -614,11 +614,8 @@
             "faas"
           ],
           "goal": "Doel: voeg optionele, event-gedreven serverless verwerking toe aan Gither.",
-          "status": "review",
-          "pr": {
-            "number": 76,
-            "url": "https://github.com/Knitweb/gither/pull/76"
-          }
+          "status": "queued",
+          "pr": null
         },
         {
           "number": 6,
@@ -1251,13 +1248,13 @@
           "number": 56,
           "title": "[CG-05] Incremental auto-sync hook: re-derive only changed atoms on each gither commit",
           "url": "https://github.com/Knitweb/gither/issues/56",
-          "state": "open",
+          "state": "closed",
           "labels": [
             "epic:code-graph",
             "P1"
           ],
           "goal": "Epic: code-graph · Priority: P1 · Demand: 5/100 roles · Levels: High",
-          "status": "queued",
+          "status": "done",
           "pr": null
         },
         {
@@ -1393,9 +1390,9 @@
       ],
       "counts": {
         "docs": 3,
-        "open": 64,
-        "review": 1,
-        "done": 1
+        "open": 63,
+        "review": 0,
+        "done": 2
       }
     },
     {
@@ -1474,7 +1471,9 @@
           "title": "backlog: deep tax modules — Tier 2 majors (IN/BR/CH/NO/SE/DK/FI/BE/AT/ES/IT/NZ/MX/KR/HK/TW/AR)",
           "url": "https://github.com/ledgerfield/ledgerfield/issues/29",
           "state": "open",
-          "labels": [],
+          "labels": [
+            "epic"
+          ],
           "goal": "Countries have schema + params.json. Need deep implementation:",
           "status": "queued",
           "pr": null
@@ -1564,7 +1563,9 @@
           "title": "backlog: knitweb P2P integration — gossip rulesets + market packages",
           "url": "https://github.com/ledgerfield/ledgerfield/issues/38",
           "state": "open",
-          "labels": [],
+          "labels": [
+            "epic"
+          ],
           "goal": "Wire ledgerfield into knitweb/pulse:",
           "status": "queued",
           "pr": null
@@ -2647,10 +2648,7 @@
           ],
           "goal": "The Monitor tab (src/molgang/monitor.py, /api/monitor) shows local node/p2p status and the KG, but assumes a single relay. As the mesh grows",
           "status": "done",
-          "pr": {
-            "number": 287,
-            "url": "https://github.com/Knitweb/molgang/pull/287"
-          }
+          "pr": null
         },
         {
           "number": 100,
@@ -3006,7 +3004,7 @@
           "number": 122,
           "title": "feat: load-test harness — ramp to N thousand concurrent peers and report p99",
           "url": "https://github.com/Knitweb/molgang/issues/122",
-          "state": "open",
+          "state": "closed",
           "labels": [
             "enhancement",
             "area:molgang",
@@ -3014,10 +3012,11 @@
             "prio:high",
             "source:agentplay",
             "MoSCoW: Must",
-            "track-m"
+            "track-m",
+            "epic"
           ],
           "goal": "The only multi-actor proof today is tests/e2e/molgange2e.py, which drives a single browser against one pristine molgang serve. To claim anyt",
-          "status": "queued",
+          "status": "done",
           "pr": null
         },
         {
@@ -3050,7 +3049,8 @@
             "type:p2p",
             "prio:med",
             "MoSCoW: Should",
-            "track-m"
+            "track-m",
+            "epic"
           ],
           "goal": "A knit's journey crosses machines: a peer confirms it in src/molgang/bar.py, webserver.startrelay pushes it via RelaySync.push in src/molgan",
           "status": "queued",
@@ -3084,7 +3084,8 @@
             "type:p2p",
             "prio:high",
             "MoSCoW: Should",
-            "track-m"
+            "track-m",
+            "epic"
           ],
           "goal": "The relay mesh (src/molgang/relaysync.py push/pull + php/src/Relay.php) is the WAN hop that holds the shared web together; FabricNode is the",
           "status": "queued",
@@ -3102,7 +3103,8 @@
             "type:deploy",
             "prio:med",
             "MoSCoW: Could",
-            "track-m"
+            "track-m",
+            "epic"
           ],
           "goal": "One always-on PHP relay at 5mart.ml is a single chokepoint; 1M peers cannot all push/pull through it. To scale the WAN hop we need multiple ",
           "status": "queued",
@@ -3135,7 +3137,8 @@
             "type:p2p",
             "type:deploy",
             "prio:high",
-            "MoSCoW: Must"
+            "MoSCoW: Must",
+            "epic"
           ],
           "goal": "Today the WAN transport is a single always-on PHP relay at 5mart.ml plus one Fly machine in Amsterdam (fly.toml: primaryregion = ams, minmac",
           "status": "queued",
@@ -3152,7 +3155,8 @@
             "type:p2p",
             "type:security",
             "prio:high",
-            "MoSCoW: Must"
+            "MoSCoW: Must",
+            "epic"
           ],
           "goal": "On launch day a flash crowd hits the faucet (game.py FAUCETPULSES=50/FAUCETSILK=10, mirrored in php/src/Bar.php) and the registered-only rel",
           "status": "queued",
@@ -3187,7 +3191,8 @@
             "type:e2e",
             "prio:high",
             "source:agentplay",
-            "MoSCoW: Must"
+            "MoSCoW: Must",
+            "epic"
           ],
           "goal": "We cannot reach 1M with humans alone on day one, so the test mixes real peers with agentplay LLM/bot swarms that each act as a distinct sign",
           "status": "queued",
@@ -3205,7 +3210,8 @@
             "type:e2e",
             "prio:high",
             "source:agentplay",
-            "MoSCoW: Must"
+            "MoSCoW: Must",
+            "epic"
           ],
           "goal": "The headline event. Using the multi-region fleet, the hardened faucet, the swarm driver, and the dashboard, execute the actual 1M-concurrent",
           "status": "queued",
@@ -3222,7 +3228,8 @@
             "type:ui",
             "type:docs",
             "prio:med",
-            "MoSCoW: Should"
+            "MoSCoW: Should",
+            "epic"
           ],
           "goal": "A launch wave needs somewhere for real humans to land and a one-tap path into the free faucet. We need a public landing page that explains t",
           "status": "queued",
@@ -3256,7 +3263,8 @@
             "type:p2p",
             "prio:med",
             "source:pulse",
-            "MoSCoW: Should"
+            "MoSCoW: Should",
+            "epic"
           ],
           "goal": "Gap issue G10 — surfaced by the Sprint 3-10 coherence/gap analysis (road to 1M concurrent peers).",
           "status": "queued",
@@ -3291,7 +3299,8 @@
             "type:p2p",
             "prio:high",
             "MoSCoW: Must",
-            "type:economy"
+            "type:economy",
+            "epic"
           ],
           "goal": "Gap issue G8 — surfaced by the Sprint 3-10 coherence/gap analysis (road to 1M concurrent peers).",
           "status": "queued",
@@ -3388,7 +3397,8 @@
             "type:deploy",
             "prio:med",
             "MoSCoW: Should",
-            "perf"
+            "perf",
+            "epic"
           ],
           "goal": "Gap issue G5 — surfaced by the Sprint 3-10 coherence/gap analysis (road to 1M concurrent peers).",
           "status": "queued",
@@ -3601,9 +3611,9 @@
       ],
       "counts": {
         "docs": 6,
-        "open": 27,
+        "open": 26,
         "review": 0,
-        "done": 99
+        "done": 100
       }
     },
     {
