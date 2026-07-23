@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-23T18:22:32.012Z",
+  "generated": "2026-07-23T19:59:43.754Z",
   "fieldCount": 17,
   "fields": [
     {
@@ -3786,8 +3786,8 @@
           "goal": "A long-running knitweb node that holds a fabric Web and replicates it over signed p2p feeds, so apps extend a shared, replicated web. molgan",
           "status": "done",
           "pr": {
-            "number": 368,
-            "url": "https://github.com/Knitweb/pulse/pull/368"
+            "number": 372,
+            "url": "https://github.com/Knitweb/pulse/pull/372"
           }
         },
         {
