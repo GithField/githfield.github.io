@@ -1,6 +1,6 @@
 {
-  "generated": "2026-08-17T15:01:10.385Z",
-  "fieldCount": 16,
+  "generated": "2026-08-17T15:38:32.029Z",
+  "fieldCount": 17,
   "fields": [
     {
       "field": "bt",
@@ -2891,6 +2891,199 @@
         "open": 63,
         "review": 0,
         "done": 2
+      }
+    },
+    {
+      "field": "ledgerfield",
+      "name": "LedgerField",
+      "accent": "#d4a017",
+      "summary": "P2P global accounting, tax engine & payroll",
+      "homepage": "",
+      "project": "",
+      "repo": "ledgerfield/ledgerfield",
+      "group_by": "",
+      "docs": [],
+      "backlog": [
+        {
+          "number": 9,
+          "title": "Package ruleset JSONs in normal builds",
+          "url": "https://github.com/ledgerfield/ledgerfield/issues/9",
+          "state": "closed",
+          "labels": [
+            "backlog"
+          ],
+          "goal": "Backlog from post-merge PR review (#2-#8).\\n\\nProblem:\\n- The publish workflow copies top-level rulesets into src/ledgerfield/rulesets befor",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 10,
+          "title": "Add source-backed tax metadata for all jurisdictions",
+          "url": "https://github.com/ledgerfield/ledgerfield/issues/10",
+          "state": "closed",
+          "labels": [
+            "backlog"
+          ],
+          "goal": "Backlog from post-merge PR review (#3-#8).\\n\\nProblem:\\n- The new jurisdiction params and rulesets encode tax rates and thresholds, but they",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 11,
+          "title": "Harden aggregate marketplace k-anonymity against per-node skew",
+          "url": "https://github.com/ledgerfield/ledgerfield/issues/11",
+          "state": "closed",
+          "labels": [
+            "backlog"
+          ],
+          "goal": "Backlog from post-merge PR review (#6).\\n\\nProblem:\\n- Aggregator.aggregate gates publication on >= KMIN distinct node IDs, but then compute",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 12,
+          "title": "Add settlement guard for DataMarket purchases",
+          "url": "https://github.com/ledgerfield/ledgerfield/issues/12",
+          "state": "closed",
+          "labels": [
+            "backlog"
+          ],
+          "goal": "Backlog from post-merge PR review (#6).\\n\\nProblem:\\n- DataMarket.purchase explicitly allows buyer balances to go negative and settles later",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 13,
+          "title": "Normalize non-positive CIT inputs for JP and CN",
+          "url": "https://github.com/ledgerfield/ledgerfield/issues/13",
+          "state": "closed",
+          "labels": [
+            "backlog"
+          ],
+          "goal": "Backlog from post-merge PR review (#4, #7).\\n\\nProblem:\\n- Canada, Singapore, and Australia calculators guard winst <= 0 and return zero tax",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 29,
+          "title": "backlog: deep tax modules — Tier 2 majors (IN/BR/CH/NO/SE/DK/FI/BE/AT/ES/IT/NZ/MX/KR/HK/TW/AR)",
+          "url": "https://github.com/ledgerfield/ledgerfield/issues/29",
+          "state": "open",
+          "labels": [
+            "epic"
+          ],
+          "goal": "Countries have schema + params.json. Need deep implementation:",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 30,
+          "title": "backlog: deep tax modules — EU East + Baltics (PL/CZ/HU/RO/BG/HR/SK/SI/LT/LV/EE/LU/MT/CY/GR)",
+          "url": "https://github.com/ledgerfield/ledgerfield/issues/30",
+          "state": "closed",
+          "labels": [],
+          "goal": "Countries have schema + params.json. Need cit.py + iit.py + vat.py.",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 31,
+          "title": "backlog: deep tax modules — Middle East + Turkey + Israel (SA/AE/QA/KW/BH/OM/IL/TR/JO)",
+          "url": "https://github.com/ledgerfield/ledgerfield/issues/31",
+          "state": "closed",
+          "labels": [],
+          "goal": "Countries have schema + params.json. Need:",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 32,
+          "title": "backlog: deep tax modules — Southeast + South Asia (ID/TH/MY/PH/VN/PK/BD/LK/MM/KH)",
+          "url": "https://github.com/ledgerfield/ledgerfield/issues/32",
+          "state": "closed",
+          "labels": [],
+          "goal": "Countries have schema + params.json. Need cit.py + iit.py + vat.py.",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 33,
+          "title": "backlog: deep tax modules — Africa (NG/EG/KE/GH/ET/TZ/MA/MU/ZM/RW/ZW/UG/SN/CI/CM/AO/MZ)",
+          "url": "https://github.com/ledgerfield/ledgerfield/issues/33",
+          "state": "closed",
+          "labels": [],
+          "goal": "Countries have schema + params.json. Need cit.py + iit.py + vat.py.",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 34,
+          "title": "backlog: deep tax modules — Latin America (CL/CO/PE/VE/EC/BO/PY/UY/CR/PA/GT/HN/NI/SV/DO/JM/TT)",
+          "url": "https://github.com/ledgerfield/ledgerfield/issues/34",
+          "state": "closed",
+          "labels": [],
+          "goal": "Countries have schema + params.json. Need cit.py + iit.py + vat.py.",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 35,
+          "title": "backlog: payroll modules — JP/CN/CA/SG/AU",
+          "url": "https://github.com/ledgerfield/ledgerfield/issues/35",
+          "state": "closed",
+          "labels": [],
+          "goal": "Only NL has a full payslip generator. Add for deep-tax countries:",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 36,
+          "title": "backlog: market GUI tab — add to ledgerfield.html",
+          "url": "https://github.com/ledgerfield/ledgerfield/issues/36",
+          "state": "closed",
+          "labels": [],
+          "goal": "Add tab 8 '📊 Datamarkt' to src/ledgerfield/static/ledgerfield.html:",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 37,
+          "title": "backlog: filing / tax-return modules — UK/US/DE/FR/JP/CN",
+          "url": "https://github.com/ledgerfield/ledgerfield/issues/37",
+          "state": "closed",
+          "labels": [],
+          "goal": "NL has VPBAangifte + IBAangifte. Add for:",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 38,
+          "title": "backlog: knitweb P2P integration — gossip rulesets + market packages",
+          "url": "https://github.com/ledgerfield/ledgerfield/issues/38",
+          "state": "open",
+          "labels": [
+            "epic"
+          ],
+          "goal": "Wire ledgerfield into knitweb/pulse:",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 39,
+          "title": "backlog: verify + complete remaining 80+ country stubs (AL/AM/AZ/BA/GE/KG/KZ/ME/MK/MN/TJ/TM/UA/UZ/RS/RU/FJ/PG/NP + OHADA)",
+          "url": "https://github.com/ledgerfield/ledgerfield/issues/39",
+          "state": "closed",
+          "labels": [],
+          "goal": "Countries currently have schema.py (20-account template) but params.json is AI-estimated, not source-verified. Need:",
+          "status": "done",
+          "pr": null
+        }
+      ],
+      "counts": {
+        "docs": 0,
+        "open": 2,
+        "review": 0,
+        "done": 14
       }
     },
     {
