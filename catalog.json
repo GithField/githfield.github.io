@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-22T16:02:52.013Z",
+  "generated": "2026-10-22T20:04:43.229Z",
   "fieldCount": 17,
   "fields": [
     {
@@ -13,6 +13,250 @@
       "group_by": "",
       "docs": [],
       "backlog": [
+        {
+          "number": 1,
+          "title": "Role-driven feature backlog — from the 100-professions field guide",
+          "url": "https://github.com/Knitweb/bt/issues/1",
+          "state": "open",
+          "labels": [],
+          "goal": "Aggregated from 490 feature requests across the [100-professions field guide](https://knitweb.github.io/professions100.html), deduplicated t",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 5,
+          "title": "[BT-001] Render a plain-language EUR-anchor basket breakdown card showing each component's weight, value, and freshness",
+          "url": "https://github.com/Knitweb/bt/issues/5",
+          "state": "open",
+          "labels": [
+            "epic:eur-anchor-basket-marketdata",
+            "P0"
+          ],
+          "goal": "Epic: eur-anchor-basket-marketdata · Priority: P0 · Demand: 9/100 roles · Levels: Low, Medium, High",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 6,
+          "title": "[BT-002] Build a deterministic basket target recomputation endpoint with cross-node match proof",
+          "url": "https://github.com/Knitweb/bt/issues/6",
+          "state": "open",
+          "labels": [
+            "epic:eur-anchor-basket-marketdata",
+            "P0"
+          ],
+          "goal": "Epic: eur-anchor-basket-marketdata · Priority: P0 · Demand: 6/100 roles · Levels: Medium, High",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 7,
+          "title": "[BT-003] Enforce normalise_weights to sum to exactly 1_000_000 ppm and prove it for all positive inputs",
+          "url": "https://github.com/Knitweb/bt/issues/7",
+          "state": "open",
+          "labels": [
+            "epic:eur-anchor-basket-marketdata",
+            "P0"
+          ],
+          "goal": "Epic: eur-anchor-basket-marketdata · Priority: P0 · Demand: 5/100 roles · Levels: High",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 8,
+          "title": "[BT-004] Verify that only the VoteBank DAO actor can sign and publish a basket spec",
+          "url": "https://github.com/Knitweb/bt/issues/8",
+          "state": "open",
+          "labels": [
+            "epic:eur-anchor-basket-marketdata",
+            "P0"
+          ],
+          "goal": "Epic: eur-anchor-basket-marketdata · Priority: P0 · Demand: 4/100 roles · Levels: Medium, High",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 9,
+          "title": "[BT-005] Reject expired and invalidly-signed knowledge claims from forming basket components",
+          "url": "https://github.com/Knitweb/bt/issues/9",
+          "state": "open",
+          "labels": [
+            "epic:eur-anchor-basket-marketdata",
+            "P0"
+          ],
+          "goal": "Epic: eur-anchor-basket-marketdata · Priority: P0 · Demand: 5/100 roles · Levels: Medium, High",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 10,
+          "title": "[BT-006] Prove integer quote rounding (ceil) never underpays the seller across indivisible fills",
+          "url": "https://github.com/Knitweb/bt/issues/10",
+          "state": "open",
+          "labels": [
+            "epic:eur-anchor-basket-marketdata",
+            "P0"
+          ],
+          "goal": "Epic: eur-anchor-basket-marketdata · Priority: P0 · Demand: 6/100 roles · Levels: Medium, High",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 11,
+          "title": "[BT-007] Display BT-quoted order prices in EUR-anchor numeraire alongside the raw price_atoms",
+          "url": "https://github.com/Knitweb/bt/issues/11",
+          "state": "open",
+          "labels": [
+            "epic:eur-anchor-basket-marketdata",
+            "P1"
+          ],
+          "goal": "Epic: eur-anchor-basket-marketdata · Priority: P1 · Demand: 8/100 roles · Levels: Low, Medium, High",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 12,
+          "title": "[BT-008] Ingest signed vBank weight points and apply recency/participation/confidence influence to derive live basket weights",
+          "url": "https://github.com/Knitweb/bt/issues/12",
+          "state": "open",
+          "labels": [
+            "epic:eur-anchor-basket-marketdata",
+            "P1"
+          ],
+          "goal": "Epic: eur-anchor-basket-marketdata · Priority: P1 · Demand: 4/100 roles · Levels: High",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 13,
+          "title": "[BT-009] Build a knowledge-claim source taxonomy with per-source expiry and outlier rejection for market-data feeds",
+          "url": "https://github.com/Knitweb/bt/issues/13",
+          "state": "open",
+          "labels": [
+            "epic:eur-anchor-basket-marketdata",
+            "P1"
+          ],
+          "goal": "Epic: eur-anchor-basket-marketdata · Priority: P1 · Demand: 4/100 roles · Levels: High",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 14,
+          "title": "[BT-010] Replay the basket target history from archived vBank and claim events and verify it reproduces published values",
+          "url": "https://github.com/Knitweb/bt/issues/14",
+          "state": "open",
+          "labels": [
+            "epic:eur-anchor-basket-marketdata",
+            "P1"
+          ],
+          "goal": "Epic: eur-anchor-basket-marketdata · Priority: P1 · Demand: 4/100 roles · Levels: High",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 15,
+          "title": "[BT-011] Add a feed-freshness indicator and stale-anchor warning to the quote display",
+          "url": "https://github.com/Knitweb/bt/issues/15",
+          "state": "open",
+          "labels": [
+            "epic:eur-anchor-basket-marketdata",
+            "P1"
+          ],
+          "goal": "Epic: eur-anchor-basket-marketdata · Priority: P1 · Demand: 7/100 roles · Levels: Low, Medium, High",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 16,
+          "title": "[BT-012] Implement a deterministic conflict-resolution rule for competing vBank weight series",
+          "url": "https://github.com/Knitweb/bt/issues/16",
+          "state": "open",
+          "labels": [
+            "epic:eur-anchor-basket-marketdata",
+            "P2"
+          ],
+          "goal": "Epic: eur-anchor-basket-marketdata · Priority: P2 · Demand: 3/100 roles · Levels: High",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 17,
+          "title": "[BT-013] Implement conflict-free event-log merge by canonical event ID (CRDT OR-Set semantics)",
+          "url": "https://github.com/Knitweb/bt/issues/17",
+          "state": "open",
+          "labels": [
+            "epic:offline-reconciliation-wallet",
+            "P0"
+          ],
+          "goal": "Epic: offline-reconciliation-wallet · Priority: P0 · Demand: 8/100 roles · Levels: Low, Medium, High",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 18,
+          "title": "[BT-014] Define deterministic total order over merged events (signed timestamp then canonical hash tie-break)",
+          "url": "https://github.com/Knitweb/bt/issues/18",
+          "state": "open",
+          "labels": [
+            "epic:offline-reconciliation-wallet",
+            "P0"
+          ],
+          "goal": "Epic: offline-reconciliation-wallet · Priority: P0 · Demand: 7/100 roles · Levels: Medium, High",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 19,
+          "title": "[BT-015] Build offline-first signed capture: sign orders/transfers/cancels with no network",
+          "url": "https://github.com/Knitweb/bt/issues/19",
+          "state": "open",
+          "labels": [
+            "epic:offline-reconciliation-wallet",
+            "P0"
+          ],
+          "goal": "Epic: offline-reconciliation-wallet · Priority: P0 · Demand: 9/100 roles · Levels: Low, Medium, High",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 20,
+          "title": "[BT-016] Add sealed-capture envelope: tamper-evident local seal over canonical bytes before sync",
+          "url": "https://github.com/Knitweb/bt/issues/20",
+          "state": "open",
+          "labels": [
+            "epic:offline-reconciliation-wallet",
+            "P1"
+          ],
+          "goal": "Epic: offline-reconciliation-wallet · Priority: P1 · Demand: 6/100 roles · Levels: Medium, High",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 21,
+          "title": "[BT-017] Write plain-language sync-status panel (captured / sealed / propagating / merged / replayed)",
+          "url": "https://github.com/Knitweb/bt/issues/21",
+          "state": "open",
+          "labels": [
+            "epic:offline-reconciliation-wallet",
+            "P1"
+          ],
+          "goal": "Epic: offline-reconciliation-wallet · Priority: P1 · Demand: 9/100 roles · Levels: Low, Medium, High",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 22,
+          "title": "[BT-018] Implement non-custodial wallet balance view from replayed integer-atom events",
+          "url": "https://github.com/Knitweb/bt/issues/22",
+          "state": "open",
+          "labels": [
+            "epic:offline-reconciliation-wallet",
+            "P0"
+          ],
+          "goal": "Epic: offline-reconciliation-wallet · Priority: P0 · Demand: 10/100 roles · Levels: Low, Medium, High",
+          "status": "queued",
+          "pr": null
+        },
         {
           "number": 23,
           "title": "[BT-019] Separate spendable vs reserved atoms so offline captures cannot double-spend on merge",
@@ -1251,7 +1495,7 @@
       ],
       "counts": {
         "docs": 0,
-        "open": 95,
+        "open": 114,
         "review": 0,
         "done": 0
       }
@@ -1291,12 +1535,215 @@
           "path": "docs/deploy-5mart.md"
         }
       ],
-      "backlog": [],
+      "backlog": [
+        {
+          "number": 4,
+          "title": "[backlog] Make 5mart sync reproducible from OpenChem",
+          "url": "https://github.com/ChemField/openchem/issues/4",
+          "state": "closed",
+          "labels": [
+            "agent"
+          ],
+          "goal": "Eén reproduceerbaar sync+verify-pad van de OpenChem-dataset naar 5mart: `make deploy && make verify` (of equivalent script-paar) zonder ad-hoc kopieerstappen.",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 5,
+          "title": "[backlog] Publish ChemField dataset to OriginTrail DKG",
+          "url": "https://github.com/ChemField/openchem/issues/5",
+          "state": "open",
+          "labels": [
+            "agent"
+          ],
+          "goal": "De ChemField-compositiegraaf publiceerbaar als live OriginTrail/DKG-asset i.p.v. `prepared_not_published`: agent levert de publicatie-tooling + docs; de feitelijke publicatie draait Edwin met eigen wallet.",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 6,
+          "title": "[backlog] Attach measured Noord-Holland clay chemistry",
+          "url": "https://github.com/ChemField/openchem/issues/6",
+          "state": "open",
+          "labels": [
+            "curatie"
+          ],
+          "goal": "Gemeten Noord-Holland-kleichemie aangehecht aan de bestaande locatie/diepte-mass-balance-templates; numerieke BOF-vs-klei enrichment-factors worden pas ontgrendeld voor records met status `measured` en gesloten massabalans.",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 7,
+          "title": "[backlog] Add ChemField dataset validation checks",
+          "url": "https://github.com/ChemField/openchem/issues/7",
+          "state": "closed",
+          "labels": [
+            "agent"
+          ],
+          "goal": "Herhaalbare, geautomatiseerde validatie van de ChemField-compositiedataset en aliassen: `npm run validate`/`make validate` vervangt de handmatige jq/JS-checks.",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 14,
+          "title": "EPIC: Slag Run — build out the full steel-slag → vanadium production chain",
+          "url": "https://github.com/ChemField/openchem/issues/14",
+          "state": "open",
+          "labels": [
+            "slag-run",
+            "game",
+            "backlog"
+          ],
+          "goal": "Tracking epic for Slag Run beyond v1. Design: docs/slag-run-game-design.md; chemistry: docs/vanadium-recovery-from-steel-slag.md; config: da",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 15,
+          "title": "Slag Run: gravity + human-strength lift check",
+          "url": "https://github.com/ChemField/openchem/issues/15",
+          "state": "closed",
+          "labels": [
+            "slag-run",
+            "game",
+            "backlog"
+          ],
+          "goal": "Turn the kracht stat into a physics gate (part of #14).",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 16,
+          "title": "Slag Run: leach tanks (80L / 40L) + fill-volume liftability caps",
+          "url": "https://github.com/ChemField/openchem/issues/16",
+          "state": "closed",
+          "labels": [
+            "slag-run",
+            "game",
+            "backlog"
+          ],
+          "goal": "Add selectable leach vessels (part of #14, config tanks).",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 17,
+          "title": "Slag Run: lift-agitation with sloshing loss + site contamination",
+          "url": "https://github.com/ChemField/openchem/issues/17",
+          "state": "closed",
+          "labels": [
+            "slag-run",
+            "game",
+            "backlog"
+          ],
+          "goal": "Manual agitation trade-off (part of #14, config agitation).",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 18,
+          "title": "Slag Run: roasting / activation stage (V(III)→V(V))",
+          "url": "https://github.com/ChemField/openchem/issues/18",
+          "state": "open",
+          "labels": [
+            "slag-run",
+            "game",
+            "backlog"
+          ],
+          "goal": "Add the roast that makes fresh-slag vanadium leachable (part of #14; see docs/vanadium-recovery-from-steel-slag.md §2).",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 19,
+          "title": "Slag Run: autoclave pressure-leach route (€7000)",
+          "url": "https://github.com/ChemField/openchem/issues/19",
+          "state": "open",
+          "labels": [
+            "slag-run",
+            "game",
+            "backlog"
+          ],
+          "goal": "Capital alternative to fine-mill+agitate (part of #14, config autoclave).",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 20,
+          "title": "Slag Run: purification / solvent extraction (SX) + V/Cr separation",
+          "url": "https://github.com/ChemField/openchem/issues/20",
+          "state": "open",
+          "labels": [
+            "slag-run",
+            "game",
+            "backlog"
+          ],
+          "goal": "Clean the pregnant leach solution (part of #14; docs §4).",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 21,
+          "title": "Slag Run: precipitation (AMV/APV) → calcination → V₂O₅ grade",
+          "url": "https://github.com/ChemField/openchem/issues/21",
+          "state": "open",
+          "labels": [
+            "slag-run",
+            "game",
+            "backlog"
+          ],
+          "goal": "Turn purified vanadate into product (part of #14; docs §5-6).",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 22,
+          "title": "Slag Run: Cr(VI) safety mechanic + reputation/penalty",
+          "url": "https://github.com/ChemField/openchem/issues/22",
+          "state": "open",
+          "labels": [
+            "slag-run",
+            "game",
+            "backlog"
+          ],
+          "goal": "Make chromium safety scored (part of #14; docs §7).",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 23,
+          "title": "Slag Run: tier-2 economy — reinvest V₂O₅ sales, unlock large mills/autoclave",
+          "url": "https://github.com/ChemField/openchem/issues/23",
+          "state": "open",
+          "labels": [
+            "slag-run",
+            "game",
+            "backlog"
+          ],
+          "goal": "Progression loop (part of #14, config large mills/autoclave already priced).",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 24,
+          "title": "Slag Run → Speciation Quest: pass V₂O₅ yield as starting state",
+          "url": "https://github.com/ChemField/openchem/issues/24",
+          "state": "open",
+          "labels": [
+            "slag-run",
+            "game",
+            "backlog"
+          ],
+          "goal": "Wire the two games together (part of #14).",
+          "status": "queued",
+          "pr": null
+        }
+      ],
       "counts": {
         "docs": 4,
-        "open": 0,
+        "open": 10,
         "review": 0,
-        "done": 0
+        "done": 5
       }
     },
     {
@@ -1473,10 +1920,21 @@
       "repo": "FinField/agents",
       "group_by": "",
       "docs": [],
-      "backlog": [],
+      "backlog": [
+        {
+          "number": 1,
+          "title": "Server deploy on 5mart.ml/finfield",
+          "url": "https://github.com/FinField/agents/issues/1",
+          "state": "open",
+          "labels": [],
+          "goal": "The package ships deploy/ (systemd unit, config.example.json, README) — the actual server step is open: create the finfield user, venv-insta",
+          "status": "queued",
+          "pr": null
+        }
+      ],
       "counts": {
         "docs": 0,
-        "open": 0,
+        "open": 1,
         "review": 0,
         "done": 0
       }
@@ -1593,12 +2051,846 @@
           "path": "Knitweb/docs/blob/main/gither/launch-plan.md"
         }
       ],
-      "backlog": [],
+      "backlog": [
+        {
+          "number": 1,
+          "title": "Role-driven feature backlog — from the 100-professions field guide",
+          "url": "https://github.com/Knitweb/gither/issues/1",
+          "state": "open",
+          "labels": [],
+          "goal": "Aggregated from 490 feature requests across the [100-professions field guide](https://knitweb.github.io/professions100.html), deduplicated t",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 2,
+          "title": "[Epic] Fase 1: Git-compatibele objectstore en CLI",
+          "url": "https://github.com/Knitweb/gither/issues/2",
+          "state": "open",
+          "labels": [
+            "epic",
+            "storage",
+            "cli"
+          ],
+          "goal": "Doel: bouw de fundamentele storage-laag en command-line interface voor Gither.",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 3,
+          "title": "[Epic] Fase 2: P2P-netwerklaag met libp2p",
+          "url": "https://github.com/Knitweb/gither/issues/3",
+          "state": "open",
+          "labels": [
+            "epic",
+            "network"
+          ],
+          "goal": "Doel: implementeer de peer-to-peer netwerklaag voor repository-uitwisseling.",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 4,
+          "title": "[Epic] Fase 3: CRDT-gebaseerde metadata voor issues/PRs",
+          "url": "https://github.com/Knitweb/gither/issues/4",
+          "state": "open",
+          "labels": [
+            "epic",
+            "crdt"
+          ],
+          "goal": "Doel: realiseer gedistribueerde social-coding metadata zonder centrale autoriteit.",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 5,
+          "title": "[Epic] Fase 4: Serverless CI/FaaS integratie",
+          "url": "https://github.com/Knitweb/gither/issues/5",
+          "state": "open",
+          "labels": [
+            "epic",
+            "faas"
+          ],
+          "goal": "Doel: voeg optionele, event-gedreven serverless verwerking toe aan Gither.",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 6,
+          "title": "[Epic] Fase 5: IDE-integratie (VS Code, Cursor, PyCharm)",
+          "url": "https://github.com/Knitweb/gither/issues/6",
+          "state": "open",
+          "labels": [
+            "epic",
+            "ide"
+          ],
+          "goal": "Doel: integreer Gither als volwaardige SCM-provider in populaire IDE's.",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 7,
+          "title": "[Epic] Fase 6: Evaluatie en optimalisatie",
+          "url": "https://github.com/Knitweb/gither/issues/7",
+          "state": "open",
+          "labels": [
+            "epic"
+          ],
+          "goal": "Doel: evalueer Gither op functionele en niet-functionele criteria en optimaliseer.",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 8,
+          "title": "Implementeer SHA-256 content-addressable storage",
+          "url": "https://github.com/Knitweb/gither/issues/8",
+          "state": "open",
+          "labels": [
+            "storage"
+          ],
+          "goal": "Bouw de storage layer met SHA-256 als standaard hash.",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 9,
+          "title": "Implementeer Gither CLI met basiscommando's",
+          "url": "https://github.com/Knitweb/gither/issues/9",
+          "state": "open",
+          "labels": [
+            "storage",
+            "cli"
+          ],
+          "goal": "Ontwikkel de command-line interface voor Gither.",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 10,
+          "title": "Implementeer libp2p peer discovery en transport",
+          "url": "https://github.com/Knitweb/gither/issues/10",
+          "state": "open",
+          "labels": [
+            "network"
+          ],
+          "goal": "Realiseer peer discovery en transport voor het Gither netwerk.",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 11,
+          "title": "Implementeer CRDT-refs voor branches",
+          "url": "https://github.com/Knitweb/gither/issues/11",
+          "state": "open",
+          "labels": [
+            "crdt"
+          ],
+          "goal": "Ontwikkel branch referenties die gelijktijdige updates van meerdere peers kunnen samenvoegen.",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 12,
+          "title": "Implementeer Gither daemon en JSON-RPC API",
+          "url": "https://github.com/Knitweb/gither/issues/12",
+          "state": "open",
+          "labels": [
+            "storage",
+            "network"
+          ],
+          "goal": "Bouw de lokale Gither daemon die CLI en IDE-extensies bedient.",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 13,
+          "title": "Implementeer VS Code SCM extensie",
+          "url": "https://github.com/Knitweb/gither/issues/13",
+          "state": "open",
+          "labels": [
+            "ide"
+          ],
+          "goal": "Ontwikkel een Visual Studio Code extensie voor Gither.",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 14,
+          "title": "Implementeer Cursor extensiecompatibiliteit",
+          "url": "https://github.com/Knitweb/gither/issues/14",
+          "state": "open",
+          "labels": [
+            "ide"
+          ],
+          "goal": "Zorg dat de VS Code Gither-extensie direct werkt in Cursor.",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 15,
+          "title": "Implementeer PyCharm / JetBrains plugin",
+          "url": "https://github.com/Knitweb/gither/issues/15",
+          "state": "open",
+          "labels": [
+            "ide"
+          ],
+          "goal": "Ontwikkel een IntelliJ-platform plugin voor Gither.",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 16,
+          "title": "Definieer gither.yml voor serverless CI",
+          "url": "https://github.com/Knitweb/gither/issues/16",
+          "state": "open",
+          "labels": [
+            "faas"
+          ],
+          "goal": "Ontwerp en implementeer het configuratieformaat voor Gither serverless functies.",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 17,
+          "title": "Ontwerp beveiligingsmodel: signed refs en verifieerbaarheid",
+          "url": "https://github.com/Knitweb/gither/issues/17",
+          "state": "open",
+          "labels": [
+            "security"
+          ],
+          "goal": "Definieer het cryptografische beveiligingsmodel voor Gither.",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 18,
+          "title": "Schrijf Gither whitepaper en architectuurdocumentatie",
+          "url": "https://github.com/Knitweb/gither/issues/18",
+          "state": "open",
+          "labels": [
+            "documentation"
+          ],
+          "goal": "Werk de academische paper en technische documentatie bij naar de Knitweb docs.",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 19,
+          "title": "Migratiepad van bestaande Git repositories",
+          "url": "https://github.com/Knitweb/gither/issues/19",
+          "state": "open",
+          "labels": [
+            "documentation",
+            "migration"
+          ],
+          "goal": "Ontwerp een migratiestrategie voor bestaande Git repositories naar Gither.",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 21,
+          "title": "[Launch] Prepare public alpha release",
+          "url": "https://github.com/Knitweb/gither/issues/21",
+          "state": "open",
+          "labels": [
+            "launch",
+            "commercial"
+          ],
+          "goal": "Prepare and ship the first public alpha of Gither.",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 22,
+          "title": "[Launch] Create landing page at knitweb.github.io/gither",
+          "url": "https://github.com/Knitweb/gither/issues/22",
+          "state": "open",
+          "labels": [
+            "launch",
+            "commercial"
+          ],
+          "goal": "Build a dedicated landing page for Gither on the Knitweb site.\\n\\nContent:\\n- One-line pitch and problem statement.\\n- Key differentiators v",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 23,
+          "title": "[Launch] Write positioning page vs GitHub/GitLab",
+          "url": "https://github.com/Knitweb/gither/issues/23",
+          "state": "open",
+          "labels": [
+            "launch",
+            "commercial"
+          ],
+          "goal": "Publish a clear comparison page that explains why Gither is not \"yet another GitHub.\"",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 24,
+          "title": "[Commercial] Define managed Relay service pricing",
+          "url": "https://github.com/Knitweb/gither/issues/24",
+          "state": "open",
+          "labels": [
+            "launch",
+            "commercial"
+          ],
+          "goal": "Design the pricing and packaging for Gither Relay (managed bootstrap/relay nodes).",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 25,
+          "title": "[Commercial] Design open-core feature boundary",
+          "url": "https://github.com/Knitweb/gither/issues/25",
+          "state": "open",
+          "labels": [
+            "launch",
+            "commercial"
+          ],
+          "goal": "Document which features stay in open-source Core and which move to commercial tiers.",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 26,
+          "title": "[Commercial] Draft terms of service for managed services",
+          "url": "https://github.com/Knitweb/gither/issues/26",
+          "state": "open",
+          "labels": [
+            "launch",
+            "commercial"
+          ],
+          "goal": "Create legal terms for Gither Relay, Build, and Cloud Namespace.",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 27,
+          "title": "[Launch] Produce 3-minute demo video",
+          "url": "https://github.com/Knitweb/gither/issues/27",
+          "state": "open",
+          "labels": [
+            "launch",
+            "commercial"
+          ],
+          "goal": "Create a concise demo video showing Gither in action.",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 28,
+          "title": "[Launch] Set up beta signup for managed tiers",
+          "url": "https://github.com/Knitweb/gither/issues/28",
+          "state": "open",
+          "labels": [
+            "launch",
+            "commercial"
+          ],
+          "goal": "Create a waitlist/signup flow for teams interested in managed Relay and Build tiers.",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 29,
+          "title": "[G2-01] Stand up a two-peer Knitweb light-client node on each box (febuz + fillslava)",
+          "url": "https://github.com/Knitweb/gither/issues/29",
+          "state": "open",
+          "labels": [
+            "epic:fabric",
+            "P0"
+          ],
+          "goal": "Epic: fabric · Priority: P0",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 30,
+          "title": "[G2-02] Establish febuz↔fillslava P2P mesh peering with mutual identity gating",
+          "url": "https://github.com/Knitweb/gither/issues/30",
+          "state": "open",
+          "labels": [
+            "epic:federation",
+            "P0"
+          ],
+          "goal": "Epic: federation · Priority: P0",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 31,
+          "title": "[G2-03] Prove fabric convergence: identical web_state_root across both peers",
+          "url": "https://github.com/Knitweb/gither/issues/31",
+          "state": "open",
+          "labels": [
+            "epic:fabric",
+            "P0"
+          ],
+          "goal": "Epic: fabric · Priority: P0",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 32,
+          "title": "[G2-04] Federate the two Gither forges into a P2P git-object exchange",
+          "url": "https://github.com/Knitweb/gither/issues/32",
+          "state": "open",
+          "labels": [
+            "epic:gither",
+            "P0"
+          ],
+          "goal": "Epic: gither · Priority: P0",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 33,
+          "title": "[G2-05] Implement signed refs and an ownership ledger for Gither releases",
+          "url": "https://github.com/Knitweb/gither/issues/33",
+          "state": "open",
+          "labels": [
+            "epic:gither",
+            "P0"
+          ],
+          "goal": "Epic: gither · Priority: P0",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 34,
+          "title": "[G2-06] Build CRDT-backed issues and PRs for conflict-free cross-peer collaboration",
+          "url": "https://github.com/Knitweb/gither/issues/34",
+          "state": "open",
+          "labels": [
+            "epic:gither",
+            "P1"
+          ],
+          "goal": "Epic: gither · Priority: P1",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 35,
+          "title": "[G2-07] Deliver serverless CI / FaaS for the federated forge via Synaptic edge bytecode",
+          "url": "https://github.com/Knitweb/gither/issues/35",
+          "state": "open",
+          "labels": [
+            "epic:gither",
+            "P1"
+          ],
+          "goal": "Epic: gither · Priority: P1",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 36,
+          "title": "[G2-08] Wire IDE integration so developers commit through Gither, not GitHub",
+          "url": "https://github.com/Knitweb/gither/issues/36",
+          "state": "open",
+          "labels": [
+            "epic:gither",
+            "P2"
+          ],
+          "goal": "Epic: gither · Priority: P2",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 37,
+          "title": "[G2-09] Mirror the federated forge outward to GitHub/GitLab as optional, non-authoritative copies",
+          "url": "https://github.com/Knitweb/gither/issues/37",
+          "state": "open",
+          "labels": [
+            "epic:gither",
+            "P2"
+          ],
+          "goal": "Epic: gither · Priority: P2",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 38,
+          "title": "[G2-10] Run cross-peer work as paid, verifiable PoUW jobs settled in PLS",
+          "url": "https://github.com/Knitweb/gither/issues/38",
+          "state": "open",
+          "labels": [
+            "epic:settlement",
+            "P0"
+          ],
+          "goal": "Epic: settlement · Priority: P0",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 39,
+          "title": "[G2-11] Enforce demand-gated, conserved PLS minting across the federation",
+          "url": "https://github.com/Knitweb/gither/issues/39",
+          "state": "open",
+          "labels": [
+            "epic:settlement",
+            "P1"
+          ],
+          "goal": "Epic: settlement · Priority: P1",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 40,
+          "title": "[G2-12] Settle cross-peer value with two-party Knit transfers committed in Fiber",
+          "url": "https://github.com/Knitweb/gither/issues/40",
+          "state": "open",
+          "labels": [
+            "epic:settlement",
+            "P1"
+          ],
+          "goal": "Epic: settlement · Priority: P1",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 41,
+          "title": "[G2-13] Converge federated state changes by BFT quorum k=⌊2n/3⌋+1",
+          "url": "https://github.com/Knitweb/gither/issues/41",
+          "state": "open",
+          "labels": [
+            "epic:governance",
+            "P0"
+          ],
+          "goal": "Epic: governance · Priority: P0",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 42,
+          "title": "[G2-14] Define the federation governance charter and equal-sovereignty policy",
+          "url": "https://github.com/Knitweb/gither/issues/42",
+          "state": "open",
+          "labels": [
+            "epic:governance",
+            "P1"
+          ],
+          "goal": "Epic: governance · Priority: P1",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 43,
+          "title": "[G2-15] Co-own and bidirectionally replicate knowledge through the knit-safe publish gate",
+          "url": "https://github.com/Knitweb/gither/issues/43",
+          "state": "open",
+          "labels": [
+            "epic:knowledge",
+            "P0"
+          ],
+          "goal": "Epic: knowledge · Priority: P0",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 44,
+          "title": "[G2-16] Stand up per-peer spider fleets that mine knowledge into the knit-safe gate",
+          "url": "https://github.com/Knitweb/gither/issues/44",
+          "state": "open",
+          "labels": [
+            "epic:knowledge",
+            "P2"
+          ],
+          "goal": "Epic: knowledge · Priority: P2",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 45,
+          "title": "[G2-17] Commit Synaptic edge bytecode bundles as the shared knowledge/relation format",
+          "url": "https://github.com/Knitweb/gither/issues/45",
+          "state": "open",
+          "labels": [
+            "epic:knowledge",
+            "P2"
+          ],
+          "goal": "Epic: knowledge · Priority: P2",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 46,
+          "title": "[G2-18] Anchor both peers' agents to vBank personhood for sybil-resistant participation",
+          "url": "https://github.com/Knitweb/gither/issues/46",
+          "state": "open",
+          "labels": [
+            "epic:identity",
+            "P0"
+          ],
+          "goal": "Epic: identity · Priority: P0",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 47,
+          "title": "[G2-19] Implement revocation with sorted-Merkle non-membership across the federation",
+          "url": "https://github.com/Knitweb/gither/issues/47",
+          "state": "open",
+          "labels": [
+            "epic:identity",
+            "P1"
+          ],
+          "goal": "Epic: identity · Priority: P1",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 48,
+          "title": "[G2-20] Add an eIDAS/EUDI trusted-RP verifier seam for external identity assurance",
+          "url": "https://github.com/Knitweb/gither/issues/48",
+          "state": "open",
+          "labels": [
+            "epic:identity",
+            "P3"
+          ],
+          "goal": "Epic: identity · Priority: P3",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 49,
+          "title": "[G2-21] Build a federation observability dashboard for fabric, settlement, and forge health",
+          "url": "https://github.com/Knitweb/gither/issues/49",
+          "state": "open",
+          "labels": [
+            "epic:ops",
+            "P1"
+          ],
+          "goal": "Epic: ops · Priority: P1",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 50,
+          "title": "[G2-22] Schedule periodic cross-peer convergence + settlement smoke tests",
+          "url": "https://github.com/Knitweb/gither/issues/50",
+          "state": "open",
+          "labels": [
+            "epic:ops",
+            "P2"
+          ],
+          "goal": "Epic: ops · Priority: P2",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 51,
+          "title": "[G2-23] Package a reproducible 'federate two peers' bootstrap and run the end-to-end demo",
+          "url": "https://github.com/Knitweb/gither/issues/51",
+          "state": "open",
+          "labels": [
+            "epic:ops",
+            "P1"
+          ],
+          "goal": "Epic: ops · Priority: P1",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 52,
+          "title": "[CG-01] Port codegraph's symbol index to content-addressed code-atoms on the Knitweb fabric",
+          "url": "https://github.com/Knitweb/gither/issues/52",
+          "state": "open",
+          "labels": [
+            "epic:code-graph",
+            "P0"
+          ],
+          "goal": "Epic: code-graph · Priority: P0 · Demand: 7/100 roles · Levels: High",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 53,
+          "title": "[CG-02] Model imports/dependencies as typed edges (depends-on / derived-from) gossiped as deltas",
+          "url": "https://github.com/Knitweb/gither/issues/53",
+          "state": "open",
+          "labels": [
+            "epic:code-graph",
+            "P0"
+          ],
+          "goal": "Epic: code-graph · Priority: P0 · Demand: 6/100 roles · Levels: High",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 54,
+          "title": "[CG-03] Expose references & call-graph as P2P-queryable edges over the fabric",
+          "url": "https://github.com/Knitweb/gither/issues/54",
+          "state": "open",
+          "labels": [
+            "epic:code-graph",
+            "P1"
+          ],
+          "goal": "Epic: code-graph · Priority: P1 · Demand: 6/100 roles · Levels: High",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 55,
+          "title": "[CG-04] Deterministic No-LLM code-graph update on commit (content_sha + mtime diff, 0 tokens)",
+          "url": "https://github.com/Knitweb/gither/issues/55",
+          "state": "closed",
+          "labels": [
+            "epic:code-graph",
+            "P0"
+          ],
+          "goal": "Epic: code-graph · Priority: P0 · Demand: 8/100 roles · Levels: Medium, High",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 56,
+          "title": "[CG-05] Incremental auto-sync hook: re-derive only changed atoms on each gither commit",
+          "url": "https://github.com/Knitweb/gither/issues/56",
+          "state": "closed",
+          "labels": [
+            "epic:code-graph",
+            "P1"
+          ],
+          "goal": "Epic: code-graph · Priority: P1 · Demand: 5/100 roles · Levels: High",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 57,
+          "title": "[CG-06] Gossip code-graph deltas P2P with multiproof verification",
+          "url": "https://github.com/Knitweb/gither/issues/57",
+          "state": "open",
+          "labels": [
+            "epic:code-graph",
+            "P1"
+          ],
+          "goal": "Epic: code-graph · Priority: P1 · Demand: 5/100 roles · Levels: High",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 58,
+          "title": "[CG-07] Attribute ownership: every code-atom carries its author's pairwise DID",
+          "url": "https://github.com/Knitweb/gither/issues/58",
+          "state": "open",
+          "labels": [
+            "epic:code-graph",
+            "P1"
+          ],
+          "goal": "Epic: code-graph · Priority: P1 · Demand: 6/100 roles · Levels: High",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 59,
+          "title": "[CG-08] P2P query API: symbol-search / find-references / dependents / ancestry (Lens/RLM-style)",
+          "url": "https://github.com/Knitweb/gither/issues/59",
+          "state": "open",
+          "labels": [
+            "epic:code-graph",
+            "P1"
+          ],
+          "goal": "Epic: code-graph · Priority: P1 · Demand: 7/100 roles · Levels: Medium, High",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 61,
+          "title": "[CG-09] Light-client code-graph queries: fetch atoms on demand, never hold the full graph",
+          "url": "https://github.com/Knitweb/gither/issues/61",
+          "state": "open",
+          "labels": [
+            "epic:code-graph",
+            "P1"
+          ],
+          "goal": "Epic: code-graph · Priority: P1 · Demand: 5/100 roles · Levels: High",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 62,
+          "title": "[CG-10] Zero-token agent context-pack assembled from the P2P code graph",
+          "url": "https://github.com/Knitweb/gither/issues/62",
+          "state": "open",
+          "labels": [
+            "epic:code-graph",
+            "P0"
+          ],
+          "goal": "Epic: code-graph · Priority: P0 · Demand: 8/100 roles · Levels: Medium, High",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 63,
+          "title": "[CG-11] Cross-peer federated code graph: febuz + fillslava forges merge by BFT quorum",
+          "url": "https://github.com/Knitweb/gither/issues/63",
+          "state": "open",
+          "labels": [
+            "epic:federation",
+            "P1"
+          ],
+          "goal": "Epic: federation · Priority: P1 · Demand: 4/100 roles · Levels: High",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 64,
+          "title": "[CG-12] Replace the JSON cache with a content-addressed Braid/Fiber store",
+          "url": "https://github.com/Knitweb/gither/issues/64",
+          "state": "open",
+          "labels": [
+            "epic:code-graph",
+            "P2"
+          ],
+          "goal": "Epic: code-graph · Priority: P2 · Demand: 4/100 roles · Levels: High",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 65,
+          "title": "[CG-13] Crypto-agile atom hashing/signing that tracks the secp256k1 -> PQC SHA2 dynamic transition",
+          "url": "https://github.com/Knitweb/gither/issues/65",
+          "state": "open",
+          "labels": [
+            "epic:identity",
+            "P0"
+          ],
+          "goal": "Epic: identity · Priority: P0 · Demand: 5/100 roles · Levels: High",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 66,
+          "title": "[CG-14] GitNexus/codegraph import adapter: ingest an existing code-graph JSON into the P2P graph",
+          "url": "https://github.com/Knitweb/gither/issues/66",
+          "state": "open",
+          "labels": [
+            "epic:code-graph",
+            "P2"
+          ],
+          "goal": "Epic: code-graph · Priority: P2 · Demand: 3/100 roles · Levels: High",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 67,
+          "title": "[CG-15] 3D code-graph viewer over the P2P atoms (Begrippen/Familie-style)",
+          "url": "https://github.com/Knitweb/gither/issues/67",
+          "state": "open",
+          "labels": [
+            "epic:knowledge",
+            "P2"
+          ],
+          "goal": "Epic: knowledge · Priority: P2 · Demand: 4/100 roles · Levels: Low, Medium, High",
+          "status": "queued",
+          "pr": null
+        }
+      ],
       "counts": {
         "docs": 3,
-        "open": 0,
+        "open": 63,
         "review": 0,
-        "done": 0
+        "done": 2
       }
     },
     {
@@ -1611,12 +2903,187 @@
       "repo": "ledgerfield/ledgerfield",
       "group_by": "",
       "docs": [],
-      "backlog": [],
+      "backlog": [
+        {
+          "number": 9,
+          "title": "Package ruleset JSONs in normal builds",
+          "url": "https://github.com/ledgerfield/ledgerfield/issues/9",
+          "state": "closed",
+          "labels": [
+            "backlog"
+          ],
+          "goal": "Backlog from post-merge PR review (#2-#8).\\n\\nProblem:\\n- The publish workflow copies top-level rulesets into src/ledgerfield/rulesets befor",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 10,
+          "title": "Add source-backed tax metadata for all jurisdictions",
+          "url": "https://github.com/ledgerfield/ledgerfield/issues/10",
+          "state": "closed",
+          "labels": [
+            "backlog"
+          ],
+          "goal": "Backlog from post-merge PR review (#3-#8).\\n\\nProblem:\\n- The new jurisdiction params and rulesets encode tax rates and thresholds, but they",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 11,
+          "title": "Harden aggregate marketplace k-anonymity against per-node skew",
+          "url": "https://github.com/ledgerfield/ledgerfield/issues/11",
+          "state": "closed",
+          "labels": [
+            "backlog"
+          ],
+          "goal": "Backlog from post-merge PR review (#6).\\n\\nProblem:\\n- Aggregator.aggregate gates publication on >= KMIN distinct node IDs, but then compute",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 12,
+          "title": "Add settlement guard for DataMarket purchases",
+          "url": "https://github.com/ledgerfield/ledgerfield/issues/12",
+          "state": "closed",
+          "labels": [
+            "backlog"
+          ],
+          "goal": "Backlog from post-merge PR review (#6).\\n\\nProblem:\\n- DataMarket.purchase explicitly allows buyer balances to go negative and settles later",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 13,
+          "title": "Normalize non-positive CIT inputs for JP and CN",
+          "url": "https://github.com/ledgerfield/ledgerfield/issues/13",
+          "state": "closed",
+          "labels": [
+            "backlog"
+          ],
+          "goal": "Backlog from post-merge PR review (#4, #7).\\n\\nProblem:\\n- Canada, Singapore, and Australia calculators guard winst <= 0 and return zero tax",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 29,
+          "title": "backlog: deep tax modules — Tier 2 majors (IN/BR/CH/NO/SE/DK/FI/BE/AT/ES/IT/NZ/MX/KR/HK/TW/AR)",
+          "url": "https://github.com/ledgerfield/ledgerfield/issues/29",
+          "state": "open",
+          "labels": [
+            "epic"
+          ],
+          "goal": "Countries have schema + params.json. Need deep implementation:",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 30,
+          "title": "backlog: deep tax modules — EU East + Baltics (PL/CZ/HU/RO/BG/HR/SK/SI/LT/LV/EE/LU/MT/CY/GR)",
+          "url": "https://github.com/ledgerfield/ledgerfield/issues/30",
+          "state": "closed",
+          "labels": [],
+          "goal": "Countries have schema + params.json. Need cit.py + iit.py + vat.py.",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 31,
+          "title": "backlog: deep tax modules — Middle East + Turkey + Israel (SA/AE/QA/KW/BH/OM/IL/TR/JO)",
+          "url": "https://github.com/ledgerfield/ledgerfield/issues/31",
+          "state": "closed",
+          "labels": [],
+          "goal": "Countries have schema + params.json. Need:",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 32,
+          "title": "backlog: deep tax modules — Southeast + South Asia (ID/TH/MY/PH/VN/PK/BD/LK/MM/KH)",
+          "url": "https://github.com/ledgerfield/ledgerfield/issues/32",
+          "state": "closed",
+          "labels": [],
+          "goal": "Countries have schema + params.json. Need cit.py + iit.py + vat.py.",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 33,
+          "title": "backlog: deep tax modules — Africa (NG/EG/KE/GH/ET/TZ/MA/MU/ZM/RW/ZW/UG/SN/CI/CM/AO/MZ)",
+          "url": "https://github.com/ledgerfield/ledgerfield/issues/33",
+          "state": "closed",
+          "labels": [],
+          "goal": "Countries have schema + params.json. Need cit.py + iit.py + vat.py.",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 34,
+          "title": "backlog: deep tax modules — Latin America (CL/CO/PE/VE/EC/BO/PY/UY/CR/PA/GT/HN/NI/SV/DO/JM/TT)",
+          "url": "https://github.com/ledgerfield/ledgerfield/issues/34",
+          "state": "closed",
+          "labels": [],
+          "goal": "Countries have schema + params.json. Need cit.py + iit.py + vat.py.",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 35,
+          "title": "backlog: payroll modules — JP/CN/CA/SG/AU",
+          "url": "https://github.com/ledgerfield/ledgerfield/issues/35",
+          "state": "closed",
+          "labels": [],
+          "goal": "Only NL has a full payslip generator. Add for deep-tax countries:",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 36,
+          "title": "backlog: market GUI tab — add to ledgerfield.html",
+          "url": "https://github.com/ledgerfield/ledgerfield/issues/36",
+          "state": "closed",
+          "labels": [],
+          "goal": "Add tab 8 '📊 Datamarkt' to src/ledgerfield/static/ledgerfield.html:",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 37,
+          "title": "backlog: filing / tax-return modules — UK/US/DE/FR/JP/CN",
+          "url": "https://github.com/ledgerfield/ledgerfield/issues/37",
+          "state": "closed",
+          "labels": [],
+          "goal": "NL has VPBAangifte + IBAangifte. Add for:",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 38,
+          "title": "backlog: knitweb P2P integration — gossip rulesets + market packages",
+          "url": "https://github.com/ledgerfield/ledgerfield/issues/38",
+          "state": "open",
+          "labels": [
+            "epic"
+          ],
+          "goal": "Wire ledgerfield into knitweb/pulse:",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 39,
+          "title": "backlog: verify + complete remaining 80+ country stubs (AL/AM/AZ/BA/GE/KG/KZ/ME/MK/MN/TJ/TM/UA/UZ/RS/RU/FJ/PG/NP + OHADA)",
+          "url": "https://github.com/ledgerfield/ledgerfield/issues/39",
+          "state": "closed",
+          "labels": [],
+          "goal": "Countries currently have schema.py (20-account template) but params.json is AI-estimated, not source-verified. Need:",
+          "status": "done",
+          "pr": null
+        }
+      ],
       "counts": {
         "docs": 0,
-        "open": 0,
+        "open": 2,
         "review": 0,
-        "done": 0
+        "done": 14
       }
     },
     {
@@ -1722,6 +3189,1389 @@
         }
       ],
       "backlog": [
+        {
+          "number": 4,
+          "title": "security: gateway economy is 0.0.0.0/no-auth + from_seed keys are publicly derivable (dev-only guardrails needed)",
+          "url": "https://github.com/Knitweb/pulse/issues/4",
+          "state": "closed",
+          "labels": [
+            "area:knitweb",
+            "type:security",
+            "prio:high"
+          ],
+          "goal": "Carried over from review of the pre-migration febuz/pulse PRs #72 (fromseed) and #73 (gateway) — those PR comments didn't migrate, but the c",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 6,
+          "title": "Land the pure-Python rewrite (canonical knitweb/pulse)",
+          "url": "https://github.com/Knitweb/pulse/issues/6",
+          "state": "closed",
+          "labels": [
+            "area:knitweb",
+            "prio:high"
+          ],
+          "goal": "Replace the JS scaffold with the pure-Python knitweb (PR #5; reconcile/supersede the earlier rewrite). Pulse is pure-Python.",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 7,
+          "title": "CI → run the Python test suite",
+          "url": "https://github.com/Knitweb/pulse/issues/7",
+          "state": "closed",
+          "labels": [
+            "area:knitweb",
+            "type:ci",
+            "prio:high"
+          ],
+          "goal": "Point CI at pytest tests/property -q (and full suite). Requires a workflow-scoped token.",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 8,
+          "title": "pip-installability (hatchling editable/pyproject)",
+          "url": "https://github.com/Knitweb/pulse/issues/8",
+          "state": "closed",
+          "labels": [
+            "area:knitweb",
+            "prio:med"
+          ],
+          "goal": "pip install -e . fails (old hatchling editable hook / metadata). Make the package cleanly installable so apps (molgang) can depend on it wit",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 9,
+          "title": "Live p2p fabric node (replicate the Web over feeds)",
+          "url": "https://github.com/Knitweb/pulse/issues/9",
+          "state": "closed",
+          "labels": [
+            "area:knitweb",
+            "type:p2p",
+            "prio:med"
+          ],
+          "goal": "A long-running knitweb node that holds a fabric Web and replicates it over signed p2p feeds, so apps extend a shared, replicated web. molgan",
+          "status": "done",
+          "pr": {
+            "number": 372,
+            "url": "https://github.com/Knitweb/pulse/pull/372"
+          }
+        },
+        {
+          "number": 10,
+          "title": "gateway.App p2p-backed shared web",
+          "url": "https://github.com/Knitweb/pulse/issues/10",
+          "state": "closed",
+          "labels": [
+            "area:knitweb",
+            "type:p2p",
+            "prio:med"
+          ],
+          "goal": "Back gateway.App's persistent web with the p2p fabric node so multiple App instances share one web (not just a local file).",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 11,
+          "title": "Pulse operator CLI parity (knitweb.tools.cli)",
+          "url": "https://github.com/Knitweb/pulse/issues/11",
+          "state": "closed",
+          "labels": [
+            "area:knitweb",
+            "prio:med"
+          ],
+          "goal": "Flesh out the Python Pulse operator CLI to match whatever the prior JS CLI offered (identity, host status, node, pay, balance, address — plu",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 12,
+          "title": "loom→knitweb vocabulary rename (owner-gated)",
+          "url": "https://github.com/Knitweb/pulse/issues/12",
+          "state": "closed",
+          "labels": [
+            "area:knitweb",
+            "type:docs",
+            "prio:low"
+          ],
+          "goal": "Rename the loom primitive references to knitweb per the vocabulary rule (Web·Knit·Pulse·Fiber·knitweb; never 'loom'/'network'). Hash-critica",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 13,
+          "title": "Provenance explorer: verify a web's OriginTrail UAL",
+          "url": "https://github.com/Knitweb/pulse/issues/13",
+          "state": "closed",
+          "labels": [
+            "area:knitweb",
+            "type:p2p",
+            "prio:med"
+          ],
+          "goal": "A small tool/endpoint to resolve + verify a woven web's OriginTrail UAL (anchor receipt → stateroot match), so anyone can independently chec",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 14,
+          "title": "Spider PoUW compute-marketplace MVP (sell verifiable GPU work for PLS)",
+          "url": "https://github.com/Knitweb/pulse/issues/14",
+          "state": "closed",
+          "labels": [
+            "area:knitweb",
+            "type:p2p",
+            "prio:low"
+          ],
+          "goal": "The DePIN core: a spider advertises GPU/RAM, takes a job through pouw/scheduler, returns a verifiable result, and earns PLS via proof-of-use",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 19,
+          "title": "version drift: knitweb.__version__ '0.0.1' vs pyproject '0.6.0'",
+          "url": "https://github.com/Knitweb/pulse/issues/19",
+          "state": "closed",
+          "labels": [
+            "bug",
+            "area:knitweb",
+            "prio:low",
+            "MoSCoW: Should"
+          ],
+          "goal": "Surfaced by PR #17 (CLI version command): knitweb.init.version is '0.0.1' in src/dev mode but pyproject.toml declares '0.6.0' (installed whe",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 21,
+          "title": "FabricNode: gossip Web edges (links), not just node records",
+          "url": "https://github.com/Knitweb/pulse/issues/21",
+          "state": "closed",
+          "labels": [
+            "area:knitweb",
+            "type:p2p",
+            "prio:high"
+          ],
+          "goal": "The live FabricNode (#9, PR #18) currently propagates node records but NOT Web edges/links. For a knowledge graph the EDGES are the value (r",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 22,
+          "title": "JSON-LD export of the fabric Web (OriginTrail DKG-compatible, @language/@direction)",
+          "url": "https://github.com/Knitweb/pulse/issues/22",
+          "state": "closed",
+          "labels": [
+            "area:knitweb",
+            "type:p2p",
+            "prio:med",
+            "MoSCoW: Should"
+          ],
+          "goal": "From the multilingual design: emit the woven Web as JSON-LD with rdf:langString + BCP-47 @language + @direction (rtl for Arabic) so a knitwe",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 23,
+          "title": "Unify FabricNode transport with AsyncioP2PNode",
+          "url": "https://github.com/Knitweb/pulse/issues/23",
+          "state": "closed",
+          "labels": [
+            "area:knitweb",
+            "type:p2p",
+            "prio:med",
+            "MoSCoW: Could"
+          ],
+          "goal": "PR #18's FabricNode runs its own asyncio.startserver rather than extending the existing AsyncioP2PNode. Unify onto one p2p transport stack t",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 24,
+          "title": "FabricNode hardening: equivocation quarantine + partial Merkle proofs + DHT discovery",
+          "url": "https://github.com/Knitweb/pulse/issues/24",
+          "state": "closed",
+          "labels": [
+            "area:knitweb",
+            "type:p2p",
+            "prio:low",
+            "MoSCoW: Should"
+          ],
+          "goal": "The #18 out-of-scope items: quarantine equivocating peers (reuse pouw equivocation-report), serve partial Merkle proofs for sub-web verifica",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 27,
+          "title": "Finish loom→knitweb: docs/research/08-knitweb.md still uses 'loom' (peer-node) on main",
+          "url": "https://github.com/Knitweb/pulse/issues/27",
+          "state": "closed",
+          "labels": [
+            "area:knitweb",
+            "type:docs",
+            "prio:high"
+          ],
+          "goal": "PR #26 (rename) was merged before the verify-flagged fix landed, so main still has ~48 active 'loom'/'Loom'/'looms' refs in docs/research/08",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 29,
+          "title": "EPIC: Fiber tension — make-or-break traversal mechanics (taut / slack / snapped)",
+          "url": "https://github.com/Knitweb/pulse/issues/29",
+          "state": "closed",
+          "labels": [
+            "area:molgang",
+            "area:knitweb",
+            "type:p2p",
+            "prio:high",
+            "MoSCoW: Could"
+          ],
+          "goal": "Model tension as the quantitative variable on every fiber (edge) governing traversal — not a static link but a tensioned thread.",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 33,
+          "title": "p2p cleanup: relay outer-frame doc wording + _relay_ namespace note (from #32 review)",
+          "url": "https://github.com/Knitweb/pulse/issues/33",
+          "state": "closed",
+          "labels": [
+            "type:p2p",
+            "prio:low",
+            "MoSCoW: Could"
+          ],
+          "goal": "Non-blocking nits from the adversarial review of #32 (signed-record byte-identity IS preserved — these are polish):",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 37,
+          "title": "p2p: reputation bans are keyed by endpoint, not identity — collateral bans via the merged relay (#31/#32 follow-up)",
+          "url": "https://github.com/Knitweb/pulse/issues/37",
+          "state": "closed",
+          "labels": [
+            "MoSCoW: Should"
+          ],
+          "goal": "",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 38,
+          "title": "p2p follow-ups from round-2 review: PEX-over-relay carrier auth + jsonld dangling-edge error type",
+          "url": "https://github.com/Knitweb/pulse/issues/38",
+          "state": "closed",
+          "labels": [
+            "type:p2p",
+            "type:security",
+            "prio:med",
+            "MoSCoW: Should"
+          ],
+          "goal": "Non-blocking nits from the adversarial review of #34/#35/#36 (all merged, all byte-identity-clean):",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 39,
+          "title": "fabric: JSON-LD export is English-only — add @language/@direction (follow-up to merged #34)",
+          "url": "https://github.com/Knitweb/pulse/issues/39",
+          "state": "closed",
+          "labels": [
+            "MoSCoW: Should"
+          ],
+          "goal": "Fix: emit language-tagged value objects for label literals, e.g. {\"@value\":\"ذرة\",\"@language\":\"ar\",\"@direction\":\"rtl\"} (and @language for en/",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 40,
+          "title": "p2p: PEX needs an inbound cap + static-peer floor (eclipse defense) — follow-up to merged #36",
+          "url": "https://github.com/Knitweb/pulse/issues/40",
+          "state": "closed",
+          "labels": [
+            "MoSCoW: Should"
+          ],
+          "goal": "Add: (1) a cap on total directory size + per-exchange accepted-peer cap (bounded merge); (2) never let PEX fully replace the peerbook — keep",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 44,
+          "title": "Wire the anti-entropy convergence loop (#43) into AsyncioP2PNode + FabricNode",
+          "url": "https://github.com/Knitweb/pulse/issues/44",
+          "state": "closed",
+          "labels": [
+            "type:p2p",
+            "prio:high",
+            "MoSCoW: Should"
+          ],
+          "goal": "PR #43 shipped a standalone, tested anti-entropy/reconnect driver (p2p/antientropy.py) driven by injected callbacks, but it is not yet wired",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 49,
+          "title": "fabric: web_state_root folds node CIDs only — edges/relations aren't in the convergence witness",
+          "url": "https://github.com/Knitweb/pulse/issues/49",
+          "state": "closed",
+          "labels": [
+            "MoSCoW: Should"
+          ],
+          "goal": "Confirmed in fabric/items.py: webstateroot = SHA-256 Merkle root of sorted(web.nodes.keys()) — node CIDs only. Edges/typed links are not fol",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 50,
+          "title": "p2p doc/test follow-ups from round 5: doc metrics-scope staleness + add Byzantine-exclusion scenario",
+          "url": "https://github.com/Knitweb/pulse/issues/50",
+          "state": "closed",
+          "labels": [
+            "type:p2p",
+            "type:docs",
+            "prio:low",
+            "MoSCoW: Could"
+          ],
+          "goal": "Non-blocking, from the round-5 review (all merged):",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 52,
+          "title": "Follow-up: fold FabricNode._serve_connection routing into the BaseNode seam",
+          "url": "https://github.com/Knitweb/pulse/issues/52",
+          "state": "closed",
+          "labels": [
+            "type:p2p",
+            "prio:low",
+            "MoSCoW: Should"
+          ],
+          "goal": "From the #23/#51 unification review (merged): FabricNode.serveconnection still inlines its own routing (framesin/out + kind-dispatch) rather",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 58,
+          "title": "p2p reputation: use a cryptographic peer identity (handshake pubkey) instead of tcp:<ip> to avoid NAT collateral-bans",
+          "url": "https://github.com/Knitweb/pulse/issues/58",
+          "state": "closed",
+          "labels": [
+            "type:p2p",
+            "type:security",
+            "prio:med",
+            "MoSCoW: Should"
+          ],
+          "goal": "Proper fix: key reputation on a cryptographic node identity — have peers prove a stable pubkey via the Knit handshake, and ban that KEY, not",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 60,
+          "title": "EPIC: port proven crypto-p2p patterns (libp2p / Bitcoin / devp2p / Kademlia / Nostr) into knitweb",
+          "url": "https://github.com/Knitweb/pulse/issues/60",
+          "state": "open",
+          "labels": [
+            "type:p2p",
+            "prio:high",
+            "MoSCoW: Should"
+          ],
+          "goal": "Research-driven expansion (owner ask): mine our own docs/research for designed-but-unimplemented ideas, AND study real crypto p2p codebases ",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 65,
+          "title": "Adopt PeerIdentityGate (#62) in BaseNode._dispatch — single, general identity-keying (supersede #61 inline)",
+          "url": "https://github.com/Knitweb/pulse/issues/65",
+          "state": "closed",
+          "labels": [
+            "type:p2p",
+            "prio:med",
+            "MoSCoW: Should"
+          ],
+          "goal": "",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 66,
+          "title": "addrbook (#63): add multi-group-flood eclipse test + document tried-promotion as the load-bearing defense",
+          "url": "https://github.com/Knitweb/pulse/issues/66",
+          "state": "closed",
+          "labels": [
+            "type:p2p",
+            "type:security",
+            "prio:med",
+            "MoSCoW: Should"
+          ],
+          "goal": "Verify of #63 found the headline eclipse test floods only a SINGLE source-group + /16. Under a realistic multi-/16 flood (attacker owning a ",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 70,
+          "title": "p2p: DHT keyspace eclipse — node_id=sha256(pubkey) is grindable; consider S/Kademlia crypto-puzzle (Refs #60 #68)",
+          "url": "https://github.com/Knitweb/pulse/issues/70",
+          "state": "closed",
+          "labels": [
+            "MoSCoW: Should"
+          ],
+          "goal": "From the #68 review: Kademlia derives nodeid = sha256(pubkey) and keys are free to mint, so an attacker can grind keypairs until their id la",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 71,
+          "title": "erlay reconcile (#69): adaptive fanout / early-exit to cut the constant-factor frame overhead for small diffs",
+          "url": "https://github.com/Knitweb/pulse/issues/71",
+          "state": "open",
+          "labels": [
+            "type:p2p",
+            "prio:low",
+            "MoSCoW: Could"
+          ],
+          "goal": "Verify of #69 noted the bisection reconciliation incurs a ~constant-factor frame overhead (~200 frames even at diff=2 over a 4000-CID invent",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 74,
+          "title": "p2p discovery hardening: bound the flat PeerDirectory + isolate source-group eclipse test",
+          "url": "https://github.com/Knitweb/pulse/issues/74",
+          "state": "closed",
+          "labels": [
+            "type:p2p",
+            "type:security",
+            "prio:med",
+            "MoSCoW: Should"
+          ],
+          "goal": "Follow-ups from the #73 AddrBook-activation review (merged; eclipse defense now live on the DIAL/PEX sample path):",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 76,
+          "title": "p2p inv-relay: test each dedup layer in isolation + clarify per-hop envelope vs record byte-identity",
+          "url": "https://github.com/Knitweb/pulse/issues/76",
+          "state": "closed",
+          "labels": [
+            "type:p2p",
+            "prio:low",
+            "MoSCoW: Should"
+          ],
+          "goal": "Follow-ups from the #75 inventory-activation review (merged; propagation now inv-announce→getdata→data, full-flood replaced):",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 78,
+          "title": "p2p: wire mesh/gossip heartbeats into a prod background scheduler + strengthen multi-hop gossip",
+          "url": "https://github.com/Knitweb/pulse/issues/78",
+          "state": "closed",
+          "labels": [
+            "type:p2p",
+            "prio:med",
+            "MoSCoW: Should"
+          ],
+          "goal": "Follow-ups from the #77 gossipsub-mesh activation (merged; eager fan-out now O(D) + lazy IHAVE):",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 81,
+          "title": "fabric/node.py: update docstrings — state_root now commits to edges, not just node CIDs",
+          "url": "https://github.com/Knitweb/pulse/issues/81",
+          "state": "closed",
+          "labels": [
+            "type:docs",
+            "prio:low",
+            "MoSCoW: Could"
+          ],
+          "goal": "Cosmetic only. After #80 (merged), the webstateroot = sha256(noderoot || edgeroot), but src/knitweb/fabric/node.py still has docstrings (lin",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 87,
+          "title": "P0: bootstrap_round() bypasses MAX_PEX_INBOUND cap — bound attacker-controlled bootstrap replies",
+          "url": "https://github.com/Knitweb/pulse/issues/87",
+          "state": "closed",
+          "labels": [
+            "area:knitweb",
+            "type:p2p",
+            "type:security",
+            "prio:high",
+            "MoSCoW: Should",
+            "track-p"
+          ],
+          "goal": "discovery.py line 293 calls directory.merge(peersfromrecords(reply.get('peers') or [])) with NO [:inboundcap], unlike handlepeerexchange lin",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 88,
+          "title": "📋 COORDINATION — two-track dev plan (Codex=molgang · Claude Code=pulse)",
+          "url": "https://github.com/Knitweb/pulse/issues/88",
+          "state": "closed",
+          "labels": [
+            "MoSCoW: Should",
+            "track-p",
+            "coordination"
+          ],
+          "goal": "Collision-free decomposition for two parallel dev sessions across separate GitHub repositories. Verified disjoint file trees ⇒ zero edit col",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 89,
+          "title": "[CRITICAL] Cleartext node:<pubkey> piggybacked beside TCP source IP — permanent passive IP↔pubkey↔Knit-signer deanonymization",
+          "url": "https://github.com/Knitweb/pulse/issues/89",
+          "state": "closed",
+          "labels": [
+            "type:security",
+            "MoSCoW: Could",
+            "track-p"
+          ],
+          "goal": "Severity: CRITICAL  ·  Track P (pulse)",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 90,
+          "title": "[HIGH] PiggybackProof replay (no nonce cache, no body/connection binding) → targeted ban of honest node:<pubkey>, carrier-ban evasion, and e",
+          "url": "https://github.com/Knitweb/pulse/issues/90",
+          "state": "closed",
+          "labels": [
+            "type:security",
+            "MoSCoW: Should",
+            "track-p"
+          ],
+          "goal": "Severity: HIGH  ·  Track P (pulse)",
+          "status": "done",
+          "pr": {
+            "number": 369,
+            "url": "https://github.com/Knitweb/pulse/pull/369"
+          }
+        },
+        {
+          "number": 91,
+          "title": "[HIGH] inv-getdata / IWANT amplification: single ~2 MiB request elicits up to ~390 GiB served, no per-peer rate or byte limit",
+          "url": "https://github.com/Knitweb/pulse/issues/91",
+          "state": "closed",
+          "labels": [
+            "type:security",
+            "MoSCoW: Should",
+            "track-p"
+          ],
+          "goal": "Severity: HIGH  ·  Track P (pulse)",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 92,
+          "title": "[HIGH] Unbounded per-node _frames store — permanent memory exhaustion via own-key-signed junk records",
+          "url": "https://github.com/Knitweb/pulse/issues/92",
+          "state": "closed",
+          "labels": [
+            "type:security",
+            "MoSCoW: Should",
+            "track-p"
+          ],
+          "goal": "Severity: HIGH  ·  Track P (pulse)",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 93,
+          "title": "[HIGH] Eager inv-announce with no Dandelion/diffusion — author is deterministically the first/earliest announcer, revealing Knit source",
+          "url": "https://github.com/Knitweb/pulse/issues/93",
+          "state": "closed",
+          "labels": [
+            "type:security",
+            "MoSCoW: Should",
+            "track-p"
+          ],
+          "goal": "Severity: HIGH  ·  Track P (pulse)",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 94,
+          "title": "[HIGH] Inbound PEX keys learned addresses under fixed local: source group, neutering the addrbook new-table eclipse defense on the attacker-",
+          "url": "https://github.com/Knitweb/pulse/issues/94",
+          "state": "closed",
+          "labels": [
+            "type:security",
+            "MoSCoW: Should",
+            "track-p"
+          ],
+          "goal": "Severity: HIGH  ·  Track P (pulse)",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 98,
+          "title": "[MEDIUM] node.bootstrap_peers() live path bypasses MAX_PEX_INBOUND (sibling of #87)",
+          "url": "https://github.com/Knitweb/pulse/issues/98",
+          "state": "closed",
+          "labels": [
+            "type:security",
+            "MoSCoW: Should",
+            "track-p"
+          ],
+          "goal": "Track P · type:security — surfaced by the adversarial verify of #95 (the #87 fix).",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 99,
+          "title": "[LOW] Flaky: test_node_learns_a_third_peer_via_pex is order-dependent under pytest-randomly",
+          "url": "https://github.com/Knitweb/pulse/issues/99",
+          "state": "closed",
+          "labels": [
+            "prio:low",
+            "MoSCoW: Could",
+            "track-p"
+          ],
+          "goal": "Track P · prio:low — surfaced by the #97 adversarial verify (not a regression; pre-existing since #36).",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 103,
+          "title": "[#100] test-api-create",
+          "url": "https://github.com/Knitweb/pulse/issues/103",
+          "state": "closed",
+          "labels": [
+            "area:knitweb",
+            "MoSCoW: Should",
+            "MoSCoW: Would",
+            "track-p"
+          ],
+          "goal": "x",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 104,
+          "title": "[#temp2]",
+          "url": "https://github.com/Knitweb/pulse/issues/104",
+          "state": "closed",
+          "labels": [
+            "MoSCoW: Should",
+            "MoSCoW: Would"
+          ],
+          "goal": "tmp",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 105,
+          "title": "[#100] Deterministic structured retrieve",
+          "url": "https://github.com/Knitweb/pulse/issues/105",
+          "state": "closed",
+          "labels": [
+            "area:knitweb",
+            "MoSCoW: Should",
+            "MoSCoW: Would",
+            "track-p"
+          ],
+          "goal": "test",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 106,
+          "title": "[#101] Recursive distill controller",
+          "url": "https://github.com/Knitweb/pulse/issues/106",
+          "state": "closed",
+          "labels": [
+            "area:knitweb",
+            "MoSCoW: Should",
+            "MoSCoW: Would",
+            "track-p"
+          ],
+          "goal": "See docs/BACKLOG100120INTERPRETATIONLOBE.md section #101. Stage: mining. Depends on: #100.",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 109,
+          "title": "📋 Epic: The Interpretation Lobe & the Settlement / Mining split (IL-100…IL-120)",
+          "url": "https://github.com/Knitweb/pulse/issues/109",
+          "state": "open",
+          "labels": [
+            "MoSCoW: Should",
+            "track-p",
+            "coordination"
+          ],
+          "goal": "The Interpretation Lobe & the Settlement / Mining split",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 110,
+          "title": "[IL-100] Deterministic structured retrieve (trap 1)",
+          "url": "https://github.com/Knitweb/pulse/issues/110",
+          "state": "closed",
+          "labels": [
+            "MoSCoW: Should",
+            "track-p",
+            "epic:interpret",
+            "settlement"
+          ],
+          "goal": "Story. As a spider, I want a retrieve(query, subscription) that returns a",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 111,
+          "title": "[IL-101] Recursive distill controller (trap 2 — the missing middle)",
+          "url": "https://github.com/Knitweb/pulse/issues/111",
+          "state": "open",
+          "labels": [
+            "MoSCoW: Should",
+            "track-p",
+            "epic:interpret",
+            "mining"
+          ],
+          "goal": "⛔ Blocked by: #110 (IL-100)",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 112,
+          "title": "[IL-102] Provenance-gate as the distiller output contract",
+          "url": "https://github.com/Knitweb/pulse/issues/112",
+          "state": "closed",
+          "labels": [
+            "MoSCoW: Should",
+            "track-p",
+            "epic:interpret",
+            "settlement"
+          ],
+          "goal": "⛔ Blocked by: #111 (IL-101)",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 113,
+          "title": "[IL-103] Distilled intermediates as content-addressed Web nodes",
+          "url": "https://github.com/Knitweb/pulse/issues/113",
+          "state": "closed",
+          "labels": [
+            "MoSCoW: Should",
+            "track-p",
+            "epic:interpret",
+            "settlement",
+            "mining"
+          ],
+          "goal": "⛔ Blocked by: #111 (IL-101)",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 114,
+          "title": "[IL-104] Compile the answer to a question (not just a named asset)",
+          "url": "https://github.com/Knitweb/pulse/issues/114",
+          "state": "closed",
+          "labels": [
+            "MoSCoW: Could",
+            "track-p",
+            "epic:interpret",
+            "settlement"
+          ],
+          "goal": "⛔ Blocked by: #112 (IL-102)",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 115,
+          "title": "[IL-105] Register distill as a PoUW job class with split verification",
+          "url": "https://github.com/Knitweb/pulse/issues/115",
+          "state": "open",
+          "labels": [
+            "MoSCoW: Should",
+            "track-p",
+            "epic:pouw",
+            "settlement"
+          ],
+          "goal": "⛔ Blocked by: #110, #111, #112 (IL-100, IL-101, IL-102)",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 116,
+          "title": "[IL-106] Deterministic re-execution of retrieve + gate",
+          "url": "https://github.com/Knitweb/pulse/issues/116",
+          "state": "closed",
+          "labels": [
+            "MoSCoW: Could",
+            "track-p",
+            "epic:pouw",
+            "settlement"
+          ],
+          "goal": "⛔ Blocked by: #115 (IL-105)",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 117,
+          "title": "[IL-107] Challenge-window + reputation for relevance",
+          "url": "https://github.com/Knitweb/pulse/issues/117",
+          "state": "closed",
+          "labels": [
+            "MoSCoW: Could",
+            "track-p",
+            "epic:pouw",
+            "settlement"
+          ],
+          "goal": "⛔ Blocked by: #115 (IL-105)",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 118,
+          "title": "[IL-108] Bounded self-reflective iteration as the metered default",
+          "url": "https://github.com/Knitweb/pulse/issues/118",
+          "state": "closed",
+          "labels": [
+            "MoSCoW: Could",
+            "track-p",
+            "epic:pouw",
+            "mining"
+          ],
+          "goal": "⛔ Blocked by: #111, #115 (IL-101, IL-105)",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 119,
+          "title": "[IL-109] Rich reputation/deploy/debug metalayer as chunk metadata (off-wire)",
+          "url": "https://github.com/Knitweb/pulse/issues/119",
+          "state": "closed",
+          "labels": [
+            "MoSCoW: Could",
+            "track-p",
+            "epic:reputation",
+            "mining"
+          ],
+          "goal": "Story. As a knowledge contributor, I want each chunk to carry a rich reputation +",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 120,
+          "title": "[IL-110] Canonical quantization of reputation → integer bytecode weight",
+          "url": "https://github.com/Knitweb/pulse/issues/120",
+          "state": "closed",
+          "labels": [
+            "MoSCoW: Could",
+            "track-p",
+            "epic:reputation",
+            "settlement"
+          ],
+          "goal": "⛔ Blocked by: #119 (IL-109)",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 121,
+          "title": "[IL-111] Flywheel feedback: distill outcomes re-weave the Web",
+          "url": "https://github.com/Knitweb/pulse/issues/121",
+          "state": "open",
+          "labels": [
+            "MoSCoW: Could",
+            "track-p",
+            "epic:reputation",
+            "settlement"
+          ],
+          "goal": "⛔ Blocked by: #117, #120 (IL-107, IL-110)",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 122,
+          "title": "[IL-112] Stage tagging across the pipeline",
+          "url": "https://github.com/Knitweb/pulse/issues/122",
+          "state": "open",
+          "labels": [
+            "MoSCoW: Could",
+            "track-p",
+            "epic:settlement-mining"
+          ],
+          "goal": "Story. As a node operator, I want every pipeline stage explicitly tagged",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 123,
+          "title": "[IL-113] Enforce the mining → settlement crossing contract",
+          "url": "https://github.com/Knitweb/pulse/issues/123",
+          "state": "open",
+          "labels": [
+            "MoSCoW: Should",
+            "track-p",
+            "epic:settlement-mining",
+            "settlement"
+          ],
+          "goal": "⛔ Blocked by: #122 (IL-112)",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 124,
+          "title": "[IL-114] Off-wire mining producers: wrap the ML stack as spiders",
+          "url": "https://github.com/Knitweb/pulse/issues/124",
+          "state": "open",
+          "labels": [
+            "MoSCoW: Could",
+            "track-p",
+            "epic:settlement-mining",
+            "settlement",
+            "mining"
+          ],
+          "goal": "⛔ Blocked by: #123 (IL-113)",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 125,
+          "title": "[IL-115] One boundary: settlement = partial-replication = PII",
+          "url": "https://github.com/Knitweb/pulse/issues/125",
+          "state": "open",
+          "labels": [
+            "MoSCoW: Should",
+            "track-p",
+            "epic:settlement-mining",
+            "settlement"
+          ],
+          "goal": "⛔ Blocked by: #122, #123 (IL-112, IL-113)",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 126,
+          "title": "[IL-116] Pluggable trap-1 backend (working-memory only)",
+          "url": "https://github.com/Knitweb/pulse/issues/126",
+          "state": "open",
+          "labels": [
+            "MoSCoW: Could",
+            "track-p",
+            "epic:backends",
+            "settlement",
+            "mining"
+          ],
+          "goal": "⛔ Blocked by: #110 (IL-100)",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 127,
+          "title": "[IL-117] STM/LTM tiering with signed-intent promotion",
+          "url": "https://github.com/Knitweb/pulse/issues/127",
+          "state": "open",
+          "labels": [
+            "MoSCoW: Could",
+            "track-p",
+            "epic:backends",
+            "settlement"
+          ],
+          "goal": "⛔ Blocked by: #111 (IL-101)",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 128,
+          "title": "[IL-118] Pluggable recognition resolver → content-address",
+          "url": "https://github.com/Knitweb/pulse/issues/128",
+          "state": "closed",
+          "labels": [
+            "MoSCoW: Could",
+            "track-p",
+            "epic:edge",
+            "mining"
+          ],
+          "goal": "Story. As an edge/AR user, I want recognition (marker / scene-semantic / embedding)",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 129,
+          "title": "[IL-119] Verifiable AR overlays from a distilled bundle",
+          "url": "https://github.com/Knitweb/pulse/issues/129",
+          "state": "closed",
+          "labels": [
+            "MoSCoW: Could",
+            "track-p",
+            "epic:edge",
+            "settlement"
+          ],
+          "goal": "⛔ Blocked by: #114, #128 (IL-104, IL-118)",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 130,
+          "title": "[IL-120] Durable anchor binding, ephemeral recognition events",
+          "url": "https://github.com/Knitweb/pulse/issues/130",
+          "state": "open",
+          "labels": [
+            "MoSCoW: Could",
+            "track-p",
+            "epic:edge",
+            "settlement",
+            "mining"
+          ],
+          "goal": "⛔ Blocked by: #125, #128 (IL-115, IL-118)",
+          "status": "queued",
+          "pr": null
+        },
+        {
+          "number": 131,
+          "title": "[IL-102] Regression-lock the asset_cid+originator presence guard (synaptic/bytecode.py)",
+          "url": "https://github.com/Knitweb/pulse/issues/131",
+          "state": "closed",
+          "labels": [
+            "MoSCoW: Should",
+            "track-p"
+          ],
+          "goal": "Relates to IL-102 (#112).",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 132,
+          "title": "[IL-100] Promote retrieve.py _in_scope convention to a fabric-wide subscription-scope mapping",
+          "url": "https://github.com/Knitweb/pulse/issues/132",
+          "state": "closed",
+          "labels": [
+            "MoSCoW: Could",
+            "track-p"
+          ],
+          "goal": "Relates to IL-100 (#110). Cross-module consumers: #125, #126.",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 133,
+          "title": "[IL-110] Replace float blend in quantize_weight with integer/fixed-point (HIGH)",
+          "url": "https://github.com/Knitweb/pulse/issues/133",
+          "state": "closed",
+          "labels": [
+            "MoSCoW: Should",
+            "track-p"
+          ],
+          "goal": "Relates to IL-110 (#120). HIGH priority — closest of the Epic-A follow-ups to the integer-only invariant.",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 134,
+          "title": "[IL-101] Replace distill byte-length/wall-clock metering with a real step/token budget primitive",
+          "url": "https://github.com/Knitweb/pulse/issues/134",
+          "state": "closed",
+          "labels": [
+            "MoSCoW: Could",
+            "track-p"
+          ],
+          "goal": "Relates to IL-101 and IL-108.",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 135,
+          "title": "[IL-103] Make dropped distilled-from edges observable in _emit_intermediate (minor)",
+          "url": "https://github.com/Knitweb/pulse/issues/135",
+          "state": "closed",
+          "labels": [
+            "MoSCoW: Could",
+            "track-p"
+          ],
+          "goal": "Relates to IL-103. Minor / hardening.",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 136,
+          "title": "interpret: quantize_weight does float arithmetic feeding a CID'd weight — convert to integer (byte-identity discipline)",
+          "url": "https://github.com/Knitweb/pulse/issues/136",
+          "state": "closed",
+          "labels": [
+            "MoSCoW: Should"
+          ],
+          "goal": "Follow-up to merged #108. interpret/quantize.py computes blended = 0.6rep + 60.0recency + 0.7pouw then int(blended), and that int becomes a ",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 143,
+          "title": "[p2p][HIGH] Mesh-control serve path trusts unauthenticated self-asserted `_MESH_PEER_KEY` → unbounded peer-table growth + one-connection sybil eclipse",
+          "url": "https://github.com/Knitweb/pulse/issues/143",
+          "state": "closed",
+          "labels": [
+            "MoSCoW: Should"
+          ],
+          "goal": "Two HIGH findings with a shared root cause and shared fix: servemesh (node.py:1099-1104) calls addpeer on a self-asserted, unsigned, carrier",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 144,
+          "title": "[p2p][HIGH] Edge-vs-node ingest routes on inner `record[\"kind\"]` but author `weave()` ignores it → permanent, anti-entropy-proof `web_state_root` divergence",
+          "url": "https://github.com/Knitweb/pulse/issues/144",
+          "state": "closed",
+          "labels": [
+            "MoSCoW: Should"
+          ],
+          "goal": "Convergence-soundness break. A single validly-signed record is stored as a NODE by the author (weave() node.py:621) but routed as an EDGE by",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 145,
+          "title": "[p2p][HIGH] Unbounded recursion in canonical CBOR decoder → pre-auth remote DoS (RecursionError escapes `except WireError`)",
+          "url": "https://github.com/Knitweb/pulse/issues/145",
+          "state": "closed",
+          "labels": [
+            "MoSCoW: Must",
+            "MoSCoW: Should"
+          ],
+          "goal": "A ~1 KB inbound frame of ~1000 nested CBOR arrays (b'\\x81'1000+b'\\x00', far under MAXFRAMEBYTES) makes decode recurse past sys.getrecursionl",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 146,
+          "title": "[p2p][MED] inv-announce reply is a deterministic, unbudgeted holdings/membership oracle",
+          "url": "https://github.com/Knitweb/pulse/issues/146",
+          "state": "closed",
+          "labels": [
+            "MoSCoW: Should"
+          ],
+          "goal": "A probing peer learns exactly which CIDs a target holds (and by extension authored) via the deterministic oninv want-dedup store-check + unb",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 152,
+          "title": "Pulse: integer attention metadata records for Lens",
+          "url": "https://github.com/Knitweb/pulse/issues/152",
+          "state": "closed",
+          "labels": [
+            "enhancement",
+            "area:knitweb",
+            "MoSCoW: Should",
+            "track-p",
+            "epic:interpret"
+          ],
+          "goal": "Add optional CID-linked metadata records for confidence, usefulness, deploy/debug score, source priority, and relation weight. All values mu",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 153,
+          "title": "Pulse: stable read-only export boundary for Lens",
+          "url": "https://github.com/Knitweb/pulse/issues/153",
+          "state": "closed",
+          "labels": [
+            "enhancement",
+            "area:knitweb",
+            "MoSCoW: Should",
+            "track-p",
+            "epic:interpret"
+          ],
+          "goal": "Define and document the stable pure-Python import surface Lens can rely on: canonical CID, Web, JSON-LD export/import, provenance traversal,",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 154,
+          "title": "Pulse: signed record verification helper for Lens",
+          "url": "https://github.com/Knitweb/pulse/issues/154",
+          "state": "closed",
+          "labels": [
+            "enhancement",
+            "area:knitweb",
+            "MoSCoW: Should",
+            "track-p",
+            "epic:interpret"
+          ],
+          "goal": "Provide one small helper that validates record CID recomputation, author/provider field matching, attestation verification, and float-free c",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 155,
+          "title": "Pulse: reusable provenance query contract for Lens",
+          "url": "https://github.com/Knitweb/pulse/issues/155",
+          "state": "closed",
+          "labels": [
+            "enhancement",
+            "area:knitweb",
+            "MoSCoW: Should",
+            "track-p",
+            "epic:interpret"
+          ],
+          "goal": "Stabilize provenance traversal inputs and outputs for Lens. Include ancestry, origins, relation filters, deterministic ordering, and danglin",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 156,
+          "title": "Pulse: deterministic Web snapshot API for Lens",
+          "url": "https://github.com/Knitweb/pulse/issues/156",
+          "state": "closed",
+          "labels": [
+            "enhancement",
+            "area:knitweb",
+            "MoSCoW: Should",
+            "track-p",
+            "epic:interpret"
+          ],
+          "goal": "Add a read-only API returning state root, node count, edge count, records, and JSON-LD export without mutating fabric state. Acceptance: rep",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 157,
+          "title": "Pulse: gateway /interpret delegation hook for Lens",
+          "url": "https://github.com/Knitweb/pulse/issues/157",
+          "state": "closed",
+          "labels": [
+            "enhancement",
+            "area:knitweb",
+            "MoSCoW: Should",
+            "track-p",
+            "epic:interpret"
+          ],
+          "goal": "Expose /interpret as a read-only gateway extension point that delegates to an external Lens service/module without adding LLM, vector, or gr",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 158,
+          "title": "Pulse docs: Lens/RLM contract",
+          "url": "https://github.com/Knitweb/pulse/issues/158",
+          "state": "closed",
+          "labels": [
+            "documentation",
+            "area:knitweb",
+            "MoSCoW: Should",
+            "track-p",
+            "epic:interpret"
+          ],
+          "goal": "Document the Lens/RLM contract: Lens is an ephemeral interpret layer over content-addressed fabric chunks, adapters are read models, no muta",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 159,
+          "title": "[HIGH] reconcile responder is unbudgeted + uncapped → 8 MiB recon-req = ~929s CPU amplification DoS",
+          "url": "https://github.com/Knitweb/pulse/issues/159",
+          "state": "closed",
+          "labels": [
+            "MoSCoW: Must",
+            "track-p"
+          ],
+          "goal": "Severity: HIGH (CPU-amplification DoS) · Surface: anti-entropy reconcile responder · sweep-2, main 10327e92",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 160,
+          "title": "[HIGH] relay carrier keys ban + ServeBudget on self-asserted _relay_reply_to → ban/budget bypass + reflection",
+          "url": "https://github.com/Knitweb/pulse/issues/160",
+          "state": "closed",
+          "labels": [
+            "MoSCoW: Must",
+            "track-p"
+          ],
+          "goal": "Severity: HIGH · Surface: relay/mailbox carrier · sweep-2, main 10327e92 · proven-vs-asserted class (#94/#100/#143), upstream of #143",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 161,
+          "title": "[MED] addrman new-table source-group (#100) forgeable via self-asserted _relay_reply_to → anti-eclipse bypass",
+          "url": "https://github.com/Knitweb/pulse/issues/161",
+          "state": "closed",
+          "labels": [
+            "MoSCoW: Should",
+            "track-p"
+          ],
+          "goal": "Severity: MED · Surface: addrman/PEX on relay carrier · sweep-2, main 10327e92 · same root cause as the relay-replyto ban/budget issue — clo",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 163,
+          "title": "[HIGH] #144 regression: relay/sync ingest routes node↔edge on UNSIGNED envelope kind → state-root partition re-opens",
+          "url": "https://github.com/Knitweb/pulse/issues/163",
+          "state": "closed",
+          "labels": [
+            "MoSCoW: Must",
+            "track-p"
+          ],
+          "goal": "Severity: HIGH (convergence soundness — silent permanent divergence) · Surface: signed-record ingest on relay/sync paths · sweep-2, main 103",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 167,
+          "title": "[sweep-3 HIGH] Cross-path node↔edge state-root partition: fabric-record gossip (envelope→node) vs relay/sync ingest (content→edge) for the same signed body",
+          "url": "https://github.com/Knitweb/pulse/issues/167",
+          "state": "closed",
+          "labels": [
+            "MoSCoW: Must",
+            "track-p"
+          ],
+          "goal": "Severity: HIGH (durable consensus / state-root partition — integrity/convergence) · sweep-3 L1 regression lens · main 5694919",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 168,
+          "title": "[sweep-3 HIGH] Inbound accept loop parks one fd-holding coroutine per TCP conn before the max_inbound semaphore → remote fd/slot-exhaustion DoS",
+          "url": "https://github.com/Knitweb/pulse/issues/168",
+          "state": "closed",
+          "labels": [
+            "MoSCoW: Must",
+            "track-p"
+          ],
+          "goal": "Severity: HIGH (remote fd/slot-exhaustion availability DoS) · sweep-3 L2 transport lifecycle · main 5694919",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 169,
+          "title": "[sweep-3 MED] canonical._decode lacks a decoded-object-COUNT cap → single 8 MiB frame inflates ~64× past the #145 depth bound",
+          "url": "https://github.com/Knitweb/pulse/issues/169",
+          "state": "closed",
+          "labels": [
+            "MoSCoW: Should",
+            "track-p"
+          ],
+          "goal": "Severity: MED (single-frame heap amplification) · sweep-3 L3 wire-decode bounds · main 5694919",
+          "status": "done",
+          "pr": null
+        },
+        {
+          "number": 174,
+          "title": "[p2p][MED] transport accept: add hard max_open_conns ceiling — timeout-only (#173) still allows high-arrival-rate burst fd exhaustion",
+          "url": "https://github.com/Knitweb/pulse/issues/174",
+          "state": "closed",
+          "labels": [
+            "MoSCoW: Should",
+            "track-p"
+          ],
+          "goal": "Follow-up to #168 / merged #173.",
+          "status": "done",
+          "pr": null
+        },
         {
           "number": 201,
           "title": "settlement: neutral escrow release payouts with resume cursor",
@@ -2103,9 +4953,9 @@
       ],
       "counts": {
         "docs": 3,
-        "open": 10,
+        "open": 23,
         "review": 0,
-        "done": 22
+        "done": 106
       }
     },
     {
